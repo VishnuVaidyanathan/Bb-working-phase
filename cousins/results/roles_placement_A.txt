@@ -1,0 +1,2 @@
+47176870 4097 1RB1LC_1RC1RB_1RD0LE_1LA1LD_---0LA
+tables tried: 1348502  reached 2M steps: 44519  thrown out as regular: 44099  halting after 100,000 steps: 1
