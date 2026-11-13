@@ -1,0 +1,61 @@
+BB(5) lower cousins: role-built machines that run the champion-style oscillator in growing bursts
+and halt when the oscillator steps onto the halt wire. Tables in tree normal form, halt written 1RZ.
+Steps and ones include the halting step. Bursts = oscillator turns per burst (bursts of 2+ turns only).
+
+
+## bursts [3, 8, 17, 29]  | layers 4  | 1 table
+1RB0LD_1RC1RB_1LA1LC_1RZ1LE_0LC1LA  steps 2566  ones 60  oscillator ADE  fillers BC  bursts [3, 8, 17, 29]
+
+## bursts 2 or 3, then 6, 11, 19  | layers 4  | 18 tables
+1RB0LD_1RC1RB_1LA1LC_1RZ1LE_1RC1LA  steps 1192  ones 40  oscillator ADE  fillers BC  bursts [3, 6, 11, 19]
+1RB0LD_1RC1RB_1LA1LC_1RZ1LE_0RC1LA  steps 1190  ones 40  oscillator ADE  fillers BC  bursts [2, 6, 11, 19]
+1RB0LD_1RC1RB_1LA1LC_1RZ1LE_1LC1LA  steps 1190  ones 40  oscillator ADE  fillers BC  bursts [3, 6, 11, 19]
+1RB0LD_1RC1RB_1LA1LC_1RZ1LE_1RD1LA  steps 1190  ones 40  oscillator ADE  fillers BC  bursts [2, 6, 11, 19]
+1RB1RA_1LC0RD_1LA1LC_1RZ1RE_0LA1RB  steps 1190  ones 40  oscillator BDE  fillers AC  bursts [2, 6, 11, 19]
+1RB1RA_1LC0RD_1LA1LC_1RZ1RE_1LD1RB  steps 1190  ones 40  oscillator BDE  fillers AC  bursts [2, 6, 11, 19]
+1RB1RA_1LC0RD_1LA1LC_1RZ1RE_1RB1RB  steps 1188  ones 40  oscillator BDE  fillers AC  bursts [2, 6, 11, 19]
+1RB0LD_1RC1RB_1LA1LC_1RZ1LE_1LA1LA  steps 1186  ones 40  oscillator ADE  fillers BC  bursts [2, 6, 11, 19]
+1RB1LD_1RC1RB_1LA1LC_1RZ0LE_1LC1LA  steps 1148  ones 41  oscillator ADE  fillers BC  bursts [3, 6, 11, 19]
+1RB1RA_1LC1RD_1LA1LC_1RZ0RE_1RB1RB  steps 1146  ones 41  oscillator BDE  fillers AC  bursts [2, 6, 11, 19]
+1RB1LD_1RC1RB_1LA1LC_1RZ0LE_1LA1LA  steps 1144  ones 41  oscillator ADE  fillers BC  bursts [2, 6, 11, 19]
+1RB1LD_1RC1RB_1LA1LC_1RZ1LE_0LC0LA  steps 1106  ones 41  oscillator ADE  fillers BC  bursts [3, 6, 11, 19]
+1RB1LD_1RC1RB_1LA1LC_1RZ1LE_1RD0LA  steps 1106  ones 41  oscillator ADE  fillers BC  bursts [2, 6, 11, 19]
+1RB1RA_1LC1RD_1LA1LC_1RZ1RE_1LD0RB  steps 1106  ones 41  oscillator BDE  fillers AC  bursts [2, 6, 11, 19]
+1RB1RA_1LC1RD_1LA1LC_1RZ1RE_0RB0RB  steps 1104  ones 41  oscillator BDE  fillers AC  bursts [2, 6, 11, 19]
+1RB1LD_1RC1RB_1LA1LC_1RZ1LE_0LA0LA  steps 1102  ones 41  oscillator ADE  fillers BC  bursts [2, 6, 11, 19]
+1RB1RA_1LC1RD_1LA1LC_1RZ1RE_1RC0RB  steps 1102  ones 41  oscillator BDE  fillers AC  bursts [2, 6, 11, 19]
+1RB1LD_1RC1RB_1LA1LC_1RZ1LE_1LB0LA  steps 1098  ones 41  oscillator ADE  fillers BC  bursts [2, 6, 11, 19]
+
+## bursts 3, 6, 11, 19, 34  | layers 5  | 2 tables
+1RB1RA_1LC1LB_1RA0LD_0LB1LE_1RZ1LC  steps 3549  ones 71  oscillator CDE  fillers AB  bursts [3, 6, 11, 19, 34]
+1RB1RA_1LC1LB_1RA0LD_1LA1LE_1RZ1LC  steps 3545  ones 71  oscillator CDE  fillers AB  bursts [3, 6, 11, 19, 34]
+
+## bursts 3, 4, 7, 10, 14, 19 (slower ladder)  | layers 6  | 9 tables
+1RB1RA_0LC0RC_1RZ1RD_0LE1RB_1LA1LE  steps 2204  ones 40  oscillator BCD  fillers AE  bursts [3, 4, 7, 10, 14, 19]
+1RB1RA_0LC0RD_1LA1LC_1RZ1RE_0LE1RB  steps 2116  ones 40  oscillator BDE  fillers AC  bursts [3, 4, 7, 10, 14, 19]
+1RB1RA_0LC0RD_1LA1LC_1RZ1RE_0LC1RB  steps 2110  ones 40  oscillator BDE  fillers AC  bursts [3, 4, 7, 10, 14, 19]
+1RB1RA_0LC1RD_1LA1LC_1RZ0RE_0LC1RB  steps 2026  ones 41  oscillator BDE  fillers AC  bursts [3, 4, 7, 10, 14, 19]
+1RB1RA_0LC1RD_1LA1LC_1RZ1RE_0LE0RB  steps 1954  ones 41  oscillator BDE  fillers AC  bursts [3, 4, 7, 10, 14, 19]
+1RB1RA_0LC1RD_1LA1LC_1RZ1RE_0LA0RB  steps 1942  ones 41  oscillator BDE  fillers AC  bursts [3, 4, 7, 10, 14, 19]
+1RB1RA_0LC1RD_1LA1LC_1RZ1RE_1RB0RB  steps 1936  ones 41  oscillator BDE  fillers AC  bursts [3, 4, 7, 10, 14, 19]
+1RB1RA_0LC1RD_1LA1LC_1RZ1RE_1LC0RB  steps 1930  ones 41  oscillator BDE  fillers AC  bursts [3, 4, 7, 10, 14, 19]
+1RB0LD_1RC1RB_1LD1LC_0RB1LE_1RZ1LA  steps 1928  ones 41  oscillator ADE  fillers BC  bursts [3, 4, 7, 10, 14, 19]
+
+## bursts 2, 3, 5, 7, 10, 14, 19 (slower ladder)  | layers 7  | 6 tables
+1RB1RA_0LC1LB_0RC1LD_1RA0LE_1RZ1LC  steps 2294  ones 40  oscillator CDE  fillers AB  bursts [2, 3, 5, 7, 10, 14, 19]
+1RB1RA_1LC1LB_0RA0LD_0RB1LE_1RZ1LC  steps 2222  ones 41  oscillator CDE  fillers AB  bursts [2, 3, 5, 7, 10, 14, 19]
+1RB1RA_1LC1LB_0RC1LD_0RA0LE_1RZ1LC  steps 2218  ones 41  oscillator CDE  fillers AB  bursts [2, 3, 5, 7, 10, 14, 19]
+1RB1RA_1LC1LB_0RA1LD_0RE0LE_1RZ1LC  steps 2138  ones 41  oscillator CDE  fillers AB  bursts [2, 3, 5, 7, 10, 14, 19]
+1RB1RA_1LC1LB_0RA1LD_0RA0LE_1RZ1LC  steps 2128  ones 41  oscillator CDE  fillers AB  bursts [2, 3, 5, 7, 10, 14, 19]
+1RB1RA_1LC1LB_0RA1LD_0RA1LE_1RZ0LC  steps 2044  ones 42  oscillator CDE  fillers AB  bursts [2, 3, 5, 7, 10, 14, 19]
+
+## bursts [2, 7, 12, 23, 42, 71, 119]  | layers 7  | 1 table
+1RB1RA_1LC0RD_1LA1LC_1RZ1RE_0RA1RB  steps 40806  ones 240  oscillator BDE  fillers AC  bursts [2, 7, 12, 23, 42, 71, 119]
+
+For comparison, the long ladders (same counting):
+1RB1LC_1RC1RB_1RD0LE_1LA1LD_1RZ0LA  steps 47176870  bursts 3, 6, 12, 22, 39, 66, 112, 189, 316, 529, 883, 1473, 2456, 4095
+1RB1RA_1LC1LB_1RA0LD_0RB1LE_1RZ1LC  steps 11811040  bursts 3, 6, 11, 19, 33, 56, 94, 158, 264, 441, 736, 1228, 2047
+1RB1RA_1LC1RD_1LA1LC_1RZ1RE_1RA0RB  steps 11792682  bursts 2, 5, 10, 19, 32, 55, 94, 157, 264, 441, 736, 1227, 2047
+
+Source: role-based search (cousins/src/roles2.c) rerun on 13 Nov 2026 for all three placements with first wire 1RB,
+keeping every halter above 1,000 steps. No machine in the search halts between 40,806 and 11,792,682 steps.
