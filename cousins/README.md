@@ -80,6 +80,8 @@ wire counts as the halt. Speed filters: tape width at 300, 3,000, 20,000 and
 No other long halter came out. All the cousins found halt between 11,792,682
 and 11,811,040 steps.
 
+Lower cousins: the same search, keeping every halter above 1,000 steps, also gives 37 machines with the same oscillator and gate that halt after only 4 to 7 layers (1,098 to 40,806 steps); see [`results/lower_cousins.txt`](results/lower_cousins.txt).
+
 ### What it does not cover
 
 - #3 to #6 have a different shape: the three-state chain does not close; its
