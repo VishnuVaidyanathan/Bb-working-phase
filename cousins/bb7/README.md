@@ -16,16 +16,17 @@ from a blank tape reaches it. First move is to the right.
 
 | | count |
 |---|---|
-| lower cousins: halt within 20 million steps, at least 1,000 steps | 1,950 |
+| lower cousins: halt within 300 million steps, at least 1,000 steps | 1,958 |
 | still running at 20 million steps and not a plain bouncer | 54,354 |
 | of these, proved to never halt (closed position set) | 46,127 |
-| not yet decided | 8,227 |
+| of the rest, halt between 20 and 300 million steps | 8 |
+| not yet decided (still running at 300 million steps) | 8,219 |
 
 - The champion is found by the search. It is in the "not yet decided" list, as it must be: the search runs
   each table only 20 million steps.
-- Biggest lower cousin: 11,825,326 steps, 4,095 ones.
-- Nothing in this list halts between 11.8 million and 20 million steps. Above 20 million steps nothing is
-  known yet from this search.
+- Biggest lower cousin: 295,113,423 steps, 20,486 ones.
+- Halting was checked by plain running up to 20 million steps for every table, and up to 300 million steps
+  for the tables that were not proved to never halt. Above 300 million steps nothing is known yet.
 
 ## Files
 
