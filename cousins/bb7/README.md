@@ -28,6 +28,39 @@ from a blank tape reaches it. First move is to the right.
 - Halting was checked by plain running up to 20 million steps for every table, and up to 300 million steps
   for the tables that were not proved to never halt. Above 300 million steps nothing is known yet.
 
+## Simulator pass (Shawn Ligocki's Quick_Sim)
+
+The 8,219 undecided tables were split by tape width at 300 million steps:
+5,252 fast growers (width 5,000 or more) and 2,967 slow growers.
+The fast growers were given to Quick_Sim from `sligocki/busy-beaver` (by Shawn Ligocki), 10 seconds each, flag `-r`.
+
+| | count |
+|---|---|
+| halt (tool) | 11 |
+| proved to run forever (tool) | 2,196 |
+| no answer in 10 seconds | 3,045 |
+
+Halting cousins found this way, biggest first:
+
+| steps | ones | table | checked by plain run |
+|---|---|---|---|
+| about 9 x 10^112 | about 4 x 10^56 | `0RB0LG_1RC1RB_1RD0LF_1RE0RD_1RF1LE_1LA1LF_---0RB` | no, too big |
+| about 1.9 x 10^61 | about 5.8 x 10^30 | `1RB1RG_0LC1LB_0RD1LF_1RE1RD_0RF1RE_1RA0LF_1RC---` | no, too big |
+| about 1.7 x 10^45 | about 7.5 x 10^22 | `1RB1LG_1LC1LB_1RD0LE_1RE1RD_1LF0RE_1LA1LF_---0LB` | no, too big |
+| 408,558,058,408,175,688 | 857,557,346 | `1RB0LG_1RC1RB_0LD1LE_0LE1LD_1LF0RE_1LA---_0RC1RB` | no, too big |
+| 114,196,411,835,282,439 | 692,549,585 | `1RB1LG_1RC1RB_1RD0RF_1LE---_0LF1LE_1LA1RF_1LC0RB` | no, too big |
+| 113,622,663,316,752,575 | 445,914,500 | `1RB1RG_0LC1LB_0RD1LF_1RE0RD_0RF1RE_1RA0LF_1RC---` | no, too big |
+| 4,034,860,548,018,943 | 86,564,054 | `0RB0LG_1RC1RB_0LD1RE_0LE1LD_1LF0RE_1LA0RF_---0LB` | no, too big |
+| 29,187,560,564 | 155,969 | `1RB0LG_1RC0RB_1RD1LE_1RE---_1LF1LE_1LA1RF_0LC1LB` | yes |
+| 2,863,705,134 | 65,542 | `0RB0LG_1LC1RB_0LD0RC_1LE1LD_1RF---_1LA1LF_0LC1LB` | yes |
+| 2,863,574,028 | 65,542 | `0RB0LG_1LC1RB_0LD0RC_1LE1LD_1LF---_1LA1LF_0LC1LB` | yes |
+| 1,732,594,991 | 70,372 | `0RB0LG_1RC1RB_0RD0RB_1LE0LD_1LF1LE_1LA0LF_---0LB` | yes |
+
+The seven rows marked "too big" rest on the tool alone for now. Each still needs our own layer rule and gate
+written out and checked. None is bigger than the champion.
+
+Still open: the 3,045 with no answer, and the 2,967 slow growers not yet tried.
+
 ## Files
 
 - `results/lower_cousins_bb7.txt` : `H steps ones table`, biggest first.
@@ -36,3 +69,8 @@ from a blank tape reaches it. First move is to the right.
 - `src/roles7.c` : the search. `PRE=33 ./roles7 7 BGCBD?EDFEAFCB 1000 20000000` runs one piece.
 - `src/ncps.c` : the never-halts prover. Checked: it proves none of the 1,950 halting machines.
 - `src/longrun.c` : plain long run from a blank tape.
+- `results/quick_sim_pass1.txt` : Quick_Sim answer for each of the 5,252 fast growers (HALT, INF or T = no answer).
+- `results/halting_cousins_from_quick_sim.txt` : the 11 halting ones.
+- `results/quick_sim_no_answer.txt` : the 3,045 with no answer yet.
+- `results/slow_growers_not_yet_tried.txt` : the 2,967 slow growers.
+- `src/qs2.py` : batch runner for Quick_Sim.
