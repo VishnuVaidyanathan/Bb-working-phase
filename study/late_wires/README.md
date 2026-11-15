@@ -32,3 +32,15 @@ The two at 10↑↑140 are the same size as their seed and are most likely the s
 No table with 3 or more rule levels came out. The undecided ones are mostly towers.
 
 `family1_quick_sim.txt` has every Quick_Sim answer. Scripts: `gen.py`, `pipe.sh`, `qs3.py`.
+
+## Family 2: Jeff's, Pavel's and the 4-arrow machine, last three wires freed (65,853 tables)
+
+| step | tables |
+|---|---|
+| halt in a plain run of 3 million steps | 21,761 |
+| proved to run forever (closed position set) | 43,098 |
+| Quick_Sim: run forever | 986 |
+| Quick_Sim: halt | 0 |
+| Quick_Sim: no answer in 8 seconds | 8 (`family2_no_answer.txt`) |
+
+No new halting machine of any depth. Around these three machines, changing up to three late wires gives small halters or loops.
