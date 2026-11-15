@@ -39,14 +39,14 @@ Each was profiled the same way. This is a first pass: a profile, not a full read
 
 ## What the catalogue shows
 
-1. **Stripes are the usual way to keep numbers.** 15 of the 24 keep numbers as `(10)^m`. Solid blocks with gaps (Jeff's way) are the minority.
+1. **Stripes are the usual way to keep numbers.** 14 of the 24 keep numbers as `(10)^m`. Solid blocks with gaps (Jeff's way) are the minority.
 2. **Units come in several shapes**: `100`, `110`, `1100`, `1110`. The shape is not fixed by anything we can see yet.
 3. **Pair fillers go with stripes.** `25`, `ad`, `03`, `79`, `8b`, `59`, `1a`: a pair of digits that walks a stripe two cells at a time.
 4. **The base is 2 or 3 in every formula the tool printed.** (Our base-4 tower is the only 4, and it does not halt.)
 5. **The divisors are 2, 3, 5, 8, 9, 27, 40.** These are the gates: the run ends on a remainder. Powers of 2 and 3 are the common ones.
 6. **Above 2 rule levels the levels are on the tape.** D1 (5 levels), D2 (4), D5, D6, D8 (3) and P (12) all keep striped groups; J keeps units.
    None of them has that many separate rules in its 13 wires.
-7. **"All wires by digit 35" holds for only some.** 8 of the 24 show every wire by digit 40. Many need 50 to 100.
+7. **"All wires by digit 35" holds for only some.** 9 of the 24 show every wire by digit 40. 11 need between 40 and 110.
    T93 needs 3,324 digits and T140 needs 7,478: a machine can run for thousands of steps as a smaller machine before its last wire is used.
 8. **J2**, the second table on the wiki with the champion's size, differs from J in one wire (G reads 0). Its tape looks the same.
 
