@@ -59,7 +59,14 @@ Halting cousins found this way, biggest first:
 The seven rows marked "too big" rest on the tool alone for now. Each still needs our own layer rule and gate
 written out and checked. None is bigger than the champion.
 
-Still open: the 3,045 with no answer, and the 2,967 slow growers not yet tried.
+Second pass on the 3,045 with no answer (20 seconds, flags `-r --exp-linear-rules --exp-meta-linear-rules`),
+stopped after 705 tables because it gave little: 0 halt, 6 run forever, 698 no answer, and 1 where the tool
+stopped on a power tower more than 500 levels high. That one is a base-4 tower machine; it is proved in Coq
+to never halt, see [`base4/`](base4/).
+
+The 2,967 slow growers (10 seconds, flag `-r`): 0 halt, 748 run forever, 2,206 no answer, 13 tool crashes.
+
+Still open: about 5,250 tables with no answer from the tool.
 
 ## Files
 
@@ -72,5 +79,6 @@ Still open: the 3,045 with no answer, and the 2,967 slow growers not yet tried.
 - `results/quick_sim_pass1.txt` : Quick_Sim answer for each of the 5,252 fast growers (HALT, INF or T = no answer).
 - `results/halting_cousins_from_quick_sim.txt` : the 11 halting ones.
 - `results/quick_sim_no_answer.txt` : the 3,045 with no answer yet.
-- `results/slow_growers_not_yet_tried.txt` : the 2,967 slow growers.
+- `results/quick_sim_slow_growers.txt` : Quick_Sim answer for each of the 2,967 slow growers.
+- `results/quick_sim_pass2_partial.txt` : second pass, first 705 tables.
 - `src/qs2.py` : batch runner for Quick_Sim.
