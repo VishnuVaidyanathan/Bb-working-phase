@@ -8,7 +8,7 @@ Everything here is tested by plain running on small hand-made tapes, unless it s
 | step | tape (head at `[G0]`) | what it is |
 |---|---|---|
 | 141 | `(10)^7 [G0]` | the boot has laid 7 pairs of `10` on the left |
-| 170 | `110 [G0] (1100)^2 1` | 3 pairs make the end-mark and the last 1, 4 pairs make 2 units |
+| 170 | `110 [G0] (1100)^2 1` | the first carry makes the last 1 and the end-mark `110`; then 2 pairs make one unit (see `boot/README.md`) |
 | 319 | `10 [G0] 1^13 0000 1` | gate with P = 13 (one tripling 3*2+6 = 12, plus the stray 1 of the end-mark) |
 | 3755 | `110 [G0] 1 (1100)^21 1` | the restart has turned 42 pairs into 21 units, with one extra 1 in front |
 | 3954 | `10 [G0] 1^16 0000 (1100)^19 1` | block 3 -> 15, plus the stray 1 = 16; the proof `BB7Halts.v` starts here |
