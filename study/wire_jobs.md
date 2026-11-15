@@ -85,7 +85,7 @@ The rare jobs are the gate and the carry: `c47` is 3% of the uses of wire 4, `98
 
 ## For designing by hand
 
-A word list is not enough to count wires, because words overlap. What can be counted is the junctions:
-each fork needs one state that reads both symbols with both readings used, and there are only 7 states.
-Jeff's machine has 6 forks, Pavel's 8, the 4-arrow machine 8. A tape story that needs more than about 9 places
-where "the next cell decides" cannot fit in 7 states.
+A word list is not enough to count wires, because words overlap. What can be counted on paper is the junctions:
+for each wire, where it can be entered from, and whether the state after it must be able to read both symbols.
+In these machines 6 to 10 of the 13 wires are forks and 5 to 9 are merges. A tape story whose words need no sharing
+at all would need far more than 13 wires; a story is only possible if its words can pass through the same few junctions.
