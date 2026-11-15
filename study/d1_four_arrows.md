@@ -65,8 +65,34 @@ comes from the small stack the boot lays (4 and 3) and from the turn after phase
 D1 is the plainest of the three: a nested countdown with no luck in it. If its stack were one counter deeper at the
 start, the same table should give one more arrow. That is an inference from the rules, not something checked.
 
+## The same table started from other stacks (checked with Quick_Sim, `d1_from_stack.py`)
+
+The tool is run from a blank tape until the boot has laid its stack, `01 11 (10)^4 11 (10)^3 11 (01)^8`. The stack is
+then changed by hand and the tool continues. Every run below reached the halt in about a second.
+With the real stack (4, 3) the result is identical to the normal run.
+
+| stack of counters | rule levels | size |
+|---|---|---|
+| 3 (one counter) | 3 | a power tower 19 high (1 arrow chain) |
+| 5 (one counter) | 3 | a power tower 25 high |
+| 1, 1 | 5 | 4 arrows |
+| 2, 3 | 5 | 4 arrows |
+| **4, 3 (the real machine)** | **5** | **4 arrows** |
+| 4, 5 | 5 | 4 arrows |
+| 8, 3 | 5 | 4 arrows |
+| 4, 1, 3 | 7 | **6 arrows** |
+| 4, 4, 3 | 7 | 6 arrows |
+| 2, 2, 2, 3 | 9 | **8 arrows** |
+| 4, 4, 4, 3 | 9 | 8 arrows |
+
+- **Each extra counter in the starting stack adds 2 rule levels and 2 arrows.** One counter: towers. Two: 4 arrows. Three: 6. Four: 8.
+- The values of the counters hardly matter. (1, 1) and (8, 3) are both 4 arrows; only the smaller terms change.
+- Every one of these halts. There is no gate to get past.
+
+So this table can run at 6 or 8 arrows. From a blank tape it runs at 4 because its boot lays two counters.
+These are hand-made tapes: they show what the table can do, they are not machines from a blank tape.
+
 ## Not done
 
 - The boot written by hand, digit for digit.
-- A test of the table on hand-made stacks of other depths. The runs are too long for plain running; it would need
-  the tool to start from a given tape.
+- What in the boot decides that two counters are laid, and whether a table with these rules can lay three.
