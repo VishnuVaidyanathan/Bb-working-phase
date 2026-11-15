@@ -92,7 +92,32 @@ With the real stack (4, 3) the result is identical to the normal run.
 So this table can run at 6 or 8 arrows. From a blank tape it runs at 4 because its boot lays two counters.
 These are hand-made tapes: they show what the table can do, they are not machines from a blank tape.
 
+## The boot, step by step (plain run, steps 1 to 505)
+
+| steps | tape | what happens |
+|---|---|---|
+| 1 to 124 | `1110 1111 (10)^4 [1] 11` | first small pass: a stripe group of 4 is made |
+| 126 to 142 | `111011 [1] 1^9 0001` | the 4 stripes are turned into a solid block of 9 (2 x 4 + 1), and one unit `001` appears on the right |
+| 142 to 211 | `111 [0] 1110 (001)^4` | the block of 9 is turned into 4 units on the right, 2 cells per unit |
+| 211 to 242 | `111 (10)^4 110 110 110 [1] 11` | the 4 units come back to the left as a stripe group of 4, the **first counter**, followed by three `110` marks |
+| 242 to 341 | `111 (10)^4 11 (10)^4 [1] 111001` | the marks are worked off one at a time; behind the first counter a **second counter** grows |
+| 341 to 505 | `111 (10)^4 11 (10)^3 1 (10)^9 0 [head]` | normal rounds have started: the second counter is already counting down (6, 5, 4, 3) and the block is growing |
+
+At step 505 the tape is the one Quick_Sim shows as `01 11 (10)^4 11 (10)^3 11 (01)^8`.
+
+What the boot is made of: the same three conversions the main run uses, at size 4.
+
+    stripes (10)^k  ->  solid block 1^(2k+1)  ->  units (001)^k on the right  ->  stripes (10)^k on the left, plus marks
+
+The first counter is the result of going once round this cycle. The second counter comes from the marks left behind.
+The far left end `111` is never rebuilt.
+
+Why two counters and not three: the cycle is gone through once at the far left before normal rounds begin, and it
+leaves one counter there. I can describe this, but I cannot yet state the rule that fixes the count at one cycle.
+In the big run the same thing happens once more (the "turn" after phase 1), and at the next time the machine halts.
+What tells the two cases apart is the open point.
+
 ## Not done
 
 - The boot written by hand, digit for digit.
-- What in the boot decides that two counters are laid, and whether a table with these rules can lay three.
+- The rule that decides between a turn (one more level) and the halt when the leftmost counter is used up.
