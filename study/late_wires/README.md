@@ -31,7 +31,7 @@ The two at 10↑↑140 are the same size as their seed and are most likely the s
 
 No table with 3 or more rule levels came out. The undecided ones are mostly towers.
 
-`family1_quick_sim.txt` has every Quick_Sim answer. Scripts: `gen.py`, `pipe.sh`, `qs3.py`.
+`family1_quick_sim.txt` has every Quick_Sim answer. Scripts: `../tools/late_wires_gen.py`, `../tools/late_wires_pipe.sh`, `../tools/quick_sim_batch.py`.
 
 ## Family 2: Jeff's, Pavel's and the 4-arrow machine, last three wires freed (65,853 tables)
 

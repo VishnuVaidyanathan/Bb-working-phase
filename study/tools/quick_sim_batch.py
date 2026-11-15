@@ -1,6 +1,6 @@
 # Quick_Sim on each table; writes: table RESULT levels=N size=...
 import subprocess,sys,re,os
-QS='/tmp/claude-0/-home-claude/4b1f9c95-7cd8-5462-90c3-009c8e8939ee/scratchpad/tools/busy-beaver/Code/Quick_Sim.py'
+QS=os.path.join(os.environ.get("QUICK_SIM_DIR", os.path.expanduser("~/busy-beaver/Code")),'Quick_Sim.py')   # set QUICK_SIM_DIR to the Code folder of sligocki/busy-beaver
 inp,out,T=sys.argv[1],sys.argv[2],float(sys.argv[3]); extra=sys.argv[4:]
 done=set(l.split()[0] for l in open(out)) if os.path.exists(out) else set()
 fo=open(out,'a')

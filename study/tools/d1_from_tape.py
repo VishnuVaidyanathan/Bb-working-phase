@@ -2,7 +2,7 @@
    usage: python3 from_tape2.py "01:1 11:1 10:4 11:1 10:3 11:1 01:8" [seconds] [trace]
    (the head stays as it is:  (00) E> 10 )"""
 import sys,os,re,runpy,time,copy,signal,io,contextlib
-QS="/tmp/claude-0/-home-claude/4b1f9c95-7cd8-5462-90c3-009c8e8939ee/scratchpad/tools/busy-beaver/Code"
+QS=os.environ.get("QUICK_SIM_DIR", os.path.expanduser("~/busy-beaver/Code"))   # the Code folder of sligocki/busy-beaver
 sys.path.insert(0,QS); os.chdir(QS)
 TM="1RB1RD_1LC0RD_0LG1LD_1RA0RE_1LF1LA_0LC1LE_1RZ0LE"
 spec=sys.argv[1]; limit=int(sys.argv[2]) if len(sys.argv)>2 else 60; trace=int(sys.argv[3]) if len(sys.argv)>3 else 0

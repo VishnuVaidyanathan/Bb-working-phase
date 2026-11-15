@@ -65,7 +65,7 @@ comes from the small stack the boot lays (4 and 3) and from the turn after phase
 D1 is the plainest of the three: a nested countdown with no luck in it. If its stack were one counter deeper at the
 start, the same table should give one more arrow. That is an inference from the rules, not something checked.
 
-## The same table started from other stacks (checked with Quick_Sim, `d1_from_stack.py`)
+## The same table started from other stacks (checked with Quick_Sim, `tools/d1_from_stack.py`)
 
 The tool is run from a blank tape until the boot has laid its stack, `01 11 (10)^4 11 (10)^3 11 (01)^8`. The stack is
 then changed by hand and the tool continues. Every run below reached the halt in about a second.
@@ -112,7 +112,7 @@ What the boot is made of: the same three conversions the main run uses, at size 
 The first counter is the result of going once round this cycle. The second counter comes from the marks left behind.
 The far left end `111` is never rebuilt.
 
-## Turn or halt: there is no separate rule (checked with Quick_Sim, `d1_from_tape.py`)
+## Turn or halt: there is no separate rule (checked with Quick_Sim, `tools/d1_from_tape.py`)
 
 The whole left side of the tape was replaced by hand at the moment the boot tape is reached, and the tool was run on.
 `01`, `10` are stripe groups, `11` is the separator; the last `01` group is the block.

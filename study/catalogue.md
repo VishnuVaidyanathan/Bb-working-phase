@@ -8,7 +8,7 @@ Each was profiled the same way. This is a first pass: a profile, not a full read
   (`-r --exp-linear-rules --exp-meta-linear-rules --no-steps`, 150 seconds).
 - **base** and **divisors**: read from the final formula the tool prints, for example `(7 + 3^x)/8` gives base 3, divisor 8.
   The divisor is where the gate's remainders come from.
-- **numbers kept as**, **fillers**, **all wires by digit**: from a plain run of 800,000 steps (`profile.py`).
+- **numbers kept as**, **fillers**, **all wires by digit**: from a plain run of 800,000 steps (`tools/profile.py`).
 
 | id | table | found by | size | rule levels (tool) | base | divisors | numbers kept as | fillers | all wires by digit |
 |---|---|---|---|---|---|---|---|---|---|
@@ -65,4 +65,4 @@ It is the closest known machine to the 6 or 7 arrows we want to build, and small
 ## Files
 
 - `machines.txt` : the 24 tables with their ids.
-- `profile.py`, `catalogue.py` : the scripts.
+- `tools/profile.py`, `tools/catalogue.py` : the scripts.

@@ -4,7 +4,7 @@
           python3 from_tape.py "4,3" 8          -> block
           python3 from_tape.py "4,4,3"          -> one more counter in the stack (a copy of the 10^x 11 pair)"""
 import sys,os,re,runpy,time,copy,signal
-QS="/tmp/claude-0/-home-claude/4b1f9c95-7cd8-5462-90c3-009c8e8939ee/scratchpad/tools/busy-beaver/Code"
+QS=os.environ.get("QUICK_SIM_DIR", os.path.expanduser("~/busy-beaver/Code"))   # the Code folder of sligocki/busy-beaver
 sys.path.insert(0,QS); os.chdir(QS)
 TM="1RB1RD_1LC0RD_0LG1LD_1RA0RE_1LF1LA_0LC1LE_1RZ0LE"
 stack=[int(x) for x in sys.argv[1].split(",")]; block=int(sys.argv[2]) if len(sys.argv)>2 else 8; limit=int(sys.argv[3]) if len(sys.argv)>3 else 120

@@ -1,4 +1,16 @@
-# Five big machines read side by side (working notes, 15 Nov 2026)
+# Study of big machines
+
+| file | what it is |
+|---|---|
+| this page | five machines read side by side |
+| [`catalogue.md`](catalogue.md) | 24 machines profiled: size, rule levels, base, divisors, storage, fillers |
+| [`d1_four_arrows.md`](d1_four_arrows.md) | a 4-arrow machine read in full; each group on the tape adds two arrows |
+| [`wire_jobs.md`](wire_jobs.md) | which wires do more than one job |
+| [`late_wires/`](late_wires) | deep openings kept, late wires freed: about 82,000 tables, nothing new |
+| [`machines.txt`](machines.txt) | the 24 tables with their ids |
+| [`tools/`](tools) | the scripts |
+
+## Five big machines read side by side (working notes, 15 Nov 2026)
 
 Purpose: before imagining a new machine, read several big ones the same way: pieces on the tape, words,
 rules, gate, boot. Digits: one per step, `2*state + symbol read`, `0-9` then `a b c d`.
@@ -16,7 +28,7 @@ How far each reading goes is stated for each machine. "Proved" = a Coq file in t
 
 Sizes of P, S, T are from Shawn Ligocki's Quick_Sim (it runs each of them to the halt).
 
-## T: the 6-state tower (tested; opening written by hand, 570 of 570 digits, `t15_boot.py`)
+## T: the 6-state tower (tested; opening written by hand, 570 of 570 digits, `tools/t15_boot.py`)
 
 Tape `1 0^G [A reads 1] 1^n`: a gap of G zeros (the counter) and a block of n ones.
 
@@ -65,7 +77,7 @@ Words: two-digit fillers `25` (to the right) and `ad` (to the left); a round is
 `53 (ad)^k a c d a d b 6103b W 53b W 5 (25)^(k+1)` with `W = 6110252479`; a carry is `b61103` repeated once per unit.
 The wire `c` (G reads 0) is used once per round, inside the `ad` filler.
 
-What the run does (`pavel.py`):
+What the run does (`tools/pavel.py`):
 
 | step | left groups | units on the right |
 |---|---|---|
@@ -121,7 +133,7 @@ P shows a second way to do this beside J: stripes and pair fillers, with a carry
 
 ## Files
 
-- `read.py TABLE STEPS` : digit counts, first appearances, opening blocks, tape at the rare wires.
-- `hand.py` : run a table from a hand-made tape.
-- `pavel.py` : Pavel's run as groups and units.
-- `t15_boot.py` : the opening of T written by hand.
+- `tools/read.py TABLE STEPS` : digit counts, first appearances, opening blocks, tape at the rare wires.
+- `tools/hand.py` : run a table from a hand-made tape.
+- `tools/pavel.py` : Pavel's run as groups and units.
+- `tools/t15_boot.py` : the opening of T written by hand.

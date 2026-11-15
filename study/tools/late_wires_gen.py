@@ -1,6 +1,6 @@
 """For each seed machine: keep the wires in the order they first appear in its run; free the last K to appear
    (write, move, next state all free).  The opening of the transcript stays the seed's; what follows changes."""
-import sys
+import sys,os
 D="0123456789abcd"; K=int(sys.argv[1]); only=sys.argv[2].split(",") if len(sys.argv)>2 else None
 def order(tm,N=3000000):
     c=tm.split('_');T={}
@@ -18,7 +18,7 @@ def order(tm,N=3000000):
     return [k for k in first if T[k] is not None]
 import itertools
 opts=[w+m+q for w in "01" for m in "LR" for q in "ABCDEFG"]
-for line in open("seeds.txt"):
+for line in open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "machines.txt")):
     n,tm=line.split()
     if only and n not in only: continue
     c=tm.replace("1RZ","---").split('_')

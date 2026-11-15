@@ -2,7 +2,7 @@ import re,os,sys,json
 from profile import profile
 names={"J":"Jeff Ketchersid (claimed champion)","J2":"Jeff Ketchersid (second table)","P":"Pavel Kropitz","D1":"Andrew Ducharme","Q1":"@prurq","D2":"Andrew Ducharme","D3":"Andrew Ducharme","D4":"Andrew Ducharme","D5":"Andrew Ducharme","D6":"Andrew Ducharme","D7":"Andrew Ducharme","D8":"Andrew Ducharme","D9":"Andrew Ducharme","T286":"Terry Ligocki","T246":"found in @Iijil's range","T140":"found in @stokastic's range","T93":"found in the Iijil / Terry Ligocki range","T46":"Terry Ligocki","T35":"listed May 2025","T22":"Shawn Ligocki","W5":"Kropitz, Michel, Wythagoras","S5":"6-state, from Shawn Ligocki's collection","T15":"Pavel Kropitz (6 states)","S6":"BB(6) champion (rules by mxdys)"}
 rows=[]
-for line in open("all.txt"):
+for line in open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "machines.txt")):
     n,tm=line.split();f="qs_%s.out"%n
     lv="";res="";size="";base="";mod=""
     if os.path.exists(f):

@@ -147,3 +147,11 @@ part by part (loop, fuel, gate, restart) instead of searching whole tables.
 Start with `design/README.md`. No bigger machine has been found yet; the best
 designed machine so far is predicted to halt after about 5.5 × 10^328 steps
 (not proved, and tiny next to the claimed champion).
+
+## Later notes in this folder
+
+| File | What it is |
+| --- | --- |
+| [`gate_notes.md`](gate_notes.md) | The opening of the run and the parity gate, with the test on other values of P. |
+| [`boot/`](boot) | The boot written by hand from the words of the big run (319 digits), and what each small number of pairs leads to. |
+| [`transcript_to_table/`](transcript_to_table) | From a written transcript to the tables that can play it. |

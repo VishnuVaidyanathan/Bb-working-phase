@@ -4,7 +4,7 @@ The idea: we do not design the table, we design the transcript. One digit per st
 
 ## What is established
 
-1. The boot is the machine at small size. Written by hand and matched: `bb7/boot/boot_by_hand.py` (319 digits), `study/t15_boot.py` (570 digits).
+1. The boot is the machine at small size. Written by hand and matched: `bb7/boot/boot_by_hand.py` (319 digits), `study/tools/t15_boot.py` (570 digits).
 2. A written transcript fixes the table: `bb7/transcript_to_table/` (`sketch.py`, `draft.py`, `prefix.py`).
 3. The gate is the counter modulo its own step: `study/README.md`.
 4. Above three levels the levels are on the tape; in the 4-arrow machine each group adds two arrows: `study/d1_four_arrows.md`.
@@ -23,8 +23,10 @@ Writing from known words gives back the same machine. Keeping a deep opening and
 
 ## Tools that need rebuilding in a fresh workspace
 
-- Shawn Ligocki's Quick_Sim: clone `sligocki/busy-beaver`, `pip install gmpy2 psutil`. The scripts in `study/` that call it have its path at the top.
-- `cousins/bb7/src/`: `longrun.c`, `ncps.c` (compile with `gcc -O2`).
+- Shawn Ligocki's Quick_Sim: clone `sligocki/busy-beaver`, `pip install gmpy2 psutil`, then
+  `export QUICK_SIM_DIR=/path/to/busy-beaver/Code`. The scripts in `study/tools/` read that setting.
+- `cousins/bb7/src/`: `longrun.c`, `ncps.c`, `roles7.c` (compile each with `gcc -O2`).
+- Everything else is plain Python 3. `study/tools/README.md` lists every script.
 
 ## Standing rules
 

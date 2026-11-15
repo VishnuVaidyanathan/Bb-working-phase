@@ -8,7 +8,7 @@ The difference is in the combination. Which wires in each machine do more than o
 A wire is one digit (a state and the symbol it reads). Its job is read from the transcript: the digit before it and
 the digit after it. Two different surroundings are two jobs. A run of the same digit counts as one use, so a filler
 walking a long block is used once. Only surroundings seen at least 3 times in 1.5 million steps are counted.
-`python3 wire_jobs.py TABLE` prints every wire with its jobs; `--all machines.txt` prints the table below.
+`python3 tools/wire_jobs.py TABLE` prints every wire with its jobs; `--all machines.txt` prints the table below.
 
 There are two ways a wire gets a second job:
 

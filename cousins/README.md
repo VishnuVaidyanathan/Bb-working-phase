@@ -8,8 +8,8 @@ to nearly the same size. It is not a neighbour that stops early.
 names, let everything else vary, and run from a blank tape. This gives back
 the champion and 13 of the known top halters, and nothing else.
 
-**Answer for BB(7): we did not run it, and do not expect it to work.** See
-the last section.
+**Answer for BB(7):** run later, see [`bb7/`](bb7). It gives lower cousins and some halting
+cousins, and nothing bigger than the champion. The last section below was written before that run.
 
 ## The grammar, turned into wiring
 

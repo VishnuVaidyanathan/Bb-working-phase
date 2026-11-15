@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.vo
+*.vok
+*.vos
+*.glob
+.*.aux
+.nia.cache
+.lia.cache
+*.tmp
