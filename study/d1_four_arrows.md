@@ -112,12 +112,39 @@ What the boot is made of: the same three conversions the main run uses, at size 
 The first counter is the result of going once round this cycle. The second counter comes from the marks left behind.
 The far left end `111` is never rebuilt.
 
-Why two counters and not three: the cycle is gone through once at the far left before normal rounds begin, and it
-leaves one counter there. I can describe this, but I cannot yet state the rule that fixes the count at one cycle.
-In the big run the same thing happens once more (the "turn" after phase 1), and at the next time the machine halts.
-What tells the two cases apart is the open point.
+## Turn or halt: there is no separate rule (checked with Quick_Sim, `d1_from_tape.py`)
+
+The whole left side of the tape was replaced by hand at the moment the boot tape is reached, and the tool was run on.
+`01`, `10` are stripe groups, `11` is the separator; the last `01` group is the block.
+
+| left side of the tape | groups before the block | rule levels | size |
+|---|---|---|---|
+| `01^2` | 0 | 0 | 9 ones |
+| `10 11 01^2` | 1 | 0 | 23 ones |
+| `10^3 11 01^2` | 1 | 0 | 35 ones |
+| `01 11 01^2` | 1 | 1 | 47 ones |
+| `11 10 11 01^2` | 1, after a bare separator | 2 | 5 x 3^10 |
+| `10 11 10 11 01^2` | 2 | 2 | one power |
+| `01 11 10 11 01^2` | 2 | 3 | a power tower 7 high |
+| `01^2 11 10 11 01^2` | 2 | 3 | 2 arrows |
+| `01 11 10 11 10 11 01^2` | 3 | 5 | 4 arrows |
+| `01 11 01 11 10 11 01^2` | 3 | 5 | 4 arrows |
+| `01 11 10^4 11 10^3 11 01^8` (the real boot tape) | 3 | 5 | 4 arrows |
+| `01 11 10^4 11 10^4 11 10^3 11 01^8` | 4 | 7 | 6 arrows |
+| five groups | 5 | 9 | 8 arrows |
+
+- The three cells `111` at the far left of the tape are themselves a group: a `01` stripe of length 1 and a separator.
+  It is the last counter. The "turn" after phase 1 is this counter being used: an ordinary reload, not a special rule.
+- When the leftmost group is used up and nothing stands to its left, the machine halts.
+- **Rule levels = 2 x groups - 1, and arrows = 2 x groups - 2**, for stacks that begin with a `01` group.
+  The real machine has 3 groups (the `111` end, the counter 4, the counter 3): 5 levels, 4 arrows.
+- A stack that begins with a `10` group, or has only one group, stays small.
+
+So the boot lays exactly three things: the `111` end in its first steps, the first counter from one trip round the cycle,
+and the second counter from the marks. A 6-arrow machine of this kind needs a fourth group.
 
 ## Not done
 
 - The boot written by hand, digit for digit.
-- The rule that decides between a turn (one more level) and the halt when the leftmost counter is used up.
+- Why each group is worth two arrows and not one.
+- A table whose boot lays four groups.
