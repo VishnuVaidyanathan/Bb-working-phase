@@ -6,6 +6,7 @@
 | [`catalogue.md`](catalogue.md) | 24 machines profiled: size, rule levels, base, divisors, storage, fillers |
 | [`d1_four_arrows.md`](d1_four_arrows.md) | a 4-arrow machine read in full; each group on the tape adds two arrows |
 | [`wire_jobs.md`](wire_jobs.md) | which wires do more than one job |
+| [`pavel_depth_word.md`](pavel_depth_word.md) | Pavel's depth word (x becomes 2x + 4 units) and his mod 3 gate |
 | [`late_wires/`](late_wires) | deep openings kept, late wires freed: about 82,000 tables, nothing new |
 | [`machines.txt`](machines.txt) | the 24 tables with their ids |
 | [`tools/`](tools) | the scripts |

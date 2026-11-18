@@ -10,6 +10,7 @@ Plain Python 3, no packages, unless noted. Run them from this folder.
 | `wire_jobs.py TABLE` or `--all ../machines.txt` | the jobs of every wire, read from its surroundings in the transcript |
 | `t15_boot.py` | the opening of Pavel Kropitz's 6-state tower written by hand, compared with the machine |
 | `pavel.py STEPS` | Pavel Kropitz's 7-state machine followed as groups and units |
+| `pavel_gate.py trace/depth/gate` | Pavel's machine at its gate wire: the real run as numbers, the depth word, hand-tape tests of the gate |
 | `catalogue.py` | builds the catalogue table from the profiles and from Quick_Sim outputs `qs_ID.out` in the current folder |
 | `d1_from_stack.py "4,3"` | Quick_Sim on the 4-arrow machine, paused after the boot, with the stack changed |
 | `d1_from_tape.py "01:1 11:1 10:4 11:1 10:3 11:1 01:8"` | the same, with the whole left side of the tape given |
