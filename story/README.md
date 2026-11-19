@@ -9,6 +9,8 @@ moment the head turns round (one picture per pass). Then ask which tables play t
 | `run.c` | `run TABLE [maxsteps]` : run a table from a blank tape |
 | `passes.py` | cut a real machine's run into pass pictures (to test the tool, or to study a machine) |
 | `cutfill.py` | the BB(5) story with other numbers, played on the tape alone, no table |
+| `pics.py` | print a real machine's tape at every head turn, repeats folded |
+| `twin.c` | run two tables side by side from a blank tape and report the first step where they differ |
 | `cut3.py` | the same story as arithmetic, to see when it halts before any table exists |
 
 Build: `gcc -O2 -o story story.c` and `gcc -O2 -o run run.c`.
@@ -38,6 +40,27 @@ state W on the second tape. S and W are only names; the search decides which rea
 
 `examples/bb5_from_real_run.story` is 14 pictures cut from the real run; the tool finds the
 champion's table from them in about 0.02 seconds.
+
+## Rediscovering the two 7-state champions from pictures
+
+Pass pictures cut from the real run, no halt picture, 7 states:
+
+| Machine | Pictures | Time | Tables found |
+|---|---|---|---|
+| Jeff Ketchersid's, first 200 steps | 46 | 0.4 s | 2 |
+| Pavel Kropitz's, first 300 steps | 85 | 0.01 s | 2 |
+
+Longer stories (1,500 and 1,300 steps) give the same two tables each.
+
+In both cases one table is the champion with its halt entry left open, and the other is a twin:
+the same tape and head for 3 billion steps (tested with `twin.c`), but no halt.
+
+- Pavel's twin `1RB0LC_1LC1LF_1RD0LB_1RE1LA_1RB0RE_1RG1LD_0RG0RF` is his machine with the halt
+  wire used as the start wire (states A and E change names, E0 becomes 1RB).
+- Jeff's twin `1RB1LA_1RC0RF_0RD1RG_0LE0LD_0LA1LE_1LC0RG_1RC1RG` is his machine with the halt
+  wire used as an ordinary wire: the champion's A0 then B1 becomes A0 then C1.
+
+So the story without a halt picture leaves exactly one free choice: what the 14th wire does.
 
 ## What this shows
 

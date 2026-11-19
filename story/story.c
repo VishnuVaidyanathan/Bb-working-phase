@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define W 160
-#define MT 64
+#define MT 600
 typedef struct{int sv,ev,halt,cap,head,lo,hi,nones,toff[W],tn,slack; char tape[W];}Test;
 Test T[MT];int nt,N,used=1,var[26],maxsol=200000,nsol=0,haltset=0;long nodes=0;
 int tr[8][2];/* -1 undefined, -2 halt, else w | m<<1 | ns<<2 */
