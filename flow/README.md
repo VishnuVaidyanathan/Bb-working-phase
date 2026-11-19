@@ -17,6 +17,8 @@ Vishnu's recipe for a deep machine, written in digits:
 | `digits.py` | `digits.py TABLE [SHOW [STEPS]]`: any table shown in digits: first digits folded, what comes before and after every digit, the filler and the tops of its nest |
 | `nestc.c` | the nest test and a tape-growth test as a fast filter over a list of tables |
 | `riverc.c` | fast test: size of the river (roads used equally often), and the number of idle digits |
+| `zonec.c` | fast test: the zones of a machine (small roads, river, next zone, fillers) and the growth number |
+| `batch3.sh` | the whole chain over a list of wirings: flow, nest test, zone test |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -87,3 +89,30 @@ a river of 15 roads all used 17,460 to 17,462 times in 2,000,000 steps, a second
 a third near four times (68,724), and a nest of depth 9 whose tops double at each level.
 It does not halt in 20,000,000,000 steps and has only 201,450 ones by then.
 So it is a counter: a perfect nest and ranges in powers of two, but slow growth.
+
+## The zone rule (Vishnu, 19 November)
+
+"A few must be small, then the river must have 7 to 9, then 1 or 2 in the next zone, then definitely 2 must be exponential."
+
+`zonec.c` counts roads in each zone and the growth number (filler per river round at the end of the run, divided by the
+same at a quarter of the run). At 4,000,000 steps:
+
+| Machine | small | river | next | fillers | growth |
+|---|---|---|---|---|---|
+| Jeff Ketchersid's | 11 | 9 | 1 | 2 | 2.31 |
+| Pavel Kropitz's 7-state | 6 | 6 | 6 | 2 | 2.17 |
+| Andrew Ducharme's 4-arrow | 7 | 6 | 9 | 1 | 2.11 |
+| BB(5) champion | 5 | 6 | 3 | 2 | 2.06 |
+| a plain back-and-forth machine | | | | | 2.00 |
+| the counter `1RB0LD_1LD0LB_0RF1LB_1RA1LC_0LD0RE_1RZ0LG_1RG1RE` | 2 | 15 | 3 | 2 | 1.39 |
+
+The growth number puts the known machines in the order of their depth, and puts the counter below 2.
+
+Rule as tested: small >= 1, river 7 to 9, next 1 or 2, fillers = 2, growth >= 2.15.
+
+| Where | Nested tables | Fit the zone rule |
+|---|---|---|
+| Jeff's and Pavel's wirings (39,960 live tables) | 444 | 1: Jeff's own table |
+| 60 random wirings (426,282 live tables) | 5,039 | 1: `1RB0LE_1LE1LD_1RZ0RG_0RF1LB_1RC1LA_0LA0LB_1RD1RG`, proved by Quick_Sim to run for ever (2 rule levels) |
+
+`nest_pass_60_wirings_zones.txt` has the zone line of each of the 5,039.
