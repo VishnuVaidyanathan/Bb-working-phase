@@ -181,3 +181,7 @@ Changing only the wire F1 of the tower machine (1RB in the original):
 | 0LA, 1LG, 1RE | proved to run for ever |
 
 Moving the halt to any other wire gives a machine that halts within 74 steps or loses the nest.
+
+The other 536 neighbours (not nested, no quick halt) in Quick_Sim (8 s, `tower_and_slow_neighbours_rest_quick_sim.txt`):
+528 proved to run for ever, 4 no answer, 4 where the tool stopped. Two of the last four reach exactly the same tower as the
+tower machine (`...1RF0LB_1RG1LA...` and `...1RZ1RG...`): the same run with a wire changed that does not matter. No halter.
