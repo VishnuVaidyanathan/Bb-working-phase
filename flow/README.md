@@ -201,3 +201,10 @@ the parity-gate table is alive (A1 writes 0 and E0 steps back onto it); the slow
 
 Of the nested tables: 2,099 of 5,039 (60 wirings) and 3,099 of 7,043 (150 wirings) have a dead halt by this check.
 So "the halt is alive" is now a line of the recipe, and it should be applied first because it costs nothing.
+
+### Fresh-cell halts
+
+All 12,082 nested tables (210 wirings) split by how the halt can be reached: dead 5,198; alive by stepping back onto a
+cell a wire has just written 789; alive by reading a fresh cell 6,095. Of the fresh-cell ones, 36 have fillers growing
+faster than a plain machine; the 19 not yet judged went to Quick_Sim for 60 s (`fresh_cell_19_quick_sim.txt`):
+6 proved to run for ever, 11 no answer with one rule level (seven of them past 10^13,000), 2 where the tool stopped. No halter.
