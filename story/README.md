@@ -6,11 +6,14 @@ moment the head turns round (one picture per pass). Then ask which tables play t
 | File | What it does |
 |---|---|
 | `story.c` | `story NSTATES file.story` : every table (up to renaming states) that plays all the pictures |
+| `free.c` | the looser tool: `free NSTATES file` takes only the tape before and after each rule, and a limit on head turns, and invents the passes itself |
 | `run.c` | `run TABLE [maxsteps]` : run a table from a blank tape |
 | `passes.py` | cut a real machine's run into pass pictures (to test the tool, or to study a machine) |
 | `cutfill.py` | the BB(5) story with other numbers, played on the tape alone, no table |
 | `pics.py` | print a real machine's tape at every head turn, repeats folded |
 | `twin.c` | run two tables side by side from a blank tape and report the first step where they differ |
+| `tower3.py` | our own story "three blocks" as loose pictures |
+| `follow.py` | start a table on a three-block tape and list every later tape of that shape |
 | `cut3.py` | the same story as arithmetic, to see when it halts before any table exists |
 
 Build: `gcc -O2 -o story story.c` and `gcc -O2 -o run run.c`.
@@ -75,3 +78,29 @@ So the story without a halt picture leaves exactly one free choice: what the 14t
   (the same BB(5) story as 7 long pictures did not finish in 5 minutes).
 - A short story can be played by tables that leave the story later. Use enough pictures to
   cover every road, and always check the result from a blank tape.
+
+## The loose tool (`free.c`)
+
+    S 0[0]0011000  S 0[0]1111110  1 30      before, after, at most 1 head turn, at most 30 steps
+
+Test: 7 loose pictures of BB(5) and one halt picture (`examples/bb5_loose.txt`) give exactly the
+champion's table, 5 states, in 0.15 seconds.
+
+## Our own story: three blocks
+
+Tape `1^a 0 1^b [0] 1^w`, head resting between the last two blocks.
+
+- transfer: (a, b, w) -> (a, b-1, w+2)
+- borrow:   (a, 0, w) -> (a-1, w+2, 0)
+- tower:    (0, 0, w) -> the working block becomes the counter (several forms tried)
+
+| Part | Result |
+|---|---|
+| transfer alone | fits in 3 states |
+| transfer and borrow | fits in 5 states: 7 tables with 3 turns allowed (`examples/three_blocks_engine_5_states.txt`) |
+| the same with w+3 | also fits in 5 states |
+| transfer, borrow and tower | no table in 5 or 6 states for the three forms tried; 7 states still being searched |
+
+All 7 five-state tables follow the rules on a bigger tape than the pictures:
+(2,2,1) -> (2,1,3) -> (2,0,5) -> (1,7,0) -> ... -> (1,0,14) -> (0,16,0) -> ... -> (0,0,32).
+With both counters empty they run away to the left for ever, so by themselves they are not machines.
