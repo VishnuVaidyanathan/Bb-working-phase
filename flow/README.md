@@ -116,3 +116,16 @@ Rule as tested: small >= 1, river 7 to 9, next 1 or 2, fillers = 2, growth >= 2.
 | 60 random wirings (426,282 live tables) | 5,039 | 1: `1RB0LE_1LE1LD_1RZ0RG_0RF1LB_1RC1LA_0LA0LB_1RD1RG`, proved by Quick_Sim to run for ever (2 rule levels) |
 
 `nest_pass_60_wirings_zones.txt` has the zone line of each of the 5,039.
+
+### Can the one fitting table be changed into a halter?
+
+`1RB0LE_1LE1LD_1RZ0RG_0RF1LB_1RC1LA_0LA0LB_1RD1RG`. Its halt is digit 4 (C reads 0), and the only way there is the word `1 8 4`:
+the loop `(91)` eats 1s two at a time going left, and ends either `9 0` (go on) or `1 8 4` (halt). So it is a parity gate.
+In the run it has always ended `9 0`, and Quick_Sim proves it always will.
+
+| Change | Tables | Halt (all within 4,000 steps) | Nested and growing like a deep machine | Of those, proved to run for ever |
+|---|---|---|---|---|
+| one wire (including moving the halt) | 715 | 500 | 2 | 2 |
+| two wires | 147,906 | not counted | 19 | 19 |
+
+So within two wire changes there is no deep halter. (Tested, 2 rule levels each.)
