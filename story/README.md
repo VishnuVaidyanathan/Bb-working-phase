@@ -15,6 +15,7 @@ moment the head turns round (one picture per pass). Then ask which tables play t
 | `tower3.py` | our own story "three blocks" as loose pictures |
 | `nest3.py` | our own story with three counters and a deep borrow, as loose pictures |
 | `marked.py`, `gate3.py` | the same stories with a lasting mark in every counter (an empty counter is a single 1) |
+| `bb5tape.py` | run the BB(5) table on a hand-made tape and print the tape at every wall |
 | `homes.py` | start a table on a tape of several counters and list each later rest position |
 | `follow.py` | start a table on a three-block tape and list every later tape of that shape |
 | `cut3.py` | the same story as arithmetic, to see when it halts before any table exists |
@@ -148,3 +149,15 @@ The 6-state table, started on counter 2 = c, counter 1 empty, working block empt
 c = 1: 39 steps, 9 ones; c = 3: 681 steps, 33 ones; c = 6: 43,692 steps, 257 ones.
 It is a halting engine made from a story. It is not a machine: from a blank tape it runs away, and adding one
 start state in all 784 ways gives nothing longer than 9 steps.
+
+## One stuff: long pieces on BB(5)'s tape (`bb5tape.py`)
+
+Counting loops showed why our engines are dear: our tape has blocks of 1s and gaps of 0s, so the head needs
+four walking loops (Jeff has three, BB(5) two).  On the champions' tapes the head walks over one kind of thing only.
+
+Test on BB(5)'s own table, hand-made tapes: a piece with three 0s (`0001`) among the ordinary `001` pieces acts as a wall
+in the middle of the tape.  The block to its left is cut and grown again before the head goes on.  So a long piece is a
+ticket of a higher level, made of the same stuff, and the 5-state table already obeys it with no extra wire.
+
+Not solved: nothing in the table lays long pieces, and every cut passes the halting gate, so a tape with many long pieces
+usually halts within a few layers.
