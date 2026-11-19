@@ -70,3 +70,20 @@ So the nest test must be used together with growth of the tape.
 
 `nest_pass_60_wirings_river.txt` lists the 5,039 with river size, river count, idle digits and digits used (2,000,000 steps).
 By these tests Jeff Ketchersid's table has a river of 9 and 1 idle digit; Pavel Kropitz's has a river of 7, so it fails the "river of 9" line.
+
+### The 887 in Shawn Ligocki's Quick_Sim (8 seconds each, `river9_887_quick_sim.txt`)
+
+| Result | Tables |
+|---|---|
+| proved to run for ever | 526 (163 with no rule level, 329 with one, 34 with two) |
+| no answer, no rule found | 251 |
+| no answer, one rule level | 106 |
+| other | 4 |
+| halts | 0 |
+| three or more rule levels | 0 |
+
+The top unanswered table by nest depth and river size is `1RB0LD_1LD0LB_0RF1LB_1RA1LC_0LD0RE_1RZ0LG_1RG1RE`:
+a river of 15 roads all used 17,460 to 17,462 times in 2,000,000 steps, a second range at exactly double (34,921),
+a third near four times (68,724), and a nest of depth 9 whose tops double at each level.
+It does not halt in 20,000,000,000 steps and has only 201,450 ones by then.
+So it is a counter: a perfect nest and ranges in powers of two, but slow growth.
