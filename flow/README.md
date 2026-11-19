@@ -14,6 +14,8 @@ Vishnu's recipe for a deep machine, written in digits:
 | `recipe.py` | `recipe.py WIRING file`: keeps the tables whose road counts fit the recipe |
 | `wirings.py` | random wirings that obey the fixed part of the recipe |
 | `nest.py` | `nest.py TABLE [STEPS]`: the nest of the filler: the lengths of its runs in order, and how many times "climb, fall back, and look at the tops" can be repeated |
+| `digits.py` | `digits.py TABLE [SHOW [STEPS]]`: any table shown in digits: first digits folded, what comes before and after every digit, the filler and the tops of its nest |
+| `nestc.c` | the nest test and a tape-growth test as a fast filter over a list of tables |
 | `batch.sh` | runs the two tools over a list of wirings |
 
 Wiring = 14 letters, the next state for digits 0..d, Z for the halt. Jeff Ketchersid's is `BGCBDZEDFEAFCB`, Pavel Kropitz's is `BACFDBAEZCGDGF`.
