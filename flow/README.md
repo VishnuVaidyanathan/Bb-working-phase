@@ -20,6 +20,7 @@ Vishnu's recipe for a deep machine, written in digits:
 | `zonec.c` | fast test: the zones of a machine (small roads, river, next zone, fillers) and the growth number |
 | `batch3.sh` | the whole chain over a list of wirings: flow, nest test, zone test |
 | `gatec.c` | fast test: does the halt hang off a counting loop (like 159 or 91), how many ways the run has left that loop, and the longest row of pieces 01 or 001 on the tape |
+| `neighbours.py` | every table one wire away from a table, including every other place for the halt |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -158,3 +159,25 @@ Its wiring is `BEEDZGFBCAABDG`, the same wiring as the parity-gate table above.
 In Quick_Sim (30 s): 11 proved to run for ever, 14 no answer (6 with no rule found, 8 with one level), 1 where the tool failed.
 No halter and no tower. The three with the highest growth number (about 3.0) do not halt in 30,000,000,000 steps and
 have fewer than 200,000 ones by then, so they grow slowly.
+
+### Cousins and neighbours of the tower machine
+
+Cousins: all 322 nested tables with the wiring `BEEDZGFBCAABDG` in Quick_Sim (15 s, `tower_wiring_family_322_quick_sim.txt`):
+184 proved to run for ever, 134 no answer, 4 where the tool stopped (one of them the tower machine). No halter, no second tower.
+
+Neighbours: the tower machine `1RB1LE_1LE1LD_1RZ1LG_1RF0LB_1RC1LA_1RA1RB_0RD1RG` and the slow table
+`1RB0LD_1LF0RE_1LC1LG_1LA1RB_1RC0RD_1RZ1LG_0LD1RB`, every one-wire change including every other place for the halt: 1,320 tables.
+766 halt within 74 steps. Of the 554 others, 18 are nested (`tower_and_slow_neighbours_nested_quick_sim.txt`).
+
+Changing only the wire F1 of the tower machine (1RB in the original):
+
+| F1 | Result |
+|---|---|
+| 1RB (original) | tower about 500 high, tool stops, no halt seen |
+| 1LA | tower about 500 high, tool stops, no halt seen |
+| 1LF | proved to run for ever, with a rule of level 3 |
+| 0LC, 0LD | no answer, one level, about 10^12,500 |
+| 0RE | no answer, no rule found |
+| 0LA, 1LG, 1RE | proved to run for ever |
+
+Moving the halt to any other wire gives a machine that halts within 74 steps or loses the nest.
