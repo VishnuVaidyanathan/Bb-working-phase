@@ -161,3 +161,19 @@ ticket of a higher level, made of the same stuff, and the 5-state table already 
 
 Not solved: nothing in the table lays long pieces, and every cut passes the halting gate, so a tape with many long pieces
 usually halts within a few layers.
+
+## BB(5) with its halt road opened (`ext.c`)
+
+BB(5)'s nine wires are kept, the halt road (state E reads 0) is opened, and every use of the five free wires of a
+7-state table is tried.  3,197 of the resulting tables can still halt; all were run from a blank tape with
+Shawn Ligocki's Quick_Sim, 6 seconds each (`examples/bb5_extensions_quick_sim_*.txt`).
+
+| Outcome | Tables |
+|---|---|
+| halts, one rule level | 1,091 |
+| no answer in 6 seconds, one rule level | 2,103 |
+| no answer, no rule found | 3 |
+| more than one rule level | 0 |
+
+The biggest halter is `1RB1LC_1RC1RB_1RD0LE_1LA1LD_0LF0LA_0RG---_1RG0RB` with 9,915,611 ones (BB(5) leaves 4,098).
+A new side road on BB(5)'s river gives more gate roads, not another level.
