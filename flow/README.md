@@ -22,6 +22,7 @@ Vishnu's recipe for a deep machine, written in digits:
 | `gatec.c` | fast test: does the halt hang off a counting loop (like 159 or 91), how many ways the run has left that loop, and the longest row of pieces 01 or 001 on the tape |
 | `neighbours.py` | every table one wire away from a table, including every other place for the halt |
 | `haltalive.py` | a check on the table alone: can the halt ever read the symbol it needs? |
+| `gatediary.py` | the diary of the gate: every visit to the counting loop in order, how many rounds, which way out |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -208,3 +209,15 @@ All 12,082 nested tables (210 wirings) split by how the halt can be reached: dea
 cell a wire has just written 789; alive by reading a fresh cell 6,095. Of the fresh-cell ones, 36 have fillers growing
 faster than a plain machine; the 19 not yet judged went to Quick_Sim for 60 s (`fresh_cell_19_quick_sim.txt`):
 6 proved to run for ever, 11 no answer with one rule level (seven of them past 10^13,000), 2 where the tool stopped. No halter.
+
+## The gate's diary (`gatediary.py`, Vishnu, 19 November)
+
+"Halt happens in the arithmetic and construction of the gate, not just at the end. It will be a perfectly fine gate
+entering mod 2 or mod 3 after a few turns of not entering it."
+
+BB(5), every visit to its counting loop `159` and the way out: `02 14 14 14 02 14 14 02 14 02 02 02 14` and then, on the
+fifteenth visit, the third way out, the halt. Two safe ways out taken in no simple order, then the third.
+
+145 nested tables have this kind of gate (a loop of 3, at least two safe ways out, the halt on the third, halt alive).
+In Quick_Sim (12 s, `bb5_kind_gate_145_quick_sim.txt`): 76 proved to run for ever, 68 no answer (54 with no rule found,
+14 with one rule level), 1 halts with 407 ones.
