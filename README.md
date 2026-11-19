@@ -17,6 +17,7 @@ Everything here uses the same lens: one digit per step,
 | [`bb7/transcript_to_table/`](bb7/transcript_to_table) | Tools that go from a written transcript to the tables that can play it. | Working. |
 | [`bb7/design/`](bb7/design) | The earlier try at designing a bigger BB(7) machine from parts. Every step is written down, including the ones that failed. | No machine bigger than the champion. |
 | [`story/`](story) | From a tape story to a table: draw the tape at every head turn, and the tool finds the tables that play it. | Working. Finds the BB(5) champion from pictures alone. No big new machine yet. |
+| [`flow/`](flow) | Wiring first: fix which state each digit flows to, try every write and move, keep the tables that fit the recipe in digits. | Working. Picks Pavel's machine out of 29,152. No new deep machine yet. |
 | [`cousins/`](cousins) | Building cousins of a champion from its grammar roles, tested on BB(5). | Works for BB(5). |
 | [`cousins/bb7/`](cousins/bb7) | The same search for the BB(7) champion: lower cousins, halting cousins found with Quick_Sim, and what is still open. | Nothing bigger than the champion. |
 | [`cousins/bb7/base4/`](cousins/bb7/base4) | A base-4 tower machine from that search, with a Coq proof that it never halts. | Proved in Coq (no axioms). |
