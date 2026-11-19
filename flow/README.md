@@ -16,6 +16,8 @@ Vishnu's recipe for a deep machine, written in digits:
 | `nest.py` | `nest.py TABLE [STEPS]`: the nest of the filler: the lengths of its runs in order, and how many times "climb, fall back, and look at the tops" can be repeated |
 | `digits.py` | `digits.py TABLE [SHOW [STEPS]]`: any table shown in digits: first digits folded, what comes before and after every digit, the filler and the tops of its nest |
 | `nestc.c` | the nest test and a tape-growth test as a fast filter over a list of tables |
+| `riverc.c` | fast test: size of the river (roads used equally often), and the number of idle digits |
+| `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
 Wiring = 14 letters, the next state for digits 0..d, Z for the halt. Jeff Ketchersid's is `BGCBDZEDFEAFCB`, Pavel Kropitz's is `BACFDBAEZCGDGF`.
@@ -57,3 +59,14 @@ Of the 126 tables that fitted the recipe (`fits_nest_depth.txt`, 1,500,000 steps
 The 23 with depth 3 or more are Pavel's machine and 22 others: 7 proved to run for ever, 6 that keep a tiny tape
 (counters: a nest with no growth), and 9 growing with one rule level and no answer yet. No new deep halter.
 So the nest test must be used together with growth of the tape.
+
+## Every live table checked (60 wirings, 426,282 live tables)
+
+| Test | Tables left |
+|---|---|
+| filler has a nest of depth 3 or more, and the tape grows | 5,039 (from 38 of the wirings) |
+| and a river of at least 9 roads in one range | 967 |
+| and at most 3 idle digits | 887 |
+
+`nest_pass_60_wirings_river.txt` lists the 5,039 with river size, river count, idle digits and digits used (2,000,000 steps).
+By these tests Jeff Ketchersid's table has a river of 9 and 1 idle digit; Pavel Kropitz's has a river of 7, so it fails the "river of 9" line.
