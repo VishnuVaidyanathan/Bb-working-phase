@@ -19,6 +19,7 @@ Vishnu's recipe for a deep machine, written in digits:
 | `riverc.c` | fast test: size of the river (roads used equally often), and the number of idle digits |
 | `zonec.c` | fast test: the zones of a machine (small roads, river, next zone, fillers) and the growth number |
 | `batch3.sh` | the whole chain over a list of wirings: flow, nest test, zone test |
+| `gatec.c` | fast test: does the halt hang off a counting loop (like 159 or 91), how many ways the run has left that loop, and the longest row of pieces 01 or 001 on the tape |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -129,3 +130,24 @@ In the run it has always ended `9 0`, and Quick_Sim proves it always will.
 | two wires | 147,906 | not counted | 19 | 19 |
 
 So within two wire changes there is no deep halter. (Tested, 2 rule levels each.)
+
+## Arithmetic gate and pieces (Vishnu, 19 November)
+
+"It must be arithmetic, the gate. And the 001 or 01 must be there, and it must fall after climbing a few good layers."
+
+`gatec.c` on known machines (2,000,000 steps): BB(5): loop of 3, two safe exits, halt 1 step away, 478 pieces `001`.
+Pavel Kropitz's: loop of 2, halt 3 steps away, 1,044 pieces `01`. Jeff Ketchersid's: no such loop and no such pieces (his units are `1100`).
+
+Of the 5,039 nested tables from the 60 wirings: 581 have a counting loop within 2 steps of the halt and pieces on the tape;
+5 of those also have fillers growing faster than a plain machine. In Quick_Sim (60 s):
+
+| Table | Result |
+|---|---|
+| `1RB1LE_1LE1LD_1RZ1LG_1RF0LB_1RC1LA_1RA1RB_0RD1RG` | **reaches a tape of `(10)^N` with N a power tower of 10s about 500 high in 1.2 seconds, then the tool stops ("Too many layers of ExpInt: 501"). No halt seen. 2 rule levels, 2 Collatz rules.** With the tool's limit raised it goes on for about five times as many rule applications and then runs out of recursion depth, still without a halt. |
+| `1RB---_0LC0LF_1LE0RD_1RC1LG_1RG1LC_1RZ1RA_0LD1RB` | no answer, 1 level, size beyond 10^60 |
+| `1RB1RE_1RE1RD_1RZ1LG_0RF1RB_0LC0RA_1RA1LB_1LD1LG` | no answer, 1 level, size about 10^89,371 |
+| `1RB1LE_0RD1RC_0RG0RB_1LA0LA_1RF1LA_1RZ0LE_0LD0RB` | no answer, no rule found |
+| `1RB0LE_1LE1LD_1RZ0RG_0RF1LB_1RC1LA_0LA0LB_1RD1RG` | proved to run for ever |
+
+The first one is a tower machine (each round the stripe count N becomes about 10^N). It climbs, but has not been seen to fall.
+Its wiring is `BEEDZGFBCAABDG`, the same wiring as the parity-gate table above.
