@@ -24,6 +24,7 @@ Vishnu's recipe for a deep machine, written in digits:
 | `haltalive.py` | a check on the table alone: can the halt ever read the symbol it needs? |
 | `gatediary.py` | the diary of the gate: every visit to the counting loop in order, how many rounds, which way out |
 | `scorecard.py` | every line of the recipe at once (15 lines) for a list of tables; needs `nestc`, `zonec2`, `gatec2` built in the same folder |
+| `climb.py` | climbs toward a table that passes all 15 lines: change one wire of the best tables in every way, drop dead halts, keep nested ones, score, repeat |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -241,3 +242,8 @@ The sixteenth line, "it falls after climbing a few good layers", can only be jud
 
 All 12,082 nested tables (`scorecard_12082_nested.txt`): nobody passes 14 or 15. 20 pass 13, 94 pass 12, 299 pass 11.
 The 20 at 13 in Quick_Sim (30 s, `scorecard_top20_quick_sim.txt`): 4 proved to run for ever, 16 no answer with at most one rule level. No halter.
+
+## Climbing the scorecard (`climb.py`)
+
+Seeds: the 114 nested tables that pass 12 or 13 lines. First 8 minutes: 11,425 tables scored, 1,642 pass 14 lines, none passes 15.
+Of the 1,642: 1,611 fail only "fillers grow", 30 fail only "the gate is rare", 1 fails only "river of 7 to 9".
