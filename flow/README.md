@@ -25,6 +25,7 @@ Vishnu's recipe for a deep machine, written in digits:
 | `gatediary.py` | the diary of the gate: every visit to the counting loop in order, how many rounds, which way out |
 | `scorecard.py` | every line of the recipe at once (15 lines) for a list of tables; needs `nestc`, `zonec2`, `gatec2` built in the same folder |
 | `climb.py` | climbs toward a table that passes all 15 lines: change one wire of the best tables in every way, drop dead halts, keep nested ones, score, repeat |
+| `scorecard2.py` | the scorecard with the gate lines reworded (needs `nestc`, `zonec2`, `gatec3`) |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -247,3 +248,26 @@ The 20 at 13 in Quick_Sim (30 s, `scorecard_top20_quick_sim.txt`): 4 proved to r
 
 Seeds: the 114 nested tables that pass 12 or 13 lines. First 8 minutes: 11,425 tables scored, 1,642 pass 14 lines, none passes 15.
 Of the 1,642: 1,611 fail only "fillers grow", 30 fail only "the gate is rare", 1 fails only "river of 7 to 9".
+
+## The gate lines reworded (`scorecard2.py`, Vishnu, 19 November)
+
+"There must be one or two wires overlapping perfectly. That wire does different jobs in different circumstances."
+
+In BB(5), Jeff Ketchersid's and Pavel Kropitz's machines the wire where a deep filler ends is the wire the gate hangs on:
+BB(5): `0` and `4` (the gate's safe ways out are the sweep's own start and fill); Jeff: `2` (the walk-right filler `3` ends
+on it, and the next read is the river or the halt); Pavel: `b` (the `a,d` filler ends on it, and the halt word `b 7 8` starts on it).
+
+Two lines of the scorecard were replaced: "arithmetic gate" -> "the halt hangs within two steps of a deep filler's exit wire",
+"the gate is rare" -> "that exit wire is fed from two places (two jobs)". Pieces now also count rows of `1100`.
+
+| Machine | Lines passed of 15 |
+|---|---|
+| Jeff Ketchersid's | **15** |
+| the parity-gate table | 14 (the halt does not read a fresh cell) |
+| Pavel Kropitz's | 13 (river of 7-9, next zone of 1-2) |
+| BB(5) | 11 |
+
+The 29,860 tables at 13 or 14 on the old card are only 385 different runs on the tape (`scorecard2_385_runs.txt`).
+On the new card 33 of them pass all 15 lines. In Quick_Sim (15 s, `pass_all_15_quick_sim.txt`) none halts: 20 no rule found,
+13 one rule level. Two of them run 20,000,000,000 steps without halting and have about 200,000 ones by then.
+So the 15 lines are passed by machines that are not deep; the sixteenth line (it falls after climbing) is still missing.
