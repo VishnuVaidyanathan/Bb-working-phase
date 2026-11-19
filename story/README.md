@@ -13,6 +13,8 @@ moment the head turns round (one picture per pass). Then ask which tables play t
 | `pics.py` | print a real machine's tape at every head turn, repeats folded |
 | `twin.c` | run two tables side by side from a blank tape and report the first step where they differ |
 | `tower3.py` | our own story "three blocks" as loose pictures |
+| `nest3.py` | our own story with three counters and a deep borrow, as loose pictures |
+| `homes.py` | start a table on a tape of several counters and list each later rest position |
 | `follow.py` | start a table on a three-block tape and list every later tape of that shape |
 | `cut3.py` | the same story as arithmetic, to see when it halts before any table exists |
 
@@ -99,8 +101,32 @@ Tape `1^a 0 1^b [0] 1^w`, head resting between the last two blocks.
 | transfer alone | fits in 3 states |
 | transfer and borrow | fits in 5 states: 7 tables with 3 turns allowed (`examples/three_blocks_engine_5_states.txt`) |
 | the same with w+3 | also fits in 5 states |
-| transfer, borrow and tower | no table in 5 or 6 states for the three forms tried; 7 states still being searched |
+| transfer, borrow and tower | no table in 5, 6 or 7 states, for three forms of the tower rule (2 head turns allowed per picture) |
 
 All 7 five-state tables follow the rules on a bigger tape than the pictures:
 (2,2,1) -> (2,1,3) -> (2,0,5) -> (1,7,0) -> ... -> (1,0,14) -> (0,16,0) -> ... -> (0,0,32).
 With both counters empty they run away to the left for ever, so by themselves they are not machines.
+
+## Three counters with a deep borrow (`nest3.py`)
+
+Tape `1^c3 0 1^c2 0 1^c1 [0] 1^w`. An empty counter is nothing: two 0s touch.
+
+- transfer:    (.., c1, w)    -> (.., c1-1, w+2)
+- borrow:      (.., c2, 0, w) -> (.., c2-1, w+2, 0)
+- deep borrow: (c3, 0, 0, w)  -> (c3-1, w+3, 0, 0)   the working block becomes counter 2 and counter 1 keeps its place, empty
+
+| Asked for | 5 states | 6 states | 7 states |
+|---|---|---|---|
+| transfer, borrow, deep borrow (w+2) | none | none | 10 tables |
+| the same with w+3 | | | 4 tables |
+| the same and a halt when all three counters are empty | none | none | none |
+
+The tables are in `examples/three_counters_engine_7_states_*.txt`. Tested on a bigger tape, e.g.
+`1LB1LA_1LE0RC_1RD1RC_0LA1RG_0LB0RF_0RD1RF_0RA1RG` from (2,0,0,0 | 1):
+(1,1,3,0) -> (1,1,2,2) -> (1,1,1,6) -> (1,1,0,14) -> (1,0,31,0) -> (1,0,30,2) -> (1,0,29,6) -> ... -> (1,0,21,2046) ...
+So counter 1 doubles for each unit of counter 2, and counter 2 is reloaded with the big block: three levels.
+
+Limits found:
+- these engines use all 14 wires, so there is no wire left for a halt, and none was found;
+- with every counter empty they run away to the left for ever, also from a blank tape, so they are engines, not machines;
+- a fourth counter only adds 1 to the third each time it pays, and five or more empty counters in a row collapse.
