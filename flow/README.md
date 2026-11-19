@@ -21,6 +21,7 @@ Vishnu's recipe for a deep machine, written in digits:
 | `batch3.sh` | the whole chain over a list of wirings: flow, nest test, zone test |
 | `gatec.c` | fast test: does the halt hang off a counting loop (like 159 or 91), how many ways the run has left that loop, and the longest row of pieces 01 or 001 on the tape |
 | `neighbours.py` | every table one wire away from a table, including every other place for the halt |
+| `haltalive.py` | a check on the table alone: can the halt ever read the symbol it needs? |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -185,3 +186,18 @@ Moving the halt to any other wire gives a machine that halts within 74 steps or 
 The other 536 neighbours (not nested, no quick halt) in Quick_Sim (8 s, `tower_and_slow_neighbours_rest_quick_sim.txt`):
 528 proved to run for ever, 4 no answer, 4 where the tool stopped. Two of the last four reach exactly the same tower as the
 tower machine (`...1RF0LB_1RG1LA...` and `...1RZ1RG...`): the same run with a wire changed that does not matter. No halter.
+
+## Can the halt be hit at all? (`haltalive.py`, Vishnu, 19 November)
+
+"The halt must hit a zero. Is that one digit enough?"
+
+In the tower machine `1RB1LE_1LE1LD_1RZ1LG_1RF0LB_1RC1LA_1RA1RB_0RD1RG` the halt is C reading 0. C is entered only by
+E0 (write 1, move right). E is entered only by A1 and B0, and both write 1 and move left. So E0 always steps back onto a
+cell that has just been written 1, and C reads 1 every time. **The halt can never be hit: this machine never halts.**
+This is a proof from the table alone (two steps), and it settles the tower machine and its second-tower neighbour.
+
+The same check on other machines: Jeff Ketchersid's, Pavel Kropitz's and BB(5) are alive (the halt reads a fresh cell);
+the parity-gate table is alive (A1 writes 0 and E0 steps back onto it); the slow table is dead.
+
+Of the nested tables: 2,099 of 5,039 (60 wirings) and 3,099 of 7,043 (150 wirings) have a dead halt by this check.
+So "the halt is alive" is now a line of the recipe, and it should be applied first because it costs nothing.
