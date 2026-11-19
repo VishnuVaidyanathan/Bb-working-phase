@@ -23,6 +23,7 @@ Vishnu's recipe for a deep machine, written in digits:
 | `neighbours.py` | every table one wire away from a table, including every other place for the halt |
 | `haltalive.py` | a check on the table alone: can the halt ever read the symbol it needs? |
 | `gatediary.py` | the diary of the gate: every visit to the counting loop in order, how many rounds, which way out |
+| `scorecard.py` | every line of the recipe at once (15 lines) for a list of tables; needs `nestc`, `zonec2`, `gatec2` built in the same folder |
 | `ranges.py` | group a machine's roads into ranges of equal use |
 | `batch.sh` | runs the two tools over a list of wirings |
 
@@ -221,3 +222,22 @@ fifteenth visit, the third way out, the halt. Two safe ways out taken in no simp
 145 nested tables have this kind of gate (a loop of 3, at least two safe ways out, the halt on the third, halt alive).
 In Quick_Sim (12 s, `bb5_kind_gate_145_quick_sim.txt`): 76 proved to run for ever, 68 no answer (54 with no rule found,
 14 with one rule level), 1 halts with 407 ones.
+
+## The scorecard: every line at once (`scorecard.py`)
+
+Fifteen lines, all from Vishnu's notes of 19 November: nest 3+; tape grows; a sticking word; branches 7-11; a few small roads;
+river of 7-9; next zone of 1-2; two fillers; fillers grow (2.15+); arithmetic gate; pieces 01/001; the halt can be hit;
+the halt reads a fresh cell; the gate is rare (3 to 300 visits in 2,000,000 steps); the ways out of the gate are mixed.
+The sixteenth line, "it falls after climbing a few good layers", can only be judged by a long run.
+
+| Machine | Lines passed | Fails |
+|---|---|---|
+| Jeff Ketchersid's | 11 | arithmetic gate, pieces, gate is rare, ways out mixed (his gate is not a counting loop) |
+| Pavel Kropitz's | 12 | river 7-9, next zone 1-2, gate is rare |
+| BB(5) champion | 11 | nest 3+, river 7-9, next zone 1-2, fillers grow |
+| Andrew Ducharme's 4-arrow | 9 | |
+| the tower machine | 9 | halt cannot be hit, among others |
+| the parity-gate table | 13 | halt does not read a fresh cell; only one way out of the gate |
+
+All 12,082 nested tables (`scorecard_12082_nested.txt`): nobody passes 14 or 15. 20 pass 13, 94 pass 12, 299 pass 11.
+The 20 at 13 in Quick_Sim (30 s, `scorecard_top20_quick_sim.txt`): 4 proved to run for ever, 16 no answer with at most one rule level. No halter.
