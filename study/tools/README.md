@@ -13,6 +13,7 @@ Plain Python 3, no packages, unless noted. Run them from this folder.
 | `pavel_gate.py trace/depth/gate` | Pavel's machine at its gate wire: the real run as numbers, the depth word, hand-tape tests of the gate |
 | `pavel_compress.py STEPS` | Pavel's decimal transcript compressed, one line per gate visit (output for 100,000 steps is in `../pavel_first_100000_digits.txt`) |
 | `pavel_plain.py STEPS [out.pdf]` | Pavel's decimal transcript with repeats folded as x(n) and nothing else, as text or a PDF |
+| `signature.py FILE [STEPS]` | road signature of each machine in a list: roads, junctions, pipes, loops, halt |
 | `catalogue.py` | builds the catalogue table from the profiles and from Quick_Sim outputs `qs_ID.out` in the current folder |
 | `d1_from_stack.py "4,3"` | Quick_Sim on the 4-arrow machine, paused after the boot, with the stack changed |
 | `d1_from_tape.py "01:1 11:1 10:4 11:1 10:3 11:1 01:8"` | the same, with the whole left side of the tape given |
