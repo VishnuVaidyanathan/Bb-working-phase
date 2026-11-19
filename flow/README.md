@@ -151,3 +151,10 @@ Of the 5,039 nested tables from the 60 wirings: 581 have a counting loop within 
 
 The first one is a tower machine (each round the stripe count N becomes about 10^N). It climbs, but has not been seen to fall.
 Its wiring is `BEEDZGFBCAABDG`, the same wiring as the parity-gate table above.
+
+### 150 more wirings (seed 2)
+
+7,043 nested tables. Zone rule: 0 fit. Arithmetic gate, pieces and growing fillers: 26 (`gate_fits_150_wirings_quick_sim.txt`).
+In Quick_Sim (30 s): 11 proved to run for ever, 14 no answer (6 with no rule found, 8 with one level), 1 where the tool failed.
+No halter and no tower. The three with the highest growth number (about 3.0) do not halt in 30,000,000,000 steps and
+have fewer than 200,000 ones by then, so they grow slowly.
