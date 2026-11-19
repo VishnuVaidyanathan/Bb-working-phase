@@ -14,6 +14,7 @@ moment the head turns round (one picture per pass). Then ask which tables play t
 | `twin.c` | run two tables side by side from a blank tape and report the first step where they differ |
 | `tower3.py` | our own story "three blocks" as loose pictures |
 | `nest3.py` | our own story with three counters and a deep borrow, as loose pictures |
+| `marked.py`, `gate3.py` | the same stories with a lasting mark in every counter (an empty counter is a single 1) |
 | `homes.py` | start a table on a tape of several counters and list each later rest position |
 | `follow.py` | start a table on a three-block tape and list every later tape of that shape |
 | `cut3.py` | the same story as arithmetic, to see when it halts before any table exists |
@@ -130,3 +131,20 @@ Limits found:
 - these engines use all 14 wires, so there is no wire left for a halt, and none was found;
 - with every counter empty they run away to the left for ever, also from a blank tape, so they are engines, not machines;
 - a fourth counter only adds 1 to the third each time it pays, and five or more empty counters in a row collapse.
+
+## Counters with a lasting mark (`marked.py`, `gate3.py`)
+
+A counter of size c is c+1 cells of 1, so an empty counter is still a single 1 and the head can tell
+"all counters empty" from "end of the tape".
+
+| Asked for | Result |
+|---|---|
+| transfer and borrow | 5 states, 2 tables |
+| transfer, borrow, and a halt when both counters are empty | 6 states, 1 table: `1LA1LB_1LE1RC_0RD0RC_0LA1RF_1RZ0LB_0RD1RF` |
+| transfer, borrow, deep borrow (three marked counters) | no table in 5, 6 or 7 states |
+| two counters and a tower when the working block is 0 mod 3 | no table in 5 or 6 states |
+
+The 6-state table, started on counter 2 = c, counter 1 empty, working block empty, halts with 2^(c+2) + 1 ones:
+c = 1: 39 steps, 9 ones; c = 3: 681 steps, 33 ones; c = 6: 43,692 steps, 257 ones.
+It is a halting engine made from a story. It is not a machine: from a blank tape it runs away, and adding one
+start state in all 784 ways gives nothing longer than 9 steps.
