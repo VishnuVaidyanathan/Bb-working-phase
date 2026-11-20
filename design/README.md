@@ -364,3 +364,10 @@ Engine wires of the 7-state stack kept; cut made one cell longer (state H: `1 d 
   14 more survive it and at the tower-sized row halt or not by the row length.
   Status: tested by our arithmetic only. Not confirmed by a simulator (93 arrows is beyond what Quick_Sim reaches here). Not candidates (10 states).
 Files: store3_round*_verdicts.txt.
+
+Later the same night (learn.py now accepts a first big row of more than 8 stores):
+* 8 states, round +2 (A0=0RB), stores of 3, blank tape: 6 tables HALT at the end of their first big row, e.g.
+  `0RB1RG_1RC1RB_0LF0LD_1LC1LD_0LA0RB_0RA1LF_0RD1RH_1RZ1RE` : rows [2] -> block 5 -> [3,2] -> block 39 -> row of 14 stores -> halt, about 12 arrows.
+  (round +2 behaves like round +5 when counted in threes: step 2x+1.)
+* 9 states, round +4: two tables halt at the end of rows of 12 and 13 stores (10 and 11 arrows).
+All "tested by our arithmetic only". File: store3_8_and_9_states_verdicts_short_rows.txt.

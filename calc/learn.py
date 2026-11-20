@@ -3,7 +3,7 @@
    1. In-row numbers: K (cells a round adds), m (size of a fresh store), read from the real run from a blank tape.
    2. End-of-row rule: the machine is started on a block of b cells with nothing behind, b = 12..59, and what it does is
       recorded (halt, or the new row).  The rule must repeat with b modulo 12 (else: no verdict).
-   3. The real run gives the first big row (more than 40 stores).  The in-row arithmetic (stackcalc) is checked against the
+   3. The real run gives the first big row (more than 8 stores).  The in-row arithmetic (stackcalc) is checked against the
       real run on that row, then gives the block W at the end of the row modulo 12, and the end rule gives the outcome.
    4. If it survives, the next row is tower-sized; the same is done for fresh rows of 1..14 stores to see what can happen.
    Verdicts are 'tested' only as far as these checks go - not proofs."""
@@ -56,7 +56,7 @@ def study(tm,steps=6000000):
     if ("A",0) not in T or T[("A",0)] is None: return "no home state"
     real=homes(T,0,[],steps,10**7)
     if real and real[-1]=="HALT": return "halts small from a blank tape"
-    big=[i for i,c in enumerate(real) if len(c[1])>40]
+    big=[i for i,c in enumerate(real) if len(c[1])>8]
     if not big: return "no big row within %d steps"%steps
     i0=big[0];w0,st0=real[i0]
     # K and m from the row

@@ -1,0 +1,54 @@
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0LA1RE | K=3 m=3, checked 2602 visits; first big row 40 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0LC1RE | K=3 m=3, checked 2602 visits; first big row 40 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0RB1RE | K=3 m=3, checked 2604 visits; first big row 14 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_1LC1RE | K=3 m=3, checked 2604 visits; first big row 14 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_1LH1RE | K=3 m=3, checked 2604 visits; first big row 14 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LG1RH_0LC1RE | K=3 m=3, checked 2602 visits; first big row 40 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RA1RH_0LC1RE | K=3 m=3, checked 2603 visits; first big row 22 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RC1RH_0LC1RE | K=3 m=3, checked 2603 visits; first big row 22 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0LC1RE | K=3 m=3, checked 2603 visits; first big row 22 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0LE1RE | K=3 m=3, checked 2604 visits; first big row 18 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0RB1RE | K=3 m=3, checked 2603 visits; first big row 21 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_1LB1RE | K=3 m=3, checked 2603 visits; first big row 24 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_1LH1RE | K=3 m=3, checked 2603 visits; first big row 21 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_1RB1RE | K=3 m=3, checked 2603 visits; first big row 24 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RF1RH_0LC1RE | K=3 m=3, checked 2603 visits; first big row 22 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LC1RH_0RG1RE | K=3 m=3, checked 2603 visits; first big row 21 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RB1RE | K=3 m=3, checked 2604 visits; first big row 11 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LB1RE | K=3 m=3, checked 2604 visits; first big row 12 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LH1RE | K=3 m=3, checked 2604 visits; first big row 11 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RB1RE | K=3 m=3, checked 2604 visits; first big row 12 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RF1RH_0LC1RE | K=3 m=3, checked 2603 visits; first big row 31 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RZ1RH_0RE1RE | K=3 m=3, checked 2602 visits; first big row 39 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2602 visits; first big row 40 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2602 visits; first big row 40 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2604 visits; first big row 13 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2604 visits; first big row 16 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0RB1RE | K=3 m=3, checked 2603 visits; first big row 14 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0RB1RE | K=3 m=3, checked 2602 visits; first big row 21 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RB1RE | K=3 m=3, checked 2603 visits; first big row 11 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RZ1RH_1LC1RE | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LC1RE | K=2 m=3, checked 3507 visits; first big row 14 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RD1RE | K=2 m=3, checked 3507 visits; first big row 11 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0LA0RB_0RA1LF_0RD1RH_1RZ1RE | K=2 m=3, checked 3507 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_0LD1RH_1RZ1RE | K=2 m=3, checked 3507 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_0LH1RH_1RZ1RE | K=2 m=3, checked 3507 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_0RD1RH_1RZ1RE | K=2 m=3, checked 3507 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_0LD1RH_1RZ1RE | K=2 m=3, checked 3507 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RG0RB_0RA1LF_0RD1RH_1RZ1RE | K=2 m=3, checked 3507 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1RH1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_1LC1RE | numbers not read
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LB0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_0LC1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 23 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_1LC1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2151 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RB0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_1RZ1RH_1RD1RE_1RB--- | K=4 m=3, checked 2151 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RI0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LB0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 17 stores; survives it; no verdict
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_1RD1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 23 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LF0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LH0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RC0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 19 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RF0RB_0RA1LF_0LC1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 23 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RG0RB_0RA1LF_0LC1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2150 visits; first big row 23 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
