@@ -1,0 +1,2 @@
+1RB0LC_1RD1RE_1LF1LA_1RC1LF_1LF1RZ_1RG1LD_0RA1RG  HALT (Quick_Sim -r --exp-linear-rules --exp-meta-linear-rules, from a blank tape)  ones = 3*2^629147 - 15, about 10^189392
+  made from our tower 1RB1LE_1LE1LD_1RZ1LG_1RF0LB_1RG1LA_1RA1RB_0RD1RG : ticket wire F1 sent to the spare state C, C0 = 1LE, C1 = halt, and started in state D (states renamed)

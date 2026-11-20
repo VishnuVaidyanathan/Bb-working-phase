@@ -3,12 +3,12 @@
    the most head turns allowed, and the most steps.  The search invents the passes.
        S 0[0]0011000  S 0[0]1111110  1 30        state S on tape 1  ->  state S on tape 2, at most 1 turn, 30 steps
        S 00[0]1100    HALT           2 40        must halt within 2 turns and 40 steps
-   Usage: free NSTATES file [maxsolutions [STARTTABLE]]   (STARTTABLE: keep these entries, invent the rest)     State names are only names; the search decides the real states. */
+   Usage: free NSTATES file [maxsolutions]     State names are only names; the search decides the real states. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #define W 128
-#define MT 400
+#define MT 900
 typedef struct{int sv,ev,halt,cap,K,head,thead,n;char tape[W],tgt[W];}Test;
 Test T[MT];int nt,N,used=1,var[26],maxsol=100000,nsol=0,haltset=0;long nodes=0;int tr[8][2];
 typedef struct{char tape[W];int p,s,steps,dir,turns;}Sim;
@@ -50,5 +50,4 @@ int main(int ac,char**av){N=atoi(av[1]);FILE*f=fopen(av[2],"r");if(ac>3)maxsol=a
     else if(sscanf(line,"%s %s %s %s %d %d",a,p1,b,p2,&K,&cap)==6){t->halt=0;t->ev=b[0]-'A';t->n=parse(p1,t->tape,&t->head);int n2=parse(p2,t->tgt,&t->thead);if(n2!=t->n){fprintf(stderr,"picture %d: the two tapes must have the same length\n",nt+1);return 1;}}
     else continue;
     t->sv=a[0]-'A';t->K=K;t->cap=cap;nt++;}
-  if(ac>4){char*t=av[4];int n=(strlen(t)+1)/7;used=n;for(int q=0;q<n;q++)for(int x=0;x<2;x++){char*e=t+q*7+x*3;if(e[2]=='-')tr[q][x]=-1;else if(e[2]=='Z'){tr[q][x]=-2;haltset=1;}else tr[q][x]=(e[0]-'0')|((e[1]=='R')<<1)|((e[2]-'A')<<2);}}
   var[T[0].sv]=0;begin(0);fprintf(stderr,"solutions %d  nodes %ld\n",nsol,nodes);return 0;}

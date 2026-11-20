@@ -135,3 +135,33 @@ What the loose version showed: without the cut it finds the same engines as befo
 - "Nothing left" must be seen in one look, as in BB5 (the cell after the block is a 1 if a piece is there, a 0 if not).
   So a used-up store must not leave a hole that looks like the end.
 - The cut must not be a loop of its own. It has to ride on a walk the machine already makes.
+
+## Layout 3: our own tower, with the gate found by rearranging, not by adding
+
+**What failed first.** Our tower machine's run was cut into about 460 short pictures (`towerpics.py`), and one ending type at a time was
+turned into a halt by hand. Searched over every 7-state table: no table for ending type 0, 1, 3 or 4.
+Reason: those endings differ only in counts. With every rest of the tower fixed, no arrangement of 7 states can see them.
+(Two earlier runs of this search were invalid because my picture maker left the halt pictures out; they are not counted.)
+
+**What the tower can see** is the pair of endings that use the road b3 (types 0 and 2). A halt there needs one spare state as a tripwire:
+the ticket wire goes into C; C on 0 does what B did; C on 1 halts. From the usual start that falls in layer 2 with 27 ones.
+
+**The change that worked: start somewhere else.** By our gate arithmetic (`flow/tower_gate_arithmetic.py`), the layer in which the b3 ending
+first comes depends only on the first layer: at best layer 5, from a first layer of 1 ticket starting in E.
+The same table started in state D on a blank tape gives exactly that first layer (at step 11). A table started in another state is just
+another machine, so after renaming the states:
+
+    1RB0LC_1RD1RE_1LF1LA_1RC1LF_1LF1RZ_1RG1LD_0RA1RG
+
+| Check | Result |
+|---|---|
+| our arithmetic, before running anything | layers of 1, 6, 18, 91 and 3,145,722 tickets; the fifth ends with b3: halt |
+| Shawn Ligocki's Quick_Sim (flags -r, exp-linear-rules, exp-meta-linear-rules) | "Turing Machine Halted", 3*2^629147 - 15 ones, about 10^189,392 |
+| direct run from a blank tape | no halt in 3 billion steps, 75,550 ones (as expected: the fall is far beyond a direct run) |
+| Quick_Sim without -r | still climbing past 10^34,800 after 5 minutes, not finished |
+
+Not checked by a second simulator. The halting size rests on Quick_Sim and on our own arithmetic agreeing.
+
+Lessons:
+- A gate cannot be bolted onto a machine whose every rest is fixed, unless the machine can already see the difference.
+- What can be changed freely is where the machine enters its own cycle. The start state is a free choice, and it moved the fall from layer 2 to layer 5.
