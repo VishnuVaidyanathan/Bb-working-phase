@@ -327,3 +327,16 @@ First 14-digit try: let digit a (F0) write a 1 when it turns, so digit 3 can sta
 `1LB1RG_1RC1RB_0LF0LD_0LF1LD_0LD0RB_1RA1LF_1RZ1RE`. Round becomes `6 a 0 3(n) 2 5 7(n+1)`, block still +3 a round (tested, hand tapes).
 Bug: digit a also turns the head at every cut, so it fills the gap between marks; the marks never form, the block is cut down
 2 at a time and the machine halts small (blocks 0..9: 12 to 114 ones). To fix next.
+
+## A 7-state stack from a blank tape (20 Nov, evening)
+
+Among the 7-state tables within two wire changes of the hand-built stack (parked list), read by their stores:
+`1RB1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RZ1RE` (hand stack with A0=1RB, D0=1LC, E0=1LD).
+From a blank tape (tested, real run, 30 million steps, 5,852 home visits, arithmetic agrees on all of them):
+block 0 -> 4 -> row [2,4] -> ... -> block 848 with nothing behind -> a row of 424 stores (423 of size 2 and one of 4).
+Rules: round +3; fresh stores of 2; nothing behind: block odd -> HALT, block even w -> w/2-1 stores of 2 and a last store of 4.
+A row of 424 stores means about 422 arrows at its end (Jeff Ketchersid's champion: 20).
+BUT (arithmetic, calc/t7.py): the block at the end of such a row is always a multiple of 4 (rows of 0..24 stores of 2 plus a 4),
+so the halt at the end of a row never fires. This table most likely never halts. It shows the engine fits in 7 states and
+boots itself from a blank tape; it needs a gate that can fire.
+112 more tables of the same family with a halt and a big store on the tape: stack_like_7_state_112_tables.txt (being run).
