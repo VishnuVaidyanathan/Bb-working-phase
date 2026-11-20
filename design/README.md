@@ -81,3 +81,30 @@ So the rule for every depth is one wire: keep filling zeros until a store is fou
 
 - The end must be found by the block running out, not by seeing blank tape: every look past an empty store must cost the block a cell
   and leave a mark behind. Then "nothing left" ends by itself, and the marks are the next stores.
+
+## Layout 2, step 2: the gate, worked out by arithmetic before looking for a table (`fate.py`, `life2.py`)
+
+The 5-state engine was run on a row of n equal stores until nothing was left (thought experiment), to get the ones on the tape T(n).
+
+| Stores made by the cut | T(n), n = 1, 2, 3 ... | Leftover of T(n) |
+|---|---|---|
+| size 1 (cut by 2, stripes) | 4, 7, 16, 34, 70, 142, 286 (then 2T+2) | mod 2 always 0, mod 3 always 1: **the gate is dead** |
+| size 2 (cut by 3, pieces 110) | 5, 10, 44, 180, 724, 2900 (then 4T+4) | mod 3 goes 2, 0, 1, 2, ...: **the gate is alive** |
+
+Failure and reason: cutting by 2 gives a leftover that never changes, because doubling keeps the block's parity. A search for such tables was stopped.
+Lesson: the cut's divisor must not divide the growth. Cut by 3 with growth 4 per store works (4 = 1 mod 3, so the leftover steps by 1 each layer).
+
+Life with stores of 2, cut by 3, by arithmetic (n stores -> T(n)+J cells -> n' = (T+J)//3 stores, leftover = gate):
+
+| Start | Block grows before the cut | Halt on leftover | Leftovers by layer | Falls in layer |
+|---|---|---|---|---|
+| 1 store | +1 | 1 | 0, 2, 0, 0, 1 | 5 |
+| 3 stores | +1 | 2 | 0, 0, 1, 1, 2 | 5 |
+| 4 stores | +2 | 0 | 2, 1, 2, 1, 0 | 5 |
+| 2 stores | +0 | 0 | 1, 2, 1, 0 | 4 |
+
+In the first row the stores go 1, 2, 3, 15, about 250 million, and the fall comes with about 4^(250 million) ones.
+So if a table exists for this story, it is a big halting machine.
+
+Engines with other numbers also exist (round +K per cell, fresh block F; round + promotion at every depth):
+K=2 F=1: 1 table in 5 states, 84 in 6. K=2 F=2: 1 and 57. K=2 F=3: 0 and 7. K=3 F=1: 0 and 33. K=3 F=2: 0 and 42.
