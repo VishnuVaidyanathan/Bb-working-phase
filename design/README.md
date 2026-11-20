@@ -371,3 +371,10 @@ Later the same night (learn.py now accepts a first big row of more than 8 stores
   (round +2 behaves like round +5 when counted in threes: step 2x+1.)
 * 9 states, round +4: two tables halt at the end of rows of 12 and 13 stores (10 and 11 arrows).
 All "tested by our arithmetic only". File: store3_8_and_9_states_verdicts_short_rows.txt.
+
+Longer row in 8 states? (same night)
+* All 1,211 non-halting round +2 tables run to 20 million steps: 71 show a row of 3s; the same 6 halt (rows of 13 or 14 stores), 2 never halt,
+  63 have no row longer than 8 stores. Starting in any other state gives the same rows. So 14 stores (12 arrows) is the most this family gives.
+* The row length is set by the multiplier: round +2 gives 5 -> 39 -> 14 stores; round +5 (10 states) gives 95 stores.
+* Ways tried on paper to add home cells without states: C0 writing (A then lands on a 1 and starts a cut), F0 writing (fills the gap between
+  fresh stores - the old bug), A0 sent left into D, B or C (runs away to the left). One state can write two cells (I0=1RI, I1=1RB), not more.

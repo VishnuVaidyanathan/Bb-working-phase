@@ -17,13 +17,13 @@ def parse(t):
         for b in (0,1):
             e=row[b*3:b*3+3];T[(chr(65+q),b)]=None if e[2] in 'Z-' else (int(e[0]),1 if e[1]=='R' else -1,e[2])
     return T
-def homes(T,w,stores,maxsteps,maxhomes):
+def homes(T,w,stores,maxsteps,maxhomes,start="A"):
     tape={};p=1
     for i in range(w): tape[p]=1;p+=1
     for s in stores:
         p+=1
         for i in range(s): tape[p]=1;p+=1
-    pos=0;st="A";out=[];hi=p
+    pos=0;st=start;out=[];hi=p
     for step in range(maxsteps):
         v=tape.get(pos,0)
         if st=="A" and v==0:
@@ -51,10 +51,11 @@ def inrow(K,m,w,stores):
     while g<len(stores) and stores[g]==0: g+=1
     if g==len(stores) or w+K<=m*g: return None
     return (m,tuple([m]*(g-1)+[w+K-m*g,stores[g]-1]+stores[g+1:]))
-def study(tm,steps=6000000):
+def study(tm,steps=6000000,start="A"):
+    """start = the state the machine is started in on the blank tape (a free choice; rename states to make it A)"""
     T=parse(tm)
     if ("A",0) not in T or T[("A",0)] is None: return "no home state"
-    real=homes(T,0,[],steps,10**7)
+    real=homes(T,0,[],steps,10**7,start)
     if real and real[-1]=="HALT": return "halts small from a blank tape"
     big=[i for i,c in enumerate(real) if len(c[1])>8]
     if not big: return "no big row within %d steps"%steps
