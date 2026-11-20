@@ -41,7 +41,8 @@ def pics(R,halt_at=None):
         out.append("%s %s %s %s %d %d"%(chr(65+a[0]),f(a[1],a[2]),chr(65+b[0]),f(b[1],b[2]),b[4]+0,b[5]+2))
     return out
 all_=[]
-all_+=pics(rests('A','0',2600,stop_after_layer=False))            # from the blank tape: the opening, layers 1 and 2, the start of layer 3
+NOBLANK=len(sys.argv)>3 and sys.argv[3]=='noblank'
+if not NOBLANK: all_+=pics(rests('A','0',2600,stop_after_layer=False))            # from the blank tape: the opening, layers 1 and 2, the start of layer 3
 for k in range(3,11):
     for st in "DE":
         ty=(k%5-(2 if st=="E" else 0))%5

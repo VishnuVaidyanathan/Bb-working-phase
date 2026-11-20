@@ -165,3 +165,24 @@ Not checked by a second simulator. The halting size rests on Quick_Sim and on ou
 Lessons:
 - A gate cannot be bolted onto a machine whose every rest is fixed, unless the machine can already see the difference.
 - What can be changed freely is where the machine enters its own cycle. The start state is a free choice, and it moved the fall from layer 2 to layer 5.
+
+## Letting the tables arrange themselves (one wire, several jobs)
+
+Instead of drawing every rule, only the round and the promotion were drawn, in 6 states, and each of the 325 tables that play them
+was then run on a tape with deeper gaps to see what it does there by itself (`emerge.py`, thought experiments).
+The tables fall into about 40 groups. Most run away or merge the stores (flat). A few do something deeper:
+
+| What happens at a wide gap | Tables |
+|---|---|
+| runs away | about 190 |
+| stops on an unused wire | about 30 |
+| the stores behind are merged into one (flat) | about 10 |
+| the store behind is reloaded with a small number and the last one pays | about 45 |
+| **two fresh stores start and a middle store counts down while the first doubles: 1 1 8 1 2 -> 1 5 7 1 2 -> 1 13 6 1 2 -> 1 29 5 1 2 ...** | 1: `1RB0LE_0RC0RB_1RA0LD_1LD1LA_1RC1LF_1LF1LE` |
+
+The last table is a stack that the search arranged by itself in 6 states (our hand-drawn three-level stack needed 7 and all 14 wires).
+Its wires are shared: walking right it wipes the block and walking left it writes it back, and it crosses a wide gap by repeated trips,
+leaving a mark where it started. Its rules are not worked out yet (`rules6.py` has the first thought experiments); in several cases it runs away to the right.
+
+Also settled here: no 7-state table plays our hand-drawn three-level stack and halts when all three stores are empty
+(only two tables play that stack at all, and both use every wire).
