@@ -1,0 +1,5 @@
+store 2, round + 1, halt on 1 left | rows []                           | halts small (end of a small row)
+store 2, round + 2, halt on 1 left | rows [0, 1, 3]                    | NEVER HALTS after the row of 3 (leftovers of long rows are [0], never 1)
+store 2, round + 3, halt on 1 left | rows []                           | halts small (end of a small row)
+store 2, round + 4, halt on 1 left | rows [1, 6]                       | NEVER HALTS after the row of 6 (leftovers of long rows are [0], never 1)
+store 2, round + 5, halt on 1 left | rows []                           | halts small (end of a small row)
