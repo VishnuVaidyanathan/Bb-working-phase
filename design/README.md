@@ -58,3 +58,26 @@ So the middle store doubles for each cell of the deep store, and the deep store 
 - Rules must share states. One rule for "the store in front is empty" at every depth, not one per depth.
 - The halt must not need a wire: it has to be a leftover (a remainder) seen by a wire that is otherwise on the river.
 - The opening must be one of the rules acting on a blank tape, not a rule of its own.
+
+## Layout 2, step 1: one rule for every depth
+
+Same row of stores as layout 1. The promotion is asked for at two depths with the same shape:
+(w, empty, c) -> (1, w+2, c-1) and (w, empty, empty, d) -> (1, w+3, d-1): whatever the gap, the next real store pays 1.
+
+| States | Tables playing round + promotion at both depths |
+|---|---|
+| 5 | 1: `1RB1LA_1RC1RB_1RD0LA_1RD0LE_1RC1LE` |
+| 6 | 84 |
+
+The 5-state table is the layout 1 engine with its free wire set to "D reads 0: write 1, go right, stay D".
+So the rule for every depth is one wire: keep filling zeros until a store is found. Layout 1 needed 7 states for two depths; this needs 5 for all depths.
+
+**Why this is still not a machine**
+
+- When nothing at all is left, D fills zeros for ever. Looking costs nothing, so the machine never learns that the tape has ended.
+- From a blank tape it runs away for the same reason.
+
+**What to do differently**
+
+- The end must be found by the block running out, not by seeing blank tape: every look past an empty store must cost the block a cell
+  and leave a mark behind. Then "nothing left" ends by itself, and the marks are the next stores.
