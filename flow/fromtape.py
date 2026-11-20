@@ -2,7 +2,7 @@
    a machine still counts only from a blank tape).  LEFT and RIGHT are 0/1 strings; the head starts on the first cell of RIGHT.
    Prints the folded digits, the end tape, and the roads used.  run(...) returns (digits, tape string, halted)."""
 import sys,re
-H="0123456789abcd"
+H="0123456789abcdef"
 def run(tm,state,left,right,NS=200000,stop=None):
     T={}
     for s,x in enumerate(tm.split("_")):

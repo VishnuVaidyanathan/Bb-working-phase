@@ -316,3 +316,14 @@ first small rows; no special opening part. S8 reads `0e324bbba1d924ba1` and halt
 m (size of a fresh store), RH (leftover that halts). Tested against S8 (K=3, m=2, RH=1: halts at once - agrees).
 Result (arithmetic only, no table yet): if K and m share a divisor the halt can never fire (dead gate, same reason as S7).
 Choices that do not die at once and are not dead are listed by the script.
+
+## Transcript first (user's direction, 20 Nov): write the long transcript with 14 digits, fix bugs after
+
+8-state stack in digits (first block 5), 15 digits in use:
+round `6 a 0 e 3(n) 2 5 7(n+2)`, cut `2 4 b(n) a 1 d 9 3(n-3)`, hop over a mark `b b a 1 d 8 7 7 6`, halt `a 1 c`.
+Digit e (H0) has one job only: it stands between 0 and 3 and writes the second new cell.
+
+First 14-digit try: let digit a (F0) write a 1 when it turns, so digit 3 can stand where e stood (A0=1LB):
+`1LB1RG_1RC1RB_0LF0LD_0LF1LD_0LD0RB_1RA1LF_1RZ1RE`. Round becomes `6 a 0 3(n) 2 5 7(n+1)`, block still +3 a round (tested, hand tapes).
+Bug: digit a also turns the head at every cut, so it fills the gap between marks; the marks never form, the block is cut down
+2 at a time and the machine halts small (blocks 0..9: 12 to 114 ones). To fix next.
