@@ -20,3 +20,17 @@ at the point where it stops with "Cannot mod Iterated_Math". `REMAINDER_LOG=file
 | 9 | halts | between 10↑↑↑10↑↑↑10↑↑10↑↑10↑↑3 and 10↑↑↑10↑↑↑10↑↑10↑↑10↑↑4 |
 
 These are not blank-tape machines (13 to 17 states with the start-up part). Not checked by a second simulator.
+
+## Gate study (20 Nov) - arithmetic only, no tables
+
+Model: round adds K, fresh store m, leftover RH halts (stackcalc.py). Checked against the real 8-state stack for K=3, m=2 only;
+for other K, m it is the same rules with other numbers, not yet a table.
+
+* A row of n stores ends with about n-2 arrows.
+* Stores of 2: every long row ends with the same leftover, so the machine halts at its first row (or never). Arrows = first row - 2.
+* Stores of 3 with round +4 or +5: the leftover at the end of a long row alternates with the row length (observed for n = 1..16).
+  A first block of 2 to 5 cells makes a first row of 2 stores, survives it, and halts at the end of the second row:
+  K=4, RH=0, first block 3: rows 2, 23 (21 arrows);  K=4, RH=1, first block 4: rows 2, 92;  K=4, RH=2, first block 5: rows 2, 370;
+  K=5, RH=0, first block 3: rows 2, 177;  K=5, RH=2, first block 2: rows 2, 35;  first block 4: rows 2, 885.
+  Some first blocks (7 to 12) halt at the end of a tower-sized row.
+Full lists: gatescan_blank_K11_m7.txt, cheap_gates_by_first_block.txt.
