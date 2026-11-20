@@ -275,3 +275,33 @@ the first block a blank tape gives has the halting parity.
 
 So the gate now depends on the arithmetic, as wanted, but the opening enters at the worst place. Same lesson as the tower:
 what matters is where the machine enters its own cycle. Not worked out yet: the parity arithmetic of the stack (when the first odd leftover comes for a given first block).
+
+## The 8-state stack as arithmetic, and its fate for each first block
+
+Rules read off thought experiments (`stack8.py`), block w and a row of stores:
+
+- round: (w, s) -> (w+3, s-1)
+- store in front empty, g empty levels before a payer d:
+  if w+3 > 2g: g fresh stores of 2 (the first is the new block), the old block becomes w+3-2g, the payer pays 1;
+  if w+3 = 2k <= 2g: the block becomes exactly k fresh stores, nobody pays;
+  if w+3 is odd and smaller than 2g: HALT
+- nothing behind: w odd -> a new row of (w+3)/2 stores of 2; w even -> HALT
+
+The fresh block is 2 and a round adds 3, so the block's parity at the end of a row is the parity of the number of promotions in that row.
+
+Fate for each first block. To get a size, Shawn Ligocki's Quick_Sim was used as a calculator: a few start-up states were put in
+front of the table to lay the first block and hand over (`stack8_with_startup_states.txt`). **These are not 7- or 8-state machines.**
+
+| First block | Our arithmetic | Real table, direct run | Quick_Sim (with start-up states) |
+|---|---|---|---|
+| 0 (a blank tape) | halts at once | halts at step 18, 4 ones | - |
+| 1 | row of 2, halts, last block 8 | halts at step 172, 12 ones | halted, 12 ones |
+| 3 | row of 3, halts, last block 92 | halts at step 8,516, 96 ones | halted, 96 ones |
+| 5 | row of 4; too long to follow by counting | still climbing after 2 billion steps | **halted**, (3 + 7*3^((-5 + 7*3^92)/2))/2 ones: between 10^^3 and 10^^4 |
+| 7 | row of 5; too long | still climbing | reached about 10^^10^^10^^3, then the tool could not work out odd or even ("Cannot mod Iterated_Math by 2") |
+| 9 | row of 6; too long | still climbing | reached about 10^^^10^^^10^^10^^10^^3, then the same |
+
+So the design does stack towers: each extra store in the first row adds a level, and with a first block of 9 it reaches three-arrow sizes.
+Whether it halts for 7 and 9 is not known: the gate asks whether a number of that size is odd, and the tool cannot answer.
+
+Open: (1) the opening - a blank tape gives first block 0; (2) 8 states to 7.
