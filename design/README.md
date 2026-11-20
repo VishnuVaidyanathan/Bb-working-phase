@@ -108,3 +108,30 @@ So if a table exists for this story, it is a big halting machine.
 
 Engines with other numbers also exist (round +K per cell, fresh block F; round + promotion at every depth):
 K=2 F=1: 1 table in 5 states, 84 in 6. K=2 F=2: 1 and 57. K=2 F=3: 0 and 7. K=3 F=1: 0 and 33. K=3 F=2: 0 and 42.
+
+## Layout 2, step 3: the whole story in 7 states - fails
+
+Pictures: round, promotion at depth 1 and 2, and the cut by 3 from the right end when four zeros are met (no halt yet).
+Searched over every 7-state table, for the block growing 0, 1, 2 or 3 cells before the cut:
+
+| Version | Tables |
+|---|---|
+| clean (one resting state for every rule) | none, for all four |
+| loose (free resting states after a promotion and after a cut, first rounds drawn through the seam) | none, for all four |
+
+(An earlier run of the clean version had a wrong cut picture and was thrown away.)
+
+What the loose version showed: without the cut it finds the same engines as before (1 in 5 states, 84 in 6). So the closed seams were not what stopped it.
+
+**Why it fails (my reading, not proved)**
+
+- Each search died after the same number of steps whatever the cut was asked to produce. So it fails before the cut's shape matters:
+  it fails at *knowing that nothing is left*.
+- In this layout an empty store and the end of the tape look the same (zeros). To tell them apart the head must count zeros, and counting costs states.
+  Then the cut needs a loop of 3 on top. Engine 5 + counting + cut does not fit in 7.
+
+**What to do differently in layout 3**
+
+- "Nothing left" must be seen in one look, as in BB5 (the cell after the block is a 1 if a piece is there, a 0 if not).
+  So a used-up store must not leave a hole that looks like the end.
+- The cut must not be a loop of its own. It has to ride on a walk the machine already makes.
