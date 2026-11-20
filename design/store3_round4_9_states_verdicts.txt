@@ -1,0 +1,29 @@
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LB0RB_0RA1LF_0RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2145 visits; first big row 51 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LB0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_0LC1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_1LD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 1802 visits; first big row 369 stores; survives it; no verdict
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_1LG1RH_1RZ1RE_1RB--- | K=4 m=3, checked 1802 visits; first big row 369 stores; survives it; no verdict
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_1RE1RH_1RZ1RE_1RB--- | K=4 m=3, checked 1802 visits; first big row 369 stores; survives it; no verdict
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_1LC1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RB0RB_0RA1LF_0RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2145 visits; first big row 51 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RB0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_1RZ1RH_1RD1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RI0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LA0RB_0RA1LF_1RZ1RH_0LD1RE_1RB--- | K=4 m=3, checked 1802 visits; first big row 369 stores; survives it; no verdict
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LB0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RZ1RH_0LC1RE_1RB--- | K=4 m=3, checked 2131 visits; first big row 92 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RZ1RH_0LD1RE_1RB--- | K=4 m=3, checked 1802 visits; first big row 369 stores; survives it; no verdict
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_0RD1RE_1RB--- | K=4 m=3, checked 2141 visits; first big row 67 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_1RD1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LF0RB_0RA1LF_0RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2145 visits; first big row 51 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LF0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LH0RB_0RA1LF_0RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2145 visits; first big row 51 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LH0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RZ1RH_1LC1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RC0RB_0RA1LF_0RD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 2145 visits; first big row 51 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RC0RB_0RA1LF_1RD1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RF0RB_0RA1LF_0LC1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RF0RB_0RA1LF_1LD1RH_1RZ1RE_1RB--- | K=4 m=3, checked 1802 visits; first big row 371 stores; survives it; NEVER HALTS (every long row ends the same way and makes the same kind of row)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RG0RB_0RA1LF_0LC1RH_1RZ1RE_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RH0RB_0RA1LF_1RZ1RH_0LD1RE_1RB--- | K=4 m=3, checked 1802 visits; first big row 369 stores; survives it; no verdict

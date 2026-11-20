@@ -1,0 +1,138 @@
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LB1RH_0RD1RE_1LJ---_1RB--- | K=5 m=3, checked 2088 visits; first big row 136 stores; survives it; long rows end in classes [0, 1, 6, 7], all make new rows (never halts if this goes on)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LB1RH_1LC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LB1RH_1RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LG1RH_1RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RF1RH_0LC1RE_1LJ---_1RB--- | K=5 m=3, checked 2079 visits; first big row 178 stores; survives it; long rows end in classes [0, 1, 6, 7], all make new rows (never halts if this goes on)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LA1RH_0RD1RE_1LJ---_1RB--- | K=5 m=3, checked 2088 visits; first big row 136 stores; survives it; long rows end in classes [0, 1, 6, 7], all make new rows (never halts if this goes on)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LA1RH_1LC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LA1RH_1RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LF1RH_0RD1RE_1LJ---_1RB--- | K=5 m=3, checked 2088 visits; first big row 136 stores; survives it; long rows end in classes [0, 1, 6, 7], all make new rows (never halts if this goes on)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LF1RH_1LC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LF1RH_1RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RC1RH_0RD1RE_1LJ---_1RB--- | K=5 m=3, checked 2088 visits; first big row 136 stores; survives it; long rows end in classes [0, 1, 6, 7], all make new rows (never halts if this goes on)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RC1RH_1LC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RC1RH_1RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LA1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LB1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LE1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LF1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LG1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LH1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LI1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LJ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RA1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RB1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RE1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RF1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RG1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RH1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RI1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RJ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LA1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LB1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LE1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LF1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LG1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LH1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LI1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LJ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RA1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RB1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RE1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RF1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RG1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RH1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RI1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RJ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RH1RH_0RD1RE_1LJ---_1RB--- | K=5 m=3, checked 2088 visits; first big row 136 stores; survives it; long rows end in classes [0, 1, 6, 7], all make new rows (never halts if this goes on)
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RH1RH_1LC1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RH1RH_1RD1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LA0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 94 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LA0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LA0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LB0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 95 stores; HALTS at the end of that row: about 93 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LB0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LB0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LC0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 93 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LC0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LC0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 93 stores; HALTS at the end of that row: about 91 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_0RE1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 95 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LF0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LG0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LH0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LI0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LJ0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RA0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RB0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 95 stores; HALTS at the end of that row: about 93 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RB0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RB0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RC0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_0LH1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 94 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 94 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1LB1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2079 visits; first big row 178 stores; survives it; at a tower-sized row the outcome depends on the row length: rHrHrHrHrHrHrH  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2079 visits; first big row 178 stores; survives it; at a tower-sized row the outcome depends on the row length: rHrHrHrHrHrHrH  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RE0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RF0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 96 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RF0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RF0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RG0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RI0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RJ0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LA0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LB0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_0LH1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 94 stores; HALTS at the end of that row: about 92 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_1LG1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_1RE1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 93 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_0RE1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 93 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LF0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 95 stores; HALTS at the end of that row: about 93 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LF0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LF0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LG0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LH0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 95 stores; HALTS at the end of that row: about 93 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LH0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LH0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LI0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1LJ0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RA0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RC0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 95 stores; HALTS at the end of that row: about 93 arrows
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RC0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RC0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_0LH1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 94 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1LB1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2099 visits; first big row 44 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2099 visits; first big row 44 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RE0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RF0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RG0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB--- | K=5 m=3, checked 2094 visits; first big row 94 stores; survives it; at a tower-sized row the outcome depends on the row length: HrHrHrHrHrHrHr  <-- LOOK
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RG0RB_0RA1LF_1LC1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RG0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RH0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RI0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_1RJ0RB_0RA1LF_1RD1RH_1RZ1RE_1LJ---_1RB--- | no big row within 6000000 steps

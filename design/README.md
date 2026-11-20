@@ -352,3 +352,15 @@ Why (arithmetic, engine "round +3, stores of 2"): the block at the end of a row 
 A cut into stores of 2 has only two endings (block even / block odd). With one of them the halt, every row is treated alike.
 To pass a small row and halt on the big one, the cut needs three endings: stores of 3 (as the gate study found), i.e. two more wires
 than the 14 this table uses - or a halt that looks at something else than the cut ending.
+
+## Store-of-3 versions of the 7-state stack (loose, 20 Nov night)
+
+Engine wires of the 7-state stack kept; cut made one cell longer (state H: `1 d f 9`), three cut endings E0/G0/H0 left open.
+* 8 states, round +3: 50 stack-like tables with rows of 3s from a blank tape; none can halt (round 3 and store 3 share a divisor).
+* 9 states, round +4 (A0=1LI, I0=1RB): 29 stack-like; 8 judged never halts, the rest no verdict.
+* 10 states, round +5 (A0=1LI, I0=1LJ, J0=1RB): 138 stack-like. calc/learn.py (rules read off the tape, in-row arithmetic agreeing with
+  about 2,090 real home visits each): 7 tables HALT at the end of their first big row, e.g.
+  `1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LB0RB_0RA1LF_0RD1RH_1RZ1RE_1LJ---_1RB---` : blank tape -> big row of 95 stores -> halt, about 93 arrows.
+  14 more survive it and at the tower-sized row halt or not by the row length.
+  Status: tested by our arithmetic only. Not confirmed by a simulator (93 arrows is beyond what Quick_Sim reaches here). Not candidates (10 states).
+Files: store3_round*_verdicts.txt.

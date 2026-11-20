@@ -1,0 +1,50 @@
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0LA1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0RB1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_1LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_1LH1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LD1RH_0RG1RE | K=3 m=3, checked 2602 visits; first big row 41 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LD1RH_1LC1RE | K=3 m=3, checked 2602 visits; first big row 41 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LG1RH_0LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RA1RH_0LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RC1RH_0LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0LE1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0RB1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_1LB1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_1LH1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_1RB1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RF1RH_0LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LC1RH_0RG1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LD1RH_1LC1RE | K=3 m=3, checked 2583 visits; first big row 122 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1LD1RH_1RG1RE | K=3 m=3, checked 2583 visits; first big row 121 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RB1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LB1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1LH1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_1RB1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RF1RH_0LC1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RA0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2397 visits; first big row 364 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RC0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2397 visits; first big row 364 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RZ1RH_0RE1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RZ1RH_1LD1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_1RZ1RH_1LD1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1LB0RB_0RA1LF_1RZ1RH_0RE1RE | K=3 m=3, checked 2397 visits; first big row 364 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1LB0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2397 visits; first big row 364 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_1RZ1RH_1LD1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2486 visits; first big row 283 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2397 visits; first big row 364 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RZ1RH_1LD1RE | no big row within 6000000 steps
+1RB1RG_1RC1RB_0LF0LD_1LC1LD_1RF0RB_0RA1LF_1RZ1RH_1LD1RE | K=3 m=3, checked 2263 visits; first big row 445 stores; survives it; long rows end in classes [0, 3], all make new rows (never halts if this goes on)
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0LC1RH_0RB1RE | no big row within 6000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_0RD1RH_0RB1RE | no big row within 6000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RB1RE | no big row within 6000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RZ1RH_1LC1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0LC1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RZ0RB_0RA1LF_1RD1RH_0RD1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0LA0RB_0RA1LF_0RD1RH_1RZ1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_0LD1RH_1RZ1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_0LH1RH_1RZ1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_0RD1RH_1RZ1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_0LD1RH_1RZ1RE | no big row within 6000000 steps
+0RB1RG_1RC1RB_0LF0LD_1LC1LD_1RG0RB_0RA1LF_0RD1RH_1RZ1RE | no big row within 6000000 steps
+1RH1RG_1RC1RB_0LF0LD_1LC1LD_1LE0RB_0RA1LF_1RZ1RH_1LC1RE | no big row within 6000000 steps
