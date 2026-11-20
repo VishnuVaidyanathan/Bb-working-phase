@@ -305,3 +305,14 @@ So the design does stack towers: each extra store in the first row adds a level,
 Whether it halts for 7 and 9 is not known: the gate asks whether a number of that size is odd, and the tool cannot answer.
 
 Open: (1) the opening - a blank tape gives first block 0; (2) 8 states to 7.
+
+## Opening: choosing the numbers before the table (stackgen.py)
+
+Boots read side by side (first digits from a blank tape): Jeff `02468bba1d2468ba1c47698...`, Pavel `025247946103b611...`,
+BB5 `02461590247777603333332461...`. Each champion walks through its 0-wires in order and its ordinary rules make the
+first small rows; no special opening part. S8 reads `0e324bbba1d924ba1` and halts at step 18.
+
+`stackgen.py` follows the stack design from a blank tape by arithmetic with three open numbers: K (cells a round adds),
+m (size of a fresh store), RH (leftover that halts). Tested against S8 (K=3, m=2, RH=1: halts at once - agrees).
+Result (arithmetic only, no table yet): if K and m share a divisor the halt can never fire (dead gate, same reason as S7).
+Choices that do not die at once and are not dead are listed by the script.
