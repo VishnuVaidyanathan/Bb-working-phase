@@ -340,3 +340,15 @@ BUT (arithmetic, calc/t7.py): the block at the end of such a row is always a mul
 so the halt at the end of a row never fires. This table most likely never halts. It shows the engine fits in 7 states and
 boots itself from a blank tape; it needs a gate that can fire.
 112 more tables of the same family with a halt and a big store on the tape: stack_like_7_state_112_tables.txt (being run).
+
+## Reading the 7-state stack's gate by arithmetic (20 Nov, night)
+
+Sift of all 57,577 tables within two wire changes of the 7-state stack (halt anywhere): 16,042 halt small (longest 4,211 steps),
+26 keep a big store with a row; calc/learn.py finds no big halter among them. Searching around it does not give a halt.
+
+Why (arithmetic, engine "round +3, stores of 2"): the block at the end of a row is odd exactly when the row's last store is odd.
+* last store even (0, 2, 4): every row ends even -> never halts (the 7-state stack has last store 4).
+* last store odd (1, 3, 5): every row ends odd -> halts at the end of its FIRST row, with (stores in that row - 2) arrows.
+A cut into stores of 2 has only two endings (block even / block odd). With one of them the halt, every row is treated alike.
+To pass a small row and halt on the big one, the cut needs three endings: stores of 3 (as the gate study found), i.e. two more wires
+than the 14 this table uses - or a halt that looks at something else than the cut ending.
