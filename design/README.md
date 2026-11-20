@@ -186,3 +186,37 @@ leaving a mark where it started. Its rules are not worked out yet (`rules6.py` h
 
 Also settled here: no 7-state table plays our hand-drawn three-level stack and halts when all three stores are empty
 (only two tables play that stack at all, and both use every wire).
+
+## Built by hand: a stack that works at every depth, with wires sharing jobs
+
+Basics taken from reading how the champions load a wire: a state is one motion plus one question, and the answer must already be on
+the tape. Built wire by wire and checked on small tapes after each wire (`play.py`, `turns.py`).
+
+    1RB1RG_1RC1RB_0LF0LD_0LE1LD_0RA1LD_0RA1LF_---0RB        (7 states, 13 wires, G0 free)
+
+| State | Motion | Question at the end |
+|---|---|---|
+| A | start right | 0: start a round (grow by 1). 1: this cell stays as a mark |
+| B | walk right over the block | at the 0: fill it and let C look |
+| C | look past the block | 1: eat it and go home. 0: the store is empty, make an empty trip |
+| D, E | walk home, stepping over single 0s | two 0s in a row: this is the far left, turn |
+| F | walk left over the block only | at its left end: hand over to A to leave a mark |
+| G | after the mark | 1: wipe it (the gap after the mark). 0: the block is used up - **the end** |
+
+First try failed: the mark was written on the cell where the round grows, so the next round swallowed it.
+Fix: the mark is cut out of the block itself (first cell stays, second is wiped), and the walk home steps over single 0s,
+so one home walk serves both the round and the promotion.
+
+Thought experiments: (3, empty, 3) -> 1 4 2;  (4, empty, empty, 3) -> 1 1 4 2;  (5, three empty, 2) -> 1 1 1 4 1;
+then 1 1 1 4 1 -> ... -> 9 _ _ 4 1 -> 1 1 9 3 1. One fresh store per empty level, the level below the payer reloaded with the block:
+the stack rule at every depth. A block with nothing behind it always ends on G0, having turned itself into w+2 marks.
+
+With G0 = 0LD (walk home: the marks become the next row, one level each):
+
+    1RB1RG_1RC1RB_0LF0LD_0LE1LD_0RA1LD_0RA1LF_0LD0RB
+
+From a blank tape: a row of 2 marks at step 13, a row of 5 marks at step 77, then a five-level stack that is still running after
+40 million steps (stores 2070, 5108, 3058, 3066). It has no halt wire, so as built it never halts. Quick_Sim crashes on it.
+With G0 = halt instead, every start state halts within 16 steps, because a blank tape is already "nothing left".
+
+Open: the gate. All 14 wires are in use and the end always comes the same way (the block passes through every size), so there is no leftover to hang a halt on yet.
