@@ -22,6 +22,11 @@ if "P" in parts:
     for w,c,d in [(2,BITE,0),(2,BITE+1,0),(3,BITE+2,0),(4,BITE,2),(5,BITE+1,1),(3,BITE+3,2),(6,BITE+2,0)]:
         rest=[(d,1)] if d else []
         print("S",tape(PADL,[(w,2),(c,1)]+rest),"S",tape(PADL-F-1,[(F,1),(w+1+BITE,1),(c-BITE,1)]+rest),TURNS,2*(w+F)+24)
+if "W" in parts:      # wide gap: two stores empty at once.  (w, empty, empty, d) -> (F, F2, w+3, d-1): the block becomes the deeper store, two fresh ones start
+    F2=int(sys.argv[6]) if len(sys.argv)>6 else 1
+    for w,d,e in [(2,1,0),(2,2,0),(3,3,0),(4,1,2),(5,2,1),(3,2,3),(7,2,0)]:
+        rest=[(e,1)] if e else []
+        print("S",tape(PADL,[(w,3),(d,1)]+rest),"S",tape(PADL-F-F2-2,[(F,1),(F2,1),(w+3,1),(d-1,1)]+rest),TURNS,2*(w+F+F2)+30)
 if "H" in parts and BITE>1:
     for w,c,d in [(2,BITE-1,0),(3,BITE-1,2),(5,BITE-1,0)]:
         rest=[(d,1)] if d else []

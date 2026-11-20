@@ -34,3 +34,27 @@ Start (1, 2, 3, 2). All eight give the same life:
 Left over for the next rules: 2 states and the wire D0.
 
 Why 2a failed: not known yet. A bite of 2 probably needs one more state to remember "one eaten, one to go".
+
+## Layout 1, rule 3: two stores empty at once (the wide gap)
+
+Rule: (w, empty, empty, d) -> (fresh 1, fresh 1, w+3, d-1). The block becomes the deeper store, the store behind pays 1, two fresh ones start.
+
+| States | Tables playing round + promotion + wide gap |
+|---|---|
+| 6 | none |
+| 7 | 2 (`layout1_three_rules_7_states.txt`) |
+
+Thought experiment on (1, 1, 1, 3, 2): 1 5 _ 3 2 -> 1 1 14 2 2 -> 1 5 13 2 2 -> 1 13 12 2 2 -> 1 29 11 2 2 -> ... -> 1 2045 5 2 2 ...
+So the middle store doubles for each cell of the deep store, and the deep store is reloaded from the big block: three levels (a tower).
+
+**Why layout 1 fails as a machine**
+
+- Both tables use all 14 wires. Nothing is left for a halt.
+- From a blank tape both run off the tape. There is no opening.
+- The cost: the round took 3 states, the promotion 2 more, the wide gap 2 more. Every rule needed states of its own.
+
+**What to do differently**
+
+- Rules must share states. One rule for "the store in front is empty" at every depth, not one per depth.
+- The halt must not need a wire: it has to be a leftover (a remainder) seen by a wire that is otherwise on the river.
+- The opening must be one of the rules acting on a blank tape, not a rule of its own.
