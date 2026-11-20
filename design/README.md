@@ -232,3 +232,26 @@ Checked: the same rows on every hand tape tried, and from a blank tape the same 
 The walk home over the marks is now a loop of wires that already existed (6, b, a, 1, c): the end wire c also hops over one mark,
 so it is used 34 times instead of 2. Jobs per wire 2.6; digit 3 carries 6 jobs and digit b carries 5.
 The end of a layer is still one fixed sequence (d 2 4 b a 1 c), the same every time, so there is still no leftover for a gate.
+
+## A gate built by hand on the 6-state stack: works on small tapes, dead by arithmetic
+
+Idea (from Pavel's words b610 / b6110, where one wire takes a bite of 1, 2 or 3 and the tape decides): make the look cost the block
+two cells, so that an odd block and an even block end on different wires. The mark is now two cells (A keeps one, G keeps one, E wipes the next):
+
+    1RB1RG_1RC1RB_0LF0LD_0LF1LD_0LD0RB_0RA1LF_1RZ1RE        (7 states, halt on G0)
+
+| Thought experiment | Result |
+|---|---|
+| block 4, 6, 8 with nothing behind | refills: rows 2 2 2, 2 2 2 2, 2 2 2 2 2 (one level per mark) |
+| block 5, 7, 9 with nothing behind | halts on G0 |
+| (5, two empty, 3) | 2 2 3 2 (the stack rule still holds, fresh stores are 2) |
+
+From a blank tape: rows 2 (step 13), 2 2 (step 48), 2 2 2 2 (step 165), then 2 6 1 2 -> 2 14 _ 2 -> 2 2 28 1 -> 2 6 27 1 -> ... ;
+no halt in 3 billion steps (stores then 16496, 57287, 14, 1).
+
+**Why it will never halt (arithmetic, before any longer run):** every step changes the block by an even amount -
+a round adds 2, a look takes 2, a fresh block is 2. So the block is always even and the odd ending never comes.
+It is the same mistake as cutting by 2 in layout 2: the gate's divisor divides the growth.
+
+**What to change:** something must change the block by an odd amount a varying number of times (a round that adds 3, or a bite of 2 with its leftover).
+Each of those needs one more wire than this table has free.
