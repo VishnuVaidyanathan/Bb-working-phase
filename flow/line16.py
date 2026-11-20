@@ -32,8 +32,8 @@ def run(tm,NS,want=None,cap=90):
         if p<5 or p>2*N-5: break
     return c if want is None else snaps
 def kinds(v):
-    if all(b>=1.4*a and a>0 for a,b in zip(v,v[1:])): return "BLOCK"
     dif={b-a for a,b in zip(v,v[1:])}
+    if len(dif)>1 and all(b>=1.4*a and a>0 for a,b in zip(v,v[1:])): return "BLOCK"   # multiplying, not just adding a fixed amount
     if len(dif)==1 and dif.pop()<0: return "COUNTER"
     return ""
 def check(tm,NS=10000000,HI=300):
