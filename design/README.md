@@ -220,3 +220,15 @@ From a blank tape: a row of 2 marks at step 13, a row of 5 marks at step 77, the
 With G0 = halt instead, every start state halts within 16 steps, because a blank tape is already "nothing left".
 
 Open: the gate. All 14 wires are in use and the end always comes the same way (the block passes through every size), so there is no leftover to hang a halt on yet.
+
+## First compression by hand: 7 states to 6
+
+Reading the digit table of the hand-built stack, five wires carried only one job each (digits 4, 8, 9, a, c), and the end wire (c) was used twice in 10 million steps.
+Digits 8 and a did the same thing in two different states ("write 0, right, A"). Letting those two states be one:
+
+    1RB1RG_1RC1RB_0LF0LD_0LF1LD_------_0RA1LF_0LD0RB        (6 states, 12 wires, state E free)
+
+Checked: the same rows on every hand tape tried, and from a blank tape the same 28,068 ones after 300 million steps.
+The walk home over the marks is now a loop of wires that already existed (6, b, a, 1, c): the end wire c also hops over one mark,
+so it is used 34 times instead of 2. Jobs per wire 2.6; digit 3 carries 6 jobs and digit b carries 5.
+The end of a layer is still one fixed sequence (d 2 4 b a 1 c), the same every time, so there is still no leftover for a gate.
