@@ -180,22 +180,32 @@ def table(f,v,m):
         for a in asked: L=lcm(L,a)
         if L==M: break
         M=L
-        if M>3000000: raise ValueError("table would be too large (%d)"%M)
-    _tables[key]=(M,T);return M,T
+        if M>BOUND: raise ValueError("table would be too large (%d)"%M)
+    _tables[key]=(M,T);_maxM[0]=max(_maxM[0],M);return M,T
+BOUND=300000                # no table may be larger than this
+_maxM=[1]                   # the largest table built so far: a number at least this large counts as "huge"
 def iter_mod(e,m,env):
     _,f,v,x,n=e
-    cur=exact(x,env);N=exact(n,env);k=0
+    cur=exact(x,env);N=exact(n,env);k=0;stuck=False
     # 1. while everything is small, just do the steps
-    while cur is not None and (N is None or k<N):
-        nxt=exact(f,{v:Known(cur)})
-        if nxt is None: break
-        cur=nxt;k+=1
-        if k>200000: raise ValueError("rule stays small for too long")
-    if N is not None and k==N: return cur%m
-    M,T=table(f,v,m)
+    if N is not None:
+        while cur is not None and k<N:
+            nxt=exact(f,{v:Known(cur)})
+            if nxt is None: stuck=True;break                # the next value is too big to write
+            cur=nxt;k+=1
+        if k==N: return cur%m
+        M,T=table(f,v,m)
+    else:
+        M,T=table(f,v,m)                                    # the repeat count is huge: step only until the tables apply
+        while cur is not None and cur<_maxM[0]:
+            nxt=exact(f,{v:Known(cur)})
+            if nxt is None: stuck=True;break
+            if nxt<=cur: raise ValueError("rule does not grow")
+            cur=nxt;k+=1
     # 2. first value on the table
-    if cur is not None: r=mod_(f,M,{v:Known(cur)});k+=1      # one step from a small number to a huge one
-    else: r=mod_(x,M,env)
+    if cur is None: r=mod_(x,M,env)
+    elif stuck: r=mod_(f,M,{v:Known(cur)});k+=1            # one step from a small number to a huge one
+    else: r=cur%M
     # 3. walk the table until it loops
     if N is not None:
         todo=N-k
