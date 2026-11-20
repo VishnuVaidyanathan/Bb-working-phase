@@ -82,3 +82,21 @@ Still open: about 5,250 tables with no answer from the tool.
 - `results/quick_sim_slow_growers.txt` : Quick_Sim answer for each of the 2,967 slow growers.
 - `results/quick_sim_pass2_partial.txt` : second pass, first 705 tables.
 - `src/qs2.py` : batch runner for Quick_Sim.
+
+## Stack-like cousins judged again (21 Nov 2026)
+
+All 8,219 undecided cousins were run 20 million steps from a blank tape and their tape read as stores (design/hand.c).
+56 show a big store followed by a row of equal stores of 2 or more (the champion is one of them): `results/stack_like_56_stores_at_20M_steps.txt`.
+These 56 went through Quick_Sim (Shawn Ligocki) with our remainder calculator (calc/), 100 seconds each:
+`results/stack_like_56_quick_sim_with_remainders.txt`.
+
+| result | tables |
+|---|---|
+| halted | 0 |
+| proved to run forever (tool) | 13 |
+| reached 3 arrows and still going | 1 - the champion itself |
+| reached 1 arrow (powers) | 10 |
+| no large number in 100 seconds | 32 |
+
+No cousin other than the champion climbs past plain powers. The remainder calculator was not needed by any of them.
+So this check finds no bigger machine in the cousin family. (Tested as far as a 100-second run goes; the 32 slow ones are not decided.)
