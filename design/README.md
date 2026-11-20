@@ -255,3 +255,23 @@ It is the same mistake as cutting by 2 in layout 2: the gate's divisor divides t
 
 **What to change:** something must change the block by an odd amount a varying number of times (a round that adds 3, or a bite of 2 with its leftover).
 Each of those needs one more wire than this table has free.
+
+## Stepping stone in 8 states: the gate is alive, but fires at the first end
+
+To make the block's parity change, the round was given one more write at the left turn (A0 = 1LH, H0 = 1RB), so a round adds 3:
+
+    1LH1RG_1RC1RB_0LF0LD_0LF1LD_0LD0RB_0RA1LF_1RZ1RE_1RB---        (8 states, one wire unused)
+
+| Thought experiment (`hand.c`) | Result |
+|---|---|
+| (3, empty, 3) | 2 4 2, then the block goes 5, 8, 11, 14: a round adds 3 |
+| block 4, 6, 8 alone | halts at once |
+| block 5, 7, 9 alone | refills: rows of 4, 5, 6 stores of 2 |
+| block 3 alone | climbs, then **halts at step 8,516 with 96 ones** |
+| block 5, 7, ... 21 alone | still climbing after 2 billion steps (stores 25676, 60331, 82, 1, ...) |
+
+From a blank tape it halts at step 18 with 4 ones, for every start state and every choice of the unused wire (264 machines):
+the first block a blank tape gives has the halting parity.
+
+So the gate now depends on the arithmetic, as wanted, but the opening enters at the worst place. Same lesson as the tower:
+what matters is where the machine enters its own cycle. Not worked out yet: the parity arithmetic of the stack (when the first odd leftover comes for a given first block).
