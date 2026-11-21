@@ -37,6 +37,18 @@ IE.Iterated_Math.__mod__=it_mod
 IE.Iterated_Math.__divmod__=math_divmod
 IE.Iterated_Expression.__mod__=it_mod
 IE.Iterated_Expression.__divmod__=expr_divmod
+
+# A third stopping place, not about remainders: inside a formula that still has a variable in it, a power term that is itself a plain
+# number has no "smallest value" recorded and Quick_Sim stops with "'ExpTerm' object has no attribute 'min_value'".
+# The smallest value of a plain number is the number itself, so that is supplied here when it is asked for.
+import Exp_Int as _EI
+def _term_min_value(self,name):
+    if name=="min_value":
+        count["minval"]=count.get("minval",0)+1
+        return _EI.ExpInt([self],0,1)
+    if name=="vars": return set()                       # a plain number has no variables
+    raise AttributeError(name)
+_EI.ExpTerm.__getattr__=_term_min_value
 sys.argv=[os.path.join(QS,"Quick_Sim.py")]+sys.argv[1:]
 try: runpy.run_path(sys.argv[0],run_name="__main__")
-finally: sys.stderr.write("remainder calculator used: %d remainders, %d divisions\n"%(count["mod"],count["divmod"]))
+finally: sys.stderr.write("remainder calculator used: %d remainders, %d divisions; smallest-value fix used %d times\n"%(count["mod"],count["divmod"],count.get("minval",0)))

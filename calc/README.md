@@ -34,3 +34,10 @@ for other K, m it is the same rules with other numbers, not yet a table.
   K=5, RH=0, first block 3: rows 2, 177;  K=5, RH=2, first block 2: rows 2, 35;  first block 4: rows 2, 885.
   Some first blocks (7 to 12) halt at the end of a tower-sized row.
 Full lists: gatescan_blank_K11_m7.txt, cheap_gates_by_first_block.txt.
+
+## A third stopping place in the simulator, fixed (21 Nov)
+
+33 of Polygon's 711 holdouts stopped in Quick_Sim with "'ExpTerm' object has no attribute 'min_value'" (not a remainder problem).
+Cause: inside a formula that still has a variable, a power term that is a plain number has no "smallest value" and no variable list recorded.
+`quick_sim_with_remainders.py` now supplies them when asked (the smallest value of a plain number is itself; it has no variables).
+Nothing in Shawn Ligocki's code is changed on disk. First table tried went from stuck at 3 arrows to about 6 arrows in 90 seconds.
