@@ -498,3 +498,25 @@ row 2 enter differently, so alone it does not replace the free endings.
 What does enter differently is the start.  The boot state of the 10-state machine (J0 = `1LE`) works this way: it enters at a cutter state.
 Free version of that (start state changed, no extra state): engines A and B started in each of their 9 states on a blank tape -
 A, C, F give the known one-row halt (11 and 10 arrows), the other starts halt small or make no row.  Rows of rows with a halt: 0.
+
+## Towers over towers with a halt in 9 states, from a blank tape, no boot state (22 Nov; arithmetic only, not proved)
+
+Vishnu's hint: the entry-point finding should give better boots.  It does: a start state is a free change of entry point, and the earlier
+work had judged the 9-state family (round +4, stores of 3, three cut endings: 3,888 tables) from start state A only.
+Boot-free alive test on all 3,888 (squeeze/round4_store3_9_states_3888_alive_test.txt): 643 alive, 280 dead, 2,001 halt small from
+every start tried, 946 no row, 18 not judged (end rule not read).  152 of the alive have a two-step map (a long row in one class survives
+and ends in a second class; a long row in that class ends in the halting class).
+Those 152 started in each of their 9 states on a blank tape (1,368 runs, squeeze/..._all_starts.txt): 1,027 halt small, 220 no row,
+110 one row then halt, 1 not judged, and 10 runs (4 engines) where a first row is survived and the machine halts at the end of the next,
+tower-long row.
+
+Clearest engine: `1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_0RE1RE_1RB---` (halt = G0; I1 never used).
+* start A  -> tree normal form `1RB1LF_1LC---_1LD1LC_0RE0RI_0LA1RE_1RZ1LG_0LH1LH_0LI0LC_1RD1RI`
+  real run: (3,[2]) (7,[1]) (11,[]) (1,[]) then the first row, block 3 stores [3,3,3,3,3,2] (6 stores).
+* start I  -> tree normal form `1RB---_1RC1RB_0LD0LI_0RE1LD_1LA1RF_1RZ1RG_0RH1RH_0RI0RB_1LC1LI`
+  real run: (3,[3,2]) (7,[2,2]) (11,[1,2]) (15,[0,2]) (3,[16,1]) ... then a first row of 94 stores (93 threes and a 2).
+Checks on both tree-normal-form tables: direct run of 300,000,000 steps, no halt.  Shawn Ligocki's Quick_Sim (110 s each, run through
+calc/quick_sim_with_remainders.py): no halt and no proof of running forever; reached (10^^^)^14 (10^^)^3 10^^4 for the first and
+(10^^^)^65 (10^^)^3 10^^4 for the second, still inside the first row.
+Honest status: one tool's arithmetic (learn2).  The older tool cannot see the first table's row of 6 (it counts rows above 8 stores only).
+Nine states: says nothing about BB(7); not claimed as a record.  One iteration only (one row survived, the next one halts).
