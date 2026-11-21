@@ -39,3 +39,16 @@ k counts down by 1 while n goes n -> 2n+4.  When k is used up, two more bars are
 When the bars are used up the lone counter M makes a new row of M+1 bars.
 Two things count down (k inside a row, the bars of the row).  Nothing counts down at the level of rows: every lone counter makes a row.
 What g4 lacks is that third count.  By Vishnu's note it does not need the halt wire: it only has to leave a bar where C looks.
+
+## The step "lone counter M -> row of M+1 bars", traced cell by cell (lone.py, 21 Nov night)
+
+M = 1..9 (tested): always `1 | ... | #` with M+1 bars; steps 86, 132, 188, 254, 330, 416, 512, 618, 734; the left edge moves M+3 cells.
+How (trace of M = 3): one walk per word.  Each walk goes to the left end (D1, C0 shift the `10` words), turns (D0, B0, C1, E1), comes
+back with an 8-wire shuttle (A0 B0 C1 E1 E1 E0 F0 G0) and turns the right-most `10` left into `110`.  When no `10` is left, D reads 0
+instead of 1 (the only test), and one last sweep turns every `110` into a bar.
+So this step takes the words ONE at a time and tests only "none left".  M is never tested in twos or threes.
+
+Numbers (from the row rules): n -> 2n+4, and the lone counter is M = 2n+2, so M is always even.  A test in twos would always see the same
+answer; only a test in threes (or a multiplier of 3 with a test in twos) can see a different answer from row to row (gate rule: the stride
+of the test and the multiplier must share no divisor).  g4 doubles, counts down by ones, and has no wire left: it has no number test at
+any of its three levels.  Observed and traced, not proved.
