@@ -53,3 +53,13 @@ So the machine reads the lead word in fours: a row at 3 (and 7), the halt at 4 (
 His blank-tape boot arrives at lead 3 with a counter of 4: one row of 13, then lead 4, halt. That is his 11 arrows.
 A boot that arrived one step earlier on the clock with the same engine would make a second row from a tower-sized counter.
 His table from a blank tape cannot: all seven start states were tried.
+
+## Lead word and lone counter together (leadmap.py, thought experiments, 21 Nov)
+
+Start: a lead word of k ones and one lone counter c (c = 1..9). Tested on the real table:
+- k = 1, 2 or 3: the lead word first grows to 3, then one row is made. Row length (first list of 8+ counters seen):
+  k = 1: 2c+5,   k = 2: 2c+9,   k = 3: 2c+6.   (leadmap counts one more than pavel/model does: his own run, k = 3 and c = 4, shows as 14 here.)
+- k = 4: halts at once, for every c.
+So the engine is "one row, then the lead word reaches 4 and it halts". The size of the machine is set by one number: the lone counter
+at the moment the lead word is 3.  His boot gives 4.  The same engine with a lone counter of 9 or more would have a first row past
+Jeff Ketchersid's 22.  Not checked here: whether a payer runs out (payer of 1 or 2) inside such a longer row, which would halt it early.

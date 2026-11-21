@@ -10,7 +10,7 @@ Tape as a list (tok.py): a number n = n words `10`; `|` = `100`; `#` = `1000`. V
 
 So it is a doubling stack like the others: a lone counter M becomes a row of M+1 stores. Its first row (21) is longer than Pavel Kropitz's (13).
 
-The gate (enum.py, tested): of all lists up to 6 tokens with counters up to 5, the machine halts on exactly those that end in `# #`
+The gate (small_lists.py, tested): of all lists up to 6 tokens with counters up to 5, the machine halts on exactly those that end in `# #`
 (626 lists, all halt in 27 steps; none of any other form halts).
 The rules above never write `# #` at the end: the nearest step is `| | n #  ->  # n+2 #`, and n+2 is never 0.
 So the halting wire is there, but no number is tested on the way to it. Observed, not proved: this machine most likely never halts.
