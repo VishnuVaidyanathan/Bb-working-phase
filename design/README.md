@@ -378,3 +378,20 @@ Longer row in 8 states? (same night)
 * The row length is set by the multiplier: round +2 gives 5 -> 39 -> 14 stores; round +5 (10 states) gives 95 stores.
 * Ways tried on paper to add home cells without states: C0 writing (A then lands on a 1 and starts a cut), F0 writing (fills the gap between
   fresh stores - the old bug), A0 sent left into D, B or C (runs away to the left). One state can write two cells (I0=1RI, I1=1RB), not more.
+
+## Towers over towers: the power halt (21 Nov)
+
+Idea (Vishnu): two halts, one for the base (inside a row) and one for the power (at a row end, on the number that becomes the next row).
+A machine that passes the power test on a real row and fails it on a later one has a row as long as a tower: past every one-row machine.
+
+Arithmetic of our stack family (calc/rows2.py, rows3.py; exact remainders, rows up to 7 stores, not proved beyond):
+the leftover of the cut settles as rows get long; when the round K is 1 more than a multiple of the store size m it goes up by 1 each row
+(a clock that counts rows).  With the first block free, 29 choices (round, store, halting leftover, first block) halt only after
+1 or 2 tower-long rows, e.g. round +4 stores of 3, round +5 stores of 4.  Stores of 2 never do.
+
+Real tables (calc/learn2.py follows tower-long rows one after another, six rows deep):
+- the 20 tables left undecided on 20 Nov (7 nine-state, 13 ten-state): none halts.  They do make row after row; the row-end classes
+  cycle through one or two values and the halt sits on a value they never show (towers_over_towers_verdicts.txt).
+- nine-state engine with every choice of its three cut-ending wires (3,888 tables): 2,691 halt early, 1,168 make no big row,
+  27 survive forever, 2 halt at the end of the first big row (10 and 11 arrows).  Towers over towers with a halt: 0
+  (store3_round4_9_states_all_cut_endings.txt).
