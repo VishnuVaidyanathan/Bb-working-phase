@@ -20,3 +20,22 @@ So the halting wire is there, but no number is tested on the way to it. Observed
 Started on a lone counter of 1:  row of 2 bars (step 86)  ->  lone counter 20 (step 1,188)  ->  row of 21 bars (step 3,858)  ->  ...
 So a finished row hands its result to the next row.  The blank-tape run is this same sequence.  The engine "towers over towers" exists in 7 states;
 what this table lacks is only a halt.
+
+## Where the halt wire looks (by hand, 21 Nov night)
+
+Halt = G reading 1.  G is entered from A1 and from F0 (both `0LG`).  Counted over 3,000,000 steps from a blank tape: 23 different local
+shapes, G always reads 0.
+* From A1 - can never halt (local argument, proved for this table): A is entered only moving right (from G0 or B1, both write 0 behind them),
+  so when A1 steps back left, G reads the 0 just written.
+* From F0 - the only way to the halt.  The chain is C1 (C on a 1, steps left), E0, F0, G.  So C, standing on the first cell of a word,
+  looks at what is on its left:
+      one zero then a 1 (a `10` word)        -> F1: carry on to the left
+      exactly two zeros then a 1 (a bar)     -> G reads 1: HALT
+      three or more zeros (a `#` or blank)   -> G0, A0, B0: fill and go on
+  So the halt asks: "is the word on my left a bar?".  It is a three-way look that the engine already uses for its work.
+
+Rules of the row work, read from the lists (observed):   k # n #  ->  k-1 | n+1 | #  ->  k-1 | | 2n+2 #  ->  k-1 # 2n+4 #
+k counts down by 1 while n goes n -> 2n+4.  When k is used up, two more bars are taken from the row and the old n becomes the new k.
+When the bars are used up the lone counter M makes a new row of M+1 bars.
+Two things count down (k inside a row, the bars of the row).  Nothing counts down at the level of rows: every lone counter makes a row.
+What g4 lacks is that third count.  By Vishnu's note it does not need the halt wire: it only has to leave a bar where C looks.
