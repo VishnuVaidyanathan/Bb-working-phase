@@ -31,20 +31,24 @@ def visits(T,n,keep=60):
     for step in range(n):
         v=tape.get(pos,0)
         if v==0 and step>50 and (pos==hi or pos==lo):
-            out.append((step,st,"R" if pos==hi else "L",runs_of(tape,lo,hi)))
+            side="R" if pos==hi else "L";gap=0
+            if side=="L":                       # empty cells between the head and the first 1
+                i=pos+1
+                while i<=hi and not tape.get(i,0): gap+=1;i+=1
+            out.append((step,st,side,runs_of(tape,lo,hi),gap))
         e=T[(st,v)]
         if e is None: return out,True
         tape[pos]=e[0];pos+=e[1];st=e[2]
         if pos<lo: lo=pos
         if pos>hi: hi=pos
     return out,False
-def build(runs,side):
+def build(runs,side,gap=0):
     cells=[]
     for (a,b),k in runs: cells+=([1]*a+[0]*b)*k
     if side=="R":
         if not cells or cells[-1]==1: cells.append(0)
         return {i:1 for i,v in enumerate(cells) if v},len(cells)-1
-    return {i:1 for i,v in enumerate(cells) if v},-1
+    return {i:1 for i,v in enumerate(cells) if v},-1-gap
 def halts(T,tape,pos,st,n):
     for step in range(n):
         e=T[(st,tape.get(pos,0))]
@@ -57,15 +61,19 @@ def test(tm,steps=3000000,trials=600,short=150000,seed=1):
     if h: return "halts by itself within %d steps"%steps
     if len(v)<10: return "too few visits (%d)"%len(v)
     pick=[v[i] for i in sorted(set(int(len(v)*f) for f in (0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.95,0.99)))]
+    # self check: the picked visits, rebuilt unchanged, must not halt at once (they are the machine's own tapes)
+    for step,st,side,runs,gap in pick:
+        tape,pos=build(runs,side,gap)
+        if halts(T,dict(tape),pos,st,20000): return "self check failed (the rebuilt real tape halts) - no verdict"
     nh=0;ex=None
     for t in range(trials):
-        step,st,side,runs=pick[t%len(pick)]
+        step,st,side,runs,gap=pick[t%len(pick)]
         new=[]
         for (a,b),k in runs:
             a2=a if a<=8 else rnd.randint(1,8)
             k2=k if k==1 else rnd.randint(1,min(k,7))
             new.append([(a2,b),k2])
-        tape,pos=build(new,side)
+        tape,pos=build(new,side,gap)
         if halts(T,dict(tape),pos,st,short):
             nh+=1
             if ex is None: ex=" ".join(("%d.%d"%w if k==1 else "(%d.%d)x%d"%(w[0],w[1],k)) for w,k in new)[:70]
