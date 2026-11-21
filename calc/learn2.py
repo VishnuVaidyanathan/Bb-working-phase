@@ -51,7 +51,7 @@ def inrow(K,m,w,stores):
     while g<len(stores) and stores[g]==0: g+=1
     if g==len(stores) or w+K<=m*g: return None
     return (m,tuple([m]*(g-1)+[w+K-m*g,stores[g]-1]+stores[g+1:]))
-def study(tm,steps=6000000,start="A",first=0):
+def study(tm,steps=6000000,start="A",first=0,life=False):
     """start = the state the machine is started in on the blank tape (a free choice; rename states to make it A)"""
     T=parse(tm)
     if ("A",0) not in T or T[("A",0)] is None: return "no home state"
@@ -102,6 +102,16 @@ def study(tm,steps=6000000,start="A",first=0):
     D=S.Design(K,m)
     def outcome(Wnode):
         r=R.mod_(Wnode,P,{});return cls[r],r
+    if life:
+        # boot-free question: a long fresh row that follows an end of class r ends in which classes?  (rows of 5..16 stores)
+        nxt={}
+        for r,sh in sorted(cls.items()):
+            if sh[0]=="HALT": continue
+            _,wb,tail,b1,nb1,slope=sh
+            nxt[r]=sorted(set(R.mod_(D.row_end(wb,[m]*n+list(tail)),P,{}) for n in range(5,17)))
+        halts=sorted(r for r,sh in cls.items() if sh[0]=="HALT")
+        good=sorted(r for r,v in nxt.items() if any(x in halts for x in v))
+        return "K=%d m=%d | halting classes %s | long-row map %s | %s"%(K,m,halts,nxt,("ALIVE: a long row after class %s can end in a halting class"%good) if good else "dead: no long row ends in a halting class")
     W=D.row_end(w0,list(st0))
     oc,r=outcome(W);n1=len(st0)
     head="K=%d m=%d, checked %d visits; first big row %d stores; "%(K,m,ok,n1)
@@ -133,6 +143,16 @@ def study(tm,steps=6000000,start="A",first=0):
     except LookupError as e: return head+"survives it; no verdict (%s)"%e
 if __name__=="__main__":
     a=sys.argv[1:]
+    if a and a[0]=="--life":             # --life TABLE... | --life --list FILE : can ANY boot make it halt after a long row?
+        tabs=[l.split()[0] for l in open(a[2]) if l.strip()] if len(a)>2 and a[1]=="--list" else a[1:]
+        for t in tabs:
+            v="no big row from any first block tried"
+            for b0 in (0,25,27,28,30,33,34,36):
+                try: v=study(t,steps=1500000,first=b0,life=True)
+                except Exception as e: v="ERROR "+str(e)[:80]
+                if v.startswith("K="): break
+            print(t,"|",v,flush=True)
+        sys.exit(0)
     if a and a[0]=="--boots":            # --boots TABLE [MAX] : the fate of the table for each first block 1..MAX (a lone block, nothing behind)
         tm=a[1];mx=int(a[2]) if len(a)>2 else 30
         for b in range(1,mx+1):
