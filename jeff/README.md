@@ -40,3 +40,18 @@ The same table started in another state on a blank tape (each is a different 7-s
   The checked rules (model.py) carry this to the end of that row: block 52,301,766,007, odd -> HALT (tested by arithmetic, not run to the end).
   Had that block been even, the next row would have had about 26 billion stores.
 So the boot (what the first row is) decides everything, and it is one parity away from an enormously longer run.
+
+## Route 1: other first rows in the same grammar (boots.py, arithmetic on the checked rules)
+
+22,376 small first rows tried (block 1..8, up to 4 stores of 0..6, then the end store 1):
+16,704 halt before the row ends, 856 end with an even block and make a new row, 4,816 meet a case the rules do not cover.
+567 of them are followed by a second row of 23 stores or more. Smallest examples (full list: boots_scan.txt):
+  block 2, stores [2,2,1] -> block 40 -> 22 stores   (this is the champion's own boot)
+  block 2, stores [2,3,1] -> block 40 -> 23 stores
+  block 1, stores [3,2,1] -> block 46 -> 25 stores
+  block 2, stores [0,4,1] -> block 82 -> 43 stores
+  block 1, stores [1,4,1] -> block 100 -> 52 stores
+  block 1, stores [1,6,1] -> block 316 -> 160 stores
+So the grammar allows longer second rows from a first row that differs by one cell.
+But his table makes exactly [2,2,1] from a blank tape, and no other start state gives a better first row (see above).
+Whether those longer rows would halt, and where, is not computed yet (needs the arithmetic to the halt).

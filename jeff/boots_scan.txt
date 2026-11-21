@@ -1,0 +1,42 @@
+first rows tried: 22376 {'HALT': 16704, 'ROW': 856, '?': 4816}
+first rows followed by a row of 23 stores or more: 567
+  block 1 stores [1, 4, 0, 0, 1] -> ends with block 100, next row 52 stores
+  block 1 stores [1, 4, 0, 1] -> ends with block 100, next row 52 stores
+  block 1 stores [1, 4, 1] -> ends with block 100, next row 52 stores
+  block 1 stores [3, 2, 0, 0, 1] -> ends with block 46, next row 25 stores
+  block 1 stores [3, 2, 0, 1] -> ends with block 46, next row 25 stores
+  block 1 stores [3, 2, 1] -> ends with block 46, next row 25 stores
+  block 2 stores [0, 4, 0, 0, 1] -> ends with block 82, next row 43 stores
+  block 2 stores [0, 4, 0, 1] -> ends with block 82, next row 43 stores
+  block 2 stores [0, 4, 1] -> ends with block 82, next row 43 stores
+  block 1 stores [1, 4, 0, 1, 1] -> ends with block 100, next row 53 stores
+  block 1 stores [1, 4, 1, 0, 1] -> ends with block 100, next row 53 stores
+  block 1 stores [1, 4, 1, 1] -> ends with block 100, next row 53 stores
+  block 1 stores [1, 5, 0, 1] -> ends with block 100, next row 53 stores
+  block 1 stores [1, 5, 1] -> ends with block 100, next row 53 stores
+  block 1 stores [3, 2, 0, 1, 1] -> ends with block 46, next row 26 stores
+  block 1 stores [3, 2, 1, 0, 1] -> ends with block 46, next row 26 stores
+  block 1 stores [3, 2, 1, 1] -> ends with block 46, next row 26 stores
+  block 1 stores [3, 3, 0, 1] -> ends with block 46, next row 26 stores
+  block 1 stores [3, 3, 1] -> ends with block 46, next row 26 stores
+  block 2 stores [0, 4, 0, 1, 1] -> ends with block 82, next row 44 stores
+  block 2 stores [0, 4, 1, 0, 1] -> ends with block 82, next row 44 stores
+  block 2 stores [0, 4, 1, 1] -> ends with block 82, next row 44 stores
+  block 2 stores [0, 5, 0, 1] -> ends with block 82, next row 44 stores
+  block 2 stores [0, 5, 1] -> ends with block 82, next row 44 stores
+  block 2 stores [2, 2, 0, 1, 1] -> ends with block 40, next row 23 stores
+  block 2 stores [2, 2, 1, 0, 1] -> ends with block 40, next row 23 stores
+  block 2 stores [2, 2, 1, 1] -> ends with block 40, next row 23 stores
+  block 2 stores [2, 3, 0, 1] -> ends with block 40, next row 23 stores
+  block 2 stores [2, 3, 1] -> ends with block 40, next row 23 stores
+  block 1 stores [1, 6, 0, 0, 1] -> ends with block 316, next row 160 stores
+  block 1 stores [1, 6, 0, 1] -> ends with block 316, next row 160 stores
+  block 1 stores [1, 6, 1] -> ends with block 316, next row 160 stores
+  block 1 stores [3, 4, 0, 0, 1] -> ends with block 154, next row 79 stores
+  block 1 stores [3, 4, 0, 1] -> ends with block 154, next row 79 stores
+  block 1 stores [3, 4, 1] -> ends with block 154, next row 79 stores
+  block 1 stores [5, 2, 0, 0, 1] -> ends with block 64, next row 34 stores
+  block 1 stores [5, 2, 0, 1] -> ends with block 64, next row 34 stores
+  block 1 stores [5, 2, 1] -> ends with block 64, next row 34 stores
+  block 2 stores [0, 6, 0, 0, 1] -> ends with block 262, next row 133 stores
+  block 2 stores [0, 6, 0, 1] -> ends with block 262, next row 133 stores
