@@ -486,3 +486,15 @@ that class halts: one-row engines, no two-step map.
 Short rows (rows from 3 stores counted; blank tape and first blocks 3..24; 8,464 trials): none survives any row.  From a blank tape:
 249 halt small, 80 halt at the end of the first row, 32 no row, 7 not judged (the tool's in-row arithmetic disagreed or failed).
 Over all trials 268 were not judged for the same reason.  Towers over towers with a halt in 8 states: 0 found.
+
+## Half overlap "the entry point of the cutter is the test": checked (22 Nov)
+
+Test on the 9-state engine A, lone blocks of 12..18 cells, cutter entered at A (normal), G, H or E on the block's first cell:
+entering one step later (G) acts exactly like a block one cell longer for the ending (block 12 entered at G halts, as block 13 does
+entered at A) and leaves a front block of 2 instead of 3; two steps later (H): like a block two longer, front block 1; at E: same as A.
+So the entry point shifts the class by 1 or 2 with no ending wire (tested).
+But it is fixed per table: one wire (F0 = `0RA`) sets the entry, and the same wire is the turn into home.  It cannot make row 1 and
+row 2 enter differently, so alone it does not replace the free endings.
+What does enter differently is the start.  The boot state of the 10-state machine (J0 = `1LE`) works this way: it enters at a cutter state.
+Free version of that (start state changed, no extra state): engines A and B started in each of their 9 states on a blank tape -
+A, C, F give the known one-row halt (11 and 10 arrows), the other starts halt small or make no row.  Rows of rows with a halt: 0.
