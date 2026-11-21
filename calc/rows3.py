@@ -18,27 +18,34 @@ def settled(K,m):
             except TO: v.append(None)
         f[r]=v[0] if v[0]==v[1] else ("alt",v[0],v[1])
     return f
+def chain(f,RH,r,rows,par):
+    """long rows one after another; r = last store of the current long row; par = its number of stores mod 2 if known"""
+    extra=0;seen=set()
+    while True:
+        if r in seen: return ("never halts (leftovers cycle)",rows,extra)
+        seen.add(r);x=f[r]
+        if not isinstance(x,int):
+            if par is None: return ("depends on whether the row length is odd or even",rows,extra)
+            x=x[1] if par==0 else x[2]          # rows of 6 stores / of 7 stores
+        par=None;extra+=1
+        if x==RH: return ("HALT after tower-long rows",rows,extra)
+        r=x
 def follow(K,m,RH,f,maxrows=12,first=0):
     D=S.Design(K,m);rows=[];w=first;stores=[]
     for _ in range(maxrows):
         res=S.plain(K,m,RH,w,stores,bits=20000,maxev=200000) if len(stores)<=40 else ("BIG",None)
         if res[0]=="HALT": return ("halt inside a small row",rows,0)
         if res[0]=="ROW":
+            k,r=divmod(res[1]+K,m)
+            if r==RH: return ("halt at a row end",rows,0)
+            if k>2000: return chain(f,RH,r,rows+["%d digits"%len(str(k))],(k-1+(1 if r else 0))%2)
             marks=S.cut(res[1]+K,m,RH)
-            if marks is None: return ("halt at a row end",rows,0)
             rows.append(len(marks)-1);w=marks[0];stores=marks[1:];continue
         try:
             signal.alarm(60);r=(R.mod_(D.row_end(w,stores),m,{})+K)%m;signal.alarm(0)
         except TO: return ("too slow",rows,0)
         if r==RH: return ("halt at the end of the first big row",rows,0)
-        extra=0;seen=set()
-        while True:                      # tower-long rows: last store r
-            if r in seen: return ("never halts (leftovers cycle)",rows,extra)
-            seen.add(r);x=f[r]
-            if not isinstance(x,int): return ("depends on whether the row length is odd or even",rows,extra)
-            extra+=1
-            if x==RH: return ("HALT after tower-long rows",rows,extra)
-            r=x
+        return chain(f,RH,r,rows,None)
     return ("still small",rows,0)
 if __name__=="__main__":
     if len(sys.argv)>1 and sys.argv[1]=="--boots":      # the first block is free too (a machine's boot decides it)
