@@ -1,0 +1,83 @@
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_---1RH_1RD1RE_1RB---  (engine A): fate for a lone first block of b cells
+first block  1 | halts small from a blank tape
+first block  2 | halts small from a blank tape
+first block  3 | no big row within 2000000 steps
+first block  4 | halts small from a blank tape
+first block  5 | no big row within 2000000 steps
+first block  6 | no big row within 2000000 steps
+first block  7 | halts small from a blank tape
+first block  8 | no big row within 2000000 steps
+first block  9 | no big row within 2000000 steps
+first block 10 | halts small from a blank tape
+first block 11 | no big row within 2000000 steps
+first block 12 | no big row within 2000000 steps
+first block 13 | halts small from a blank tape
+first block 14 | no big row within 2000000 steps
+first block 15 | no big row within 2000000 steps
+first block 16 | halts small from a blank tape
+first block 17 | no big row within 2000000 steps
+first block 18 | no big row within 2000000 steps
+first block 19 | halts small from a blank tape
+first block 20 | no big row within 2000000 steps
+first block 21 | K=4 m=3, checked 1308 visits; first big row 9 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 22 | halts small from a blank tape
+first block 23 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+first block 24 | K=4 m=3, checked 1308 visits; first big row 10 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 25 | halts small from a blank tape
+first block 26 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+first block 27 | K=4 m=3, checked 1308 visits; first big row 11 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 28 | halts small from a blank tape
+first block 29 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+first block 30 | K=4 m=3, checked 1308 visits; first big row 12 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 31 | halts small from a blank tape
+first block 32 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+first block 33 | K=4 m=3, checked 1308 visits; first big row 13 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 34 | halts small from a blank tape
+first block 35 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+first block 36 | K=4 m=3, checked 1308 visits; first big row 14 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 37 | halts small from a blank tape
+first block 38 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+first block 39 | K=4 m=3, checked 1308 visits; first big row 15 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 40 | halts small from a blank tape
+
+1LI1RG_1RC1RB_0LF0LD_1LC1LD_0LE0RB_0RA1LF_1LC1RH_---1RE_1RB---  (engine B)
+first block  1 | halts small from a blank tape
+first block  2 | halts small from a blank tape
+first block  3 | no big row within 2000000 steps
+first block  4 | no big row within 2000000 steps
+first block  5 | halts small from a blank tape
+first block  6 | no big row within 2000000 steps
+first block  7 | no big row within 2000000 steps
+first block  8 | halts small from a blank tape
+first block  9 | no big row within 2000000 steps
+first block 10 | no big row within 2000000 steps
+first block 11 | halts small from a blank tape
+first block 12 | no big row within 2000000 steps
+first block 13 | no big row within 2000000 steps
+first block 14 | halts small from a blank tape
+first block 15 | no big row within 2000000 steps
+first block 16 | no big row within 2000000 steps
+first block 17 | halts small from a blank tape
+first block 18 | no big row within 2000000 steps
+first block 19 | no big row within 2000000 steps
+first block 20 | halts small from a blank tape
+first block 21 | K=4 m=3, checked 1308 visits; first big row 9 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+first block 23 | halts small from a blank tape
+first block 24 | K=4 m=3, checked 1308 visits; first big row 10 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+first block 26 | halts small from a blank tape
+first block 27 | K=4 m=3, checked 1308 visits; first big row 11 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+first block 29 | halts small from a blank tape
+first block 30 | K=4 m=3, checked 1308 visits; first big row 12 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+first block 32 | halts small from a blank tape
+first block 33 | K=4 m=3, checked 1308 visits; first big row 13 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+first block 35 | halts small from a blank tape
+first block 36 | K=4 m=3, checked 1308 visits; first big row 14 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+first block 38 | halts small from a blank tape
+first block 39 | K=4 m=3, checked 1308 visits; first big row 15 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+first block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows

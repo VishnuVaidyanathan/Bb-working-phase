@@ -395,3 +395,17 @@ Real tables (calc/learn2.py follows tower-long rows one after another, six rows 
 - nine-state engine with every choice of its three cut-ending wires (3,888 tables): 2,691 halt early, 1,168 make no big row,
   27 survive forever, 2 halt at the end of the first big row (10 and 11 arrows).  Towers over towers with a halt: 0
   (store3_round4_9_states_all_cut_endings.txt).
+
+## The boot-free "alive" test, and two engines that only lack a boot (21 Nov, evening)
+
+calc/learn2.py --life: when a long row follows an end of class r (end block mod 12), in which class does it end?  An engine is alive if
+some long row can end in a halting class.  This does not depend on how the machine started.
+- 9 states, round +4 (29 tables): 4 alive, 25 dead.   10 states, round +5 (14 tables): 14 alive (for some row lengths only).
+  File: alive_test_9_and_10_states.txt.
+- Engine A `1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_---1RH_1RD1RE_1RB---`: halts on class 1 (mod 3); a long row after class 2 ends in
+  class 1; a long row after class 0 ends in class 2.  So every chain of long rows halts within two long rows.
+calc/learn2.py --boots (the table started on a lone block of b cells, b = 1..40): for engines A and B every b = 21, 24, 27, ... 39 gives
+a first big row of 9 to 15 stores, survives it, and HALTS at the end of the next, tower-long row.  File: first_blocks_of_two_alive_9_state_engines.txt.
+From a blank tape their own boot leads to a first big row that halts at once (10 to 13 arrows): the boot delivers the wrong class.
+Status: arithmetic only (rules read off the real tape, about 2,000 real visits agree; long-row endings tested on rows of 5..16 stores).
+These are thought experiments with a given first block, NOT machines from a blank tape, and the engines have 9 states.
