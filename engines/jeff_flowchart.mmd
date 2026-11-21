@@ -1,0 +1,19 @@
+flowchart TD
+  S([Blank tape]) --> BOOT["BOOT (no extra state)<br/>engine starts itself<br/>first row: block 2, stores 2, 2, 1"]
+  BOOT --> HOME{{"HOME<br/>is the front store empty?"}}
+  HOME -- "no" --> ROUND["ROUND<br/>block +3<br/>front store pays 1"]
+  ROUND --> HOME
+  HOME -- "yes" --> LOOK{{"LOOK at the payer behind<br/>(test in twos)"}}
+  LOOK -- "payer 2 or more" --> TICKET["PAYMENT BETWEEN DEPTHS<br/>payer pays 2<br/>old block becomes the front store<br/>fresh block 1<br/>(this makes x3: 12, 38, 128, 398 ...)"]
+  TICKET --> HOME
+  LOOK -- "payer exactly 1,<br/>a real store behind" --> H1(["HALT<br/>base halt"])
+  LOOK -- "payer 1,<br/>nothing behind<br/>= END OF ROW" --> PAR{{"block odd or even?<br/>(test in twos)"}}
+  PAR -- "odd" --> H2(["HALT<br/>power halt"])
+  PAR -- "even, block w" --> CUT["CUTTER<br/>new row of about w/2 stores of 2<br/>last store 1"]
+  CUT --> HOME
+  classDef halt fill:#f6d5d5,stroke:#a33,color:#000
+  classDef test fill:#fff3c4,stroke:#a80,color:#000
+  classDef work fill:#dcebfa,stroke:#369,color:#000
+  class H1,H2 halt
+  class HOME,LOOK,PAR test
+  class BOOT,ROUND,TICKET,CUT work

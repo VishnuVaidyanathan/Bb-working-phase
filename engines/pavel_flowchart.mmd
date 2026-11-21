@@ -1,0 +1,21 @@
+flowchart TD
+  S([Blank tape]) --> BOOT["BOOT (no extra state)<br/>engine starts itself<br/>lead word 3, one lone counter 4"]
+  BOOT --> ROW["CUTTER<br/>lone counter becomes a row<br/>(13 small counters, mostly 3s)"]
+  ROW --> VISIT{{"RIGHT END<br/>is the counter next to the last empty?"}}
+  VISIT -- "no" --> TR["ROUND (transfer)<br/>that counter pays 1<br/>last counter +2"]
+  TR --> VISIT
+  VISIT -- "yes" --> LOOK{{"LOOK at the payer to the left<br/>(test in threes)"}}
+  LOOK -- "payer 3 or more" --> TICKET["PAYMENT BETWEEN DEPTHS<br/>payer pays 3<br/>last counter b becomes about b+7<br/>new last counter 0<br/>(this makes x2: 10, 34, 82 ...)"]
+  TICKET --> VISIT
+  LOOK -- "payer 1" --> H1(["HALT<br/>base halt"])
+  LOOK -- "payer 2,<br/>something on its left" --> H1
+  LOOK -- "payer 2 at the left end<br/>= LIST USED UP" --> CLOCK{{"CLOCK<br/>lead word grows by 1<br/>what is it now?"}}
+  CLOCK -- "below 3" --> VISIT
+  CLOCK -- "3" --> ROW
+  CLOCK -- "4" --> H2(["HALT<br/>fixed clock, not a number test"])
+  classDef halt fill:#f6d5d5,stroke:#a33,color:#000
+  classDef test fill:#fff3c4,stroke:#a80,color:#000
+  classDef work fill:#dcebfa,stroke:#369,color:#000
+  class H1,H2 halt
+  class VISIT,LOOK,CLOCK test
+  class BOOT,ROW,TR,TICKET work
