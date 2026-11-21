@@ -27,3 +27,19 @@ different (words of 2 and 3 cells instead of blocks and gaps).  Status: observed
 * The row: at step 932 thirteen words `100` stand in a row; they are turned into counters one at a time (first a 6, then 3s).
 In our stack terms: block at the right end, round "x2", fresh stores of 3, payer pays 1, old block +6 becomes the store.
 Not done: the rules for two or more empty counters, the row rule, where the halt (state E reading 0) is met, and a check at every visit.
+
+## Rules as arithmetic, checked (rules.py thought experiments, model.py against the real run)
+
+Canonical visit: lead word, counters, last counter b at the right end.
+* transfer: the counter a next to the last is not empty -> a-1, b+2
+* ticket: g empty counters before the last, payer c >= 3 before them -> payer c-3; then b+7 (g = 1), or b+5, g-2 counters of 3,
+  a counter of 5 (g >= 2); then a new last counter 0
+* payer of 1 -> HALT; payer of 2 with something to its left -> HALT; payer of 2 at the left end -> the lead word grows (row event)
+model.py: 5,112 canonical visits of the real run (30 million steps) agree, 0 differ; 2 are row events at the left end, not modelled.
+The builder reproduces 360 of 360 real steps.
+
+So his gate is in THREES: a payer pays 3 at a time and the machine halts when a payer has 1 left. His multiplier is 2.
+Jeff Ketchersid's gate is in twos with multiplier 3. In both, the multiplier and the gate number share no divisor.
+Pavel's machine is "round x2, payers of 3" - the combination our own gate study found to fire (our loose version needs 8 states).
+
+Start states (blank tape): only A gives the stack (row of 13). C halts at step 860, E at once; B, D, F, G do not build anything.
