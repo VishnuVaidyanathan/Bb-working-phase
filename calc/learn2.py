@@ -51,11 +51,11 @@ def inrow(K,m,w,stores):
     while g<len(stores) and stores[g]==0: g+=1
     if g==len(stores) or w+K<=m*g: return None
     return (m,tuple([m]*(g-1)+[w+K-m*g,stores[g]-1]+stores[g+1:]))
-def study(tm,steps=6000000,start="A"):
+def study(tm,steps=6000000,start="A",first=0):
     """start = the state the machine is started in on the blank tape (a free choice; rename states to make it A)"""
     T=parse(tm)
     if ("A",0) not in T or T[("A",0)] is None: return "no home state"
-    real=homes(T,0,[],steps,10**7,start)
+    real=homes(T,first,[],steps,10**7,start)
     if real and real[-1]=="HALT": return "halts small from a blank tape"
     big=[i for i,c in enumerate(real) if len(c[1])>8]
     if not big: return "no big row within %d steps"%steps
@@ -133,6 +133,13 @@ def study(tm,steps=6000000,start="A"):
     except LookupError as e: return head+"survives it; no verdict (%s)"%e
 if __name__=="__main__":
     a=sys.argv[1:]
+    if a and a[0]=="--boots":            # --boots TABLE [MAX] : the fate of the table for each first block 1..MAX (a lone block, nothing behind)
+        tm=a[1];mx=int(a[2]) if len(a)>2 else 30
+        for b in range(1,mx+1):
+            try: v=study(tm,steps=2000000,first=b)
+            except Exception as e: v="ERROR "+str(e)[:80]
+            print("first block %2d | %s"%(b,v),flush=True)
+        sys.exit(0)
     tabs=[l.split()[0] for l in open(a[1]) if l.strip()] if a and a[0]=="--list" else a
     for t in tabs:
         try: v=study(t)
