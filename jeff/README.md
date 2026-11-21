@@ -55,3 +55,24 @@ So the boot (what the first row is) decides everything, and it is one parity awa
 So the grammar allows longer second rows from a first row that differs by one cell.
 But his table makes exactly [2,2,1] from a blank tape, and no other start state gives a better first row (see above).
 Whether those longer rows would halt, and where, is not computed yet (needs the arithmetic to the halt).
+
+## How his 14 wires share the jobs (wires.py and a cell-by-cell trace, 21 Nov night; observed)
+
+wires.py, 3,000,000 steps from a blank tape, events named by the checked rules:
+* round (1,523 times) uses 9 wires: A0 B0 B1 C0 D0 D1 E0 E1 F0.
+  A0 writes a cell and starts; B1 runs right over the block; B0 fills the first cell of the gap; C0 LOOKS at the second cell of the gap;
+  D1 takes one cell of the front store (D0 if it is empty); E1 runs back left; E0 and F0 turn at the left end.
+* payment between depths (8 times), the new row (once) and the start from a blank tape all use those 9 wires plus the SAME 4 more:
+  A1, G1, G0, F1.  No other wire exists except the halt.
+* halt = C1.  C is entered only from B0 (and from G0, where it always re-reads a cell A has just set to 0 - local argument).  So the halt
+  is: B fills the first cell of a gap and the next cell is already a 1 = "the gap is one cell wide, not two".  It is the look the round
+  makes on every trip.  A payer that pays 2 at a time leaves a gap of one or two: that is his test in twos.
+So 9 (round) + 4 (everything else) + 1 (halt) = 14.
+
+The cutter, traced on the block of 5 that makes his first row [2,2,1] (steps 95-178):
+ phase 1 (peel): F0 writes 1, A1 and G1 erase two cells, B runs to the right end and adds a cell, F1 runs back: one `10` word per walk.
+          It ends when G (or A) meets the right end: which of the two = the block odd or even.
+ phase 2 (pair): G0 turns back, and the ROUND wires C0 D1 D0 E1 E0 F0 (with F1, A1, G0) walk left turning each `10 10` into `1100`:
+          the stores of 2 with their two-cell gaps.
+Compared with our stack (17 working wires: round 9, cutter 4, three cut endings, one runner): he has NO wire that is only a cut ending.
+His peel ends on the home wire A0 or on G0, and G0 is also the wire that starts the pairing; his halt is not an ending at all.

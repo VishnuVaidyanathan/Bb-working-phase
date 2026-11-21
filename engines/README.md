@@ -28,3 +28,15 @@ Correction (21 Nov, night): the first version of this sheet said Jeff Ketchersid
 rules (jeff/README.md) say his row end is a test in twos: block even -> a new row of half the block, block odd -> halt.  So his ENGINE has
 rows of rows together with a number test, in 7 states.  His machine is small only because his start gives a first row of 3 stores; the row
 made from it has 22.  Flowcharts of both machines in our terms: jeff_flowchart.*, pavel_flowchart.* (from the checked rules, not proved).
+
+## Wires per job, counted the same way (21 Nov, night; observed)
+
+| Job | Jeff Ketchersid's engine | Our stack (9-state engine A) |
+|---|---|---|
+| round (run, fill, look, eat, turn) | 9 wires | 9 wires |
+| cutter | 4 wires (A1 G1 G0 F1), also used for the payment between depths and the start | 4 wires (A1 G1 H1 E1) + 1 runner (F1) |
+| cut endings | 0 (the peel ends on the home wire or on the wire that starts the pairing) | 3 wires, used for nothing else |
+| halt | 1 wire = the look the round makes at the gap | one of the 3 endings |
+| total | 14 | 17 (+ boot) |
+Lessons: (1) no wire should be only an ending; (2) the halt belongs on the round's look (the width of a gap), where a payer that pays
+2 or 3 at a time is tested for free; (3) the second half of a cut can be done by the round's own wires.
