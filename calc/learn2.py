@@ -11,6 +11,7 @@ import sys
 sys.path.insert(0,__file__.rsplit('/',2)[0]+'/design')
 import stackcalc as S,remainder as R
 P=12
+BIG=8          # a row counts as big when it has more stores than this
 def parse(t):
     T={}
     for q,row in enumerate(t.split('_')):
@@ -57,7 +58,7 @@ def study(tm,steps=6000000,start="A",first=0,life=False):
     if ("A",0) not in T or T[("A",0)] is None: return "no home state"
     real=homes(T,first,[],steps,10**7,start)
     if real and real[-1]=="HALT": return "halts small from a blank tape"
-    big=[i for i,c in enumerate(real) if len(c[1])>8]
+    big=[i for i,c in enumerate(real) if len(c[1])>BIG]
     if not big: return "no big row within %d steps"%steps
     i0=big[0];w0,st0=real[i0]
     # K and m from the row
