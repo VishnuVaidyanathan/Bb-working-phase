@@ -409,3 +409,25 @@ a first big row of 9 to 15 stores, survives it, and HALTS at the end of the next
 From a blank tape their own boot leads to a first big row that halts at once (10 to 13 arrows): the boot delivers the wrong class.
 Status: arithmetic only (rules read off the real tape, about 2,000 real visits agree; long-row endings tested on rows of 5..16 stores).
 These are thought experiments with a given first block, NOT machines from a blank tape, and the engines have 9 states.
+
+## First machine with towers over towers and a halt, from a blank tape - 10 states, arithmetic only (21 Nov, night)
+
+Engine A plus ONE boot state (used once: write 1, move, enter engine state E).  In standard form (start state first):
+
+    1LF---_1LJ1RH_1RD1RC_0LG0LE_1LD1LE_0RI0RC_0RB1LG_---1RI_1RE1RF_1RC---        (10 states; halt wire H0; A1 and J1 never used)
+
+(the same table as `1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RH0RB_0RA1LF_---1RH_1RD1RE_1RB---_1LE---` started in its last state; the first
+3,000,000 steps of both were compared and are identical.)
+
+From a blank tape (home visits: block, stores): (1,[1,1]) (5,[0,1]) (3,[6]) (7,[5]) (11,[4]) (15,[3]) ... then the first big row:
+block 3, stores [3,3,3,3,3,3,3,3,3,1,1] (11 stores).  Verdict of calc/learn2.py: round +4, stores of 3, 2,151 real home visits agree with
+the in-row arithmetic; the row of 11 is survived; the next row is tower-long and the machine HALTS at its end.
+The older tool calc/learn.py gives the same: "every long row of that shape halts" (fresh rows of 5 to 14 stores all end in the halting class).
+
+Checks: direct run 300,000,000 steps: no halt.  Shawn Ligocki's Quick_Sim, 110 s: no halt, not proved infinite, at (10^^)^8 10^^4 and growing.
+Boot trials: 72 boot arrangements were tried (engine_A_boot_state_trials.txt); 2 give this result (the boot cell written, moving left or right).
+
+Status - be careful:  TESTED BY OUR ARITHMETIC ONLY.  Not proved; no simulator can confirm a number of this size; the long-row rule is
+tested on rows of 5 to 16 stores, not proved for a tower-long row.  It has 10 states, so it says nothing about BB(7) and it is not
+claimed as a record for 10 states.  What it shows: the "power halt" idea (Vishnu) works in a real table from a blank tape -
+a first row of 11 stores, then a row as long as the number that row makes, then a halt.

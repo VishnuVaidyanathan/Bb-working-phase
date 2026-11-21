@@ -1,0 +1,72 @@
+0LA--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+0RA--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LA--- | halts small from a bla
+1RA--- | halts small from a bla
+0LB--- | halts small from a bla
+0RB--- | halts small from a bla
+1LB--- | halts small from a bla
+1RB--- | halts small from a bla
+0LC--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+0RC--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LC--- | halts small from a bla
+1RC--- | halts small from a bla
+0LD--- | halts small from a bla
+0RD--- | halts small from a bla
+1LD--- | halts small from a bla
+1RD--- | no big row within 1500
+0LE--- | no big row within 1500
+0RE--- | no big row within 1500
+1LE--- | K=4 m=3, checked 1187 visits; first big row 11 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+1RE--- | K=4 m=3, checked 1187 visits; first big row 11 stores; survives it; then HALTS at the end of tower-long row number 1  <-- TOWERS OVER TOWERS
+0LF--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+0RF--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LF--- | halts small from a bla
+1RF--- | halts small from a bla
+0LG--- | halts small from a bla
+0RG--- | halts small from a bla
+1LG--- | halts small from a bla
+1RG--- | halts small from a bla
+0LH--- | no big row within 1500
+0RH--- | no big row within 1500
+1LH--- | no big row within 1500
+1RH--- | no big row within 1500
+0LI--- | halts small from a bla
+0RI--- | halts small from a bla
+1LI--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1RI--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LK---_1LA--- | halts small from a bla
+1LK---_1RA--- | halts small from a bla
+1RK---_1LA--- | halts small from a bla
+1RK---_1RA--- | halts small from a bla
+1LK---_1LB--- | no big row within 1500
+1LK---_1RB--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1RK---_1LB--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1RK---_1RB--- | K=4 m=3, checked 1187 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LK---_1LC--- | halts small from a bla
+1LK---_1RC--- | halts small from a bla
+1RK---_1LC--- | no big row within 1500
+1RK---_1RC--- | halts small from a bla
+1LK---_1LD--- | no big row within 1500
+1LK---_1RD--- | no big row within 1500
+1RK---_1LD--- | no big row within 1500
+1RK---_1RD--- | no big row within 1500
+1LK---_1LE--- | halts small from a bla
+1LK---_1RE--- | halts small from a bla
+1RK---_1LE--- | halts small from a bla
+1RK---_1RE--- | halts small from a bla
+1LK---_1LF--- | halts small from a bla
+1LK---_1RF--- | halts small from a bla
+1RK---_1LF--- | halts small from a bla
+1RK---_1RF--- | halts small from a bla
+1LK---_1LG--- | halts small from a bla
+1LK---_1RG--- | halts small from a bla
+1RK---_1LG--- | halts small from a bla
+1RK---_1RG--- | halts small from a bla
+1LK---_1LH--- | halts small from a bla
+1LK---_1RH--- | halts small from a bla
+1RK---_1LH--- | halts small from a bla
+1RK---_1RH--- | halts small from a bla
+1LK---_1LI--- | halts small from a bla
+1LK---_1RI--- | halts small from a bla
+1RK---_1LI--- | halts small from a bla
+1RK---_1RI--- | halts small from a bla
