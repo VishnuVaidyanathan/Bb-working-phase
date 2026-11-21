@@ -40,3 +40,10 @@ Read by hand (learn_any.py, tested on the real runs):
   markers `110`, `1000`; a lone counter again becomes a short row of markers.
 So the deep holdouts looked at are one idea in different clothes: a doubling stack with a boot and no reachable halt.
 They most likely never halt (tested, not proved).
+
+## Gate test on the other 641 (21 Nov)
+
+200 small tapes each. 551 holdouts: none halt. 90 holdouts: at least one halts (most of them a handful; the two highest 149 and 113).
+Of those 90, 21 also reach 3 or 4 arrows in the second tool before it runs out of time: results/gated_and_deep.txt.
+They fall into two groups of cousins (a 3-arrow group and a 4-arrow group) plus one or two singles.
+Status: tested, not proved. A halting small tape shows the table has a gate somewhere; it does not show the blank-tape run ever meets it.
