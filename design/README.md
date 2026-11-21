@@ -459,3 +459,19 @@ from the next store), F1 runs back, F0 turns into A1 again: one walk of the bloc
    (arithmetic, rows3.out) or share a divisor.
 So for THIS engine: power halt needs round +4 with stores of 3 = 9 states, plus a boot.  Seven states hold only its one-row form.
 All of this is tested / read from traces, not proved.
+
+## Note (Vishnu, 21 Nov): the power halt is not the machine's halt
+
+The power halt only ENDS THE POWER: it stops the making of new rows.  It can have its own arithmetic, and it does not need the halt wire.
+The machine's one real halt wire can stay in the base (inside a row); the power only has to end in a tape on which the base halt can fire.
+(Shawn Ligocki's name for rows-of-rows repeated many times: "iterated Ackermann".  Goal to prefer: a power that counts several rows
+before it ends, not one that ends on the second row.)
+
+What this changes in the wire count (7 states = 14 wires, one of them the halt):
+- holdout g4 runs rows of rows with 13 wires; its 14th wire is the halt, behind a shape that is never written.  So engine 13 + halt 1 = 14:
+  the count closes only if BOTH tests are done by wires the engine already has.  No wire is left for a separate power-halt wire -
+  with this note none is needed.
+- wires of g4 (trace from a blank tape, 1,300 steps, tested): all 13 are in use.  The halt is G reading 1; G is entered from A1 and F0
+  (both `0LG`), so the halt asks "is the cell left of this point a 1".  Today that is a shape, not a number.
+- our own 9-state engine: its halt is one of three cut endings.  Under this note the three endings can all be ordinary wires (three
+  different tails), with the halt inside the row.  Not tried yet.
