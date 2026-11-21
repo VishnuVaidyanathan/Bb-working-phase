@@ -18,8 +18,8 @@ def settled(K,m):
             except TO: v.append(None)
         f[r]=v[0] if v[0]==v[1] else ("alt",v[0],v[1])
     return f
-def follow(K,m,RH,f,maxrows=12):
-    D=S.Design(K,m);rows=[];w=0;stores=[]
+def follow(K,m,RH,f,maxrows=12,first=0):
+    D=S.Design(K,m);rows=[];w=first;stores=[]
     for _ in range(maxrows):
         res=S.plain(K,m,RH,w,stores,bits=20000,maxev=200000) if len(stores)<=40 else ("BIG",None)
         if res[0]=="HALT": return ("halt inside a small row",rows,0)
@@ -41,6 +41,15 @@ def follow(K,m,RH,f,maxrows=12):
             r=x
     return ("still small",rows,0)
 if __name__=="__main__":
+    if len(sys.argv)>1 and sys.argv[1]=="--boots":      # the first block is free too (a machine's boot decides it)
+        for K in range(1,8):
+            for m in range(2,5):
+                f=settled(K,m)
+                for RH in range(1,m):
+                    for first in range(0,13):
+                        v,rows,extra=follow(K,m,RH,f,first=first)
+                        if extra>=1 and v.startswith("HALT"): print("round +%d store %d halt-on %d first block %2d : small rows %s then %d tower-long rows, then HALT"%(K,m,RH,first,rows,extra),flush=True)
+        sys.exit(0)
     KM=int(sys.argv[1]) if len(sys.argv)>1 else 9
     for K in range(1,KM+1):
         for m in range(2,7):
