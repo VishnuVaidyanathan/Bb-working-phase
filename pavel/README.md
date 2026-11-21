@@ -43,3 +43,13 @@ Jeff Ketchersid's gate is in twos with multiplier 3. In both, the multiplier and
 Pavel's machine is "round x2, payers of 3" - the combination our own gate study found to fire (our loose version needs 8 states).
 
 Start states (blank tape): only A gives the stack (row of 13). C halts at step 860, E at once; B, D, F, G do not build anything.
+
+## The lead word is a clock in fours (thought experiments, 21 Nov)
+
+A lone counter of 4 with a lead word of k ones:
+k = 1: row of 12;  k = 2: the counter becomes 7, then a row of 16;  k = 3: row of 13 (this is his real run);  k = 4: HALT at once;
+k = 5: halts after a few hundred steps;  k = 6: goes on without a row;  k = 7: row of 17;  k = 8: HALT.
+So the machine reads the lead word in fours: a row at 3 (and 7), the halt at 4 (and 8). Each time the list is used up the lead grows by 1.
+His blank-tape boot arrives at lead 3 with a counter of 4: one row of 13, then lead 4, halt. That is his 11 arrows.
+A boot that arrived one step earlier on the clock with the same engine would make a second row from a tower-sized counter.
+His table from a blank tape cannot: all seven start states were tried.
