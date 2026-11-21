@@ -28,3 +28,15 @@ model.py: 4,730 home visits of the real run (30 million steps) agree with these 
 What the gate is, in these terms: the store made at a ticket is block + 7 - 2g. For g >= 2 it will be a payer that pays 2 at a time,
 so it must be even, i.e. the block at that ticket must be odd. A ticket at depth 2 or more with an even block leaves a payer of 1 -> halt.
 Second gate: an odd block at the end of a row.
+
+## Rows and the start state (21 Nov)
+
+From a blank tape started in A (the champion as published): rows of 3 stores, then 22 stores. 22 - 2 = 20, the number of arrows
+in the published bound 3 ^(20) 3. So "arrows = stores in the halting row - 2" holds for his machine too (observed).
+
+The same table started in another state on a blank tape (each is a different 7-state machine after renaming):
+* B: halts at step 469.
+* C, D, E, F, G: all fall into the same run: a first row of 4 stores, real tape after 20 million steps: block 6700, stores [1409, 28, 0, 1].
+  The checked rules (model.py) carry this to the end of that row: block 52,301,766,007, odd -> HALT (tested by arithmetic, not run to the end).
+  Had that block been even, the next row would have had about 26 billion stores.
+So the boot (what the first row is) decides everything, and it is one parity away from an enormously longer run.
