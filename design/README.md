@@ -431,3 +431,31 @@ Status - be careful:  TESTED BY OUR ARITHMETIC ONLY.  Not proved; no simulator c
 tested on rows of 5 to 16 stores, not proved for a tower-long row.  It has 10 states, so it says nothing about BB(7) and it is not
 claimed as a record for 10 states.  What it shows: the "power halt" idea (Vishnu) works in a real table from a blank tape -
 a first row of 11 stores, then a row as long as the number that row makes, then a halt.
+
+## Squeezing the 10-state machine by hand (21 Nov, late)
+
+Earlier the same evening, recorded as zeros: an 8-state batch with a smaller round and B0=0RC (6,144 tables; 4,384 run, all "no big row",
+1,760 not run) and 9-state start-up wire trials (288 tables; 4 run: 3 run away, 1 halts small; stopped).  Both were blind; stopped for design.
+
+Wire jobs of the 9-state engine A, read from a cell-by-cell trace (tested):
+round = A0 (cell at home), I0 (one more cell: makes the round +4), B1 run right, B0 fill the gap, C1 eat one cell of the first store,
+D1 run left, D0 write a cell, C0 and F0 turn around.  Cut = A1 G1 H1 E1 write `1110`, B runs to the right end and adds a cell (or takes one
+from the next store), F1 runs back, F0 turns into A1 again: one walk of the block per store.  G0/H0/E0 = the three cut endings.
+17 of the 18 wires have a job (I1 is free).
+
+1. Merge "round adder = a cutter state" (I's job moved to the 0-wire of G, H or E).  8 states, 192 tables (squeeze/merged_*).
+   From a blank tape: 141 halt small, 50 no big row, 1 makes rows: `1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LC1RE`
+   (round +4, stores of 3, first big row 19 stores, then row after row, every row end in class 3, the halt is on class 1: dead).
+   Alive test: 19 alive, 11 dead, 162 no row.  The 19 are one-row engines: from first blocks 1..40, 287 trials halt at the end of the
+   first row (3 to 13 arrows), 411 halt small, 62 no row; none survives a row.  Towers over towers with a halt: 0.
+   Reason (seen on the tape): with one ending fixed to the round wire, both non-halting endings leave the same tail ([2,1]); engine A's two
+   free endings leave different tails ([1,1] and [1]), and that difference is what makes one row survive and the next halt.
+2. One-pass cutter (E1 = 0RA: the cutter loops through home and cuts the block in one walk; 7 states, stores of 2, three endings; 112 tables,
+   squeeze/one_pass_cutter_*).  From a blank tape: 82 halt small, 30 no big row.  Not a stack: 0.
+   Reason (trace): the walk to the right end after each store is not waste - there the cut takes one cell from the next store.  That
+   payment is what ties one depth to the next.  Without it the second store only piles up ((2,[2,5,2,3]) -> (2,[2,8,2,3]) ...).
+3. Round +4 without state I, on paper: every wire of the turn-around (D0, C0, F0) has a second job (shifting the stores back, finding the
+   right end, starting the cut), so none can write the extra cell.  Round +2 and +3 are free; with stores of 3 they give one-row machines
+   (arithmetic, rows3.out) or share a divisor.
+So for THIS engine: power halt needs round +4 with stores of 3 = 9 states, plus a boot.  Seven states hold only its one-row form.
+All of this is tested / read from traces, not proved.

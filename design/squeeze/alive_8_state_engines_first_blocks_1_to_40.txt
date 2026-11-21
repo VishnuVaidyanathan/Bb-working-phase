@@ -1,0 +1,760 @@
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 3 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 4 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 5 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 6 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 7 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 8 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 9 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 10 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 11 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 13 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 14 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 16 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 17 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 19 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 20 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 22 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 23 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 25 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 26 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 28 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 29 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 31 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 32 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 34 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 35 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 37 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 38 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_0RD1RE | block 40 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 3 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 4 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 5 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 6 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 7 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 8 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 9 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 10 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 11 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 13 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 14 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 16 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 17 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 19 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 20 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 22 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 23 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 25 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 26 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 28 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 29 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 31 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 32 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 34 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 35 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 37 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 38 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1LD1RE | block 40 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 3 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 4 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 5 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 6 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 7 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 8 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 9 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 10 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 11 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 13 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 14 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 16 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 17 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 19 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 20 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 22 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 23 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 25 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 26 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 28 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 29 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 31 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 32 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 34 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 35 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 37 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 38 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_---1RH_1RD1RE | block 40 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 3 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 4 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 5 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 6 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 7 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 8 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 9 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 10 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 11 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 12 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 14 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 15 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 17 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 18 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 20 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 21 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 23 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 24 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 26 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 27 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 29 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 30 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 32 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 33 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 35 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 36 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 38 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 39 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0LD1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 3 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 4 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 5 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 6 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 7 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 8 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 9 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 10 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 11 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 12 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 14 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 15 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 17 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 18 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 20 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 21 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 23 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 24 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 26 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 27 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 29 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 30 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 32 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 33 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 35 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 36 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 38 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 39 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_0RD1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 3 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 4 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 5 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 6 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 7 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 8 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 9 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 10 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 11 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 12 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 14 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 15 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 17 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 18 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 20 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 21 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 23 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 24 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 26 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 27 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 29 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 30 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 32 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 33 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 35 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 36 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 38 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 39 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LC1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 3 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 4 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 5 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 6 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 7 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 8 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 9 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 10 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 11 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 12 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 14 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 15 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 17 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 18 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 20 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 21 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 23 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 24 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 26 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 27 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 29 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 30 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 32 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 33 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 35 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 36 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 38 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 39 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1LD1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 1 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 2 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 3 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 4 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 5 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 6 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 7 | no big row within 2000000 steps
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 8 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 9 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 10 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 11 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 12 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 14 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 15 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 17 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 18 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 20 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 21 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 23 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 24 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 26 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 27 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 29 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 30 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 32 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 33 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 35 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 36 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 38 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 39 | halts small from a blank tape
+1LE1RG_1RC1RB_0LF0LD_1LC1LD_1RB0RB_0RA1LF_1RD1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 1 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 2 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 3 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 4 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 5 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 6 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 7 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 8 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 9 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 10 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 11 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 14 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 17 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 20 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 23 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 26 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 29 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 32 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 35 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 38 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RB1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 1 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 2 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 3 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 4 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 5 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 6 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 7 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 8 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 9 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 10 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 11 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 12 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 14 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 17 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 20 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 23 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 26 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 29 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 32 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 35 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 38 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RB1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 1 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 2 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 3 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 4 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 5 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 6 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 7 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 8 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 9 | no big row within 2000000 steps
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 10 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 11 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 14 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 17 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 20 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 23 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 26 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 29 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 32 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 35 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 38 | halts small from a blank tape
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LG1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_1RB1RH_---1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 2 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 4 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 5 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 6 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 7 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 8 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 9 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 10 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 11 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 12 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 14 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 15 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 17 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 18 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 20 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 21 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 23 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 24 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 26 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 27 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 29 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 30 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 32 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 33 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 35 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 36 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 38 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 39 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_0RD1RH_1RB1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 2 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 4 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 5 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 6 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 7 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 8 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 9 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 10 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 11 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 12 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 14 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 15 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 17 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 18 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 20 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 21 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 23 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 24 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 26 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 27 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 29 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 30 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 32 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 33 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 35 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 36 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 38 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 39 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1LD1RH_1RB1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 2 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 4 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 5 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 6 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 7 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 8 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 9 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 10 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 11 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 12 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 13 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 14 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 15 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 16 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 17 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 18 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 19 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 20 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 21 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 22 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 23 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 24 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 25 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 26 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 27 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 28 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 29 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 30 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 31 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 32 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 33 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 34 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 35 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 36 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 37 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 38 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 39 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_---0RB_0RA1LF_1RD1RH_1RB1RE | block 40 | K=4 m=3, checked 1308 visits; first big row 15 stores; HALTS at the end of that row: about 13 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 2 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 4 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 5 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 6 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 7 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 8 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 9 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 10 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 11 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 12 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 13 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 14 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 16 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 17 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 19 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 20 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 22 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 23 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 25 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 26 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 28 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 29 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 31 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 32 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 34 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 35 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 37 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 38 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0LD0RB_0RA1LF_---1RH_1RB1RE | block 40 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 2 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 4 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 5 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 6 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 7 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 8 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 9 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 10 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 11 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 13 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 14 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 16 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 17 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 19 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 20 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 22 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 23 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 25 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 26 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 28 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 29 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 31 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 32 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 34 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 35 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 37 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 38 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_---1RH_1RB1RE | block 40 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 2 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 4 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 5 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 6 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 7 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 8 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 9 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 10 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 11 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 13 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 14 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 16 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 17 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 19 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 20 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 22 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 23 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 25 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 26 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 28 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 29 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 31 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 32 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 34 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 35 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 37 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 38 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LC0RB_0RA1LF_---1RH_1RB1RE | block 40 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 2 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 4 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 5 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 6 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 7 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 8 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 9 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 10 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 11 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 12 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 13 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 14 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 16 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 17 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 19 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 20 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 22 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 23 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 25 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 26 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 28 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 29 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 31 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 32 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 34 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 35 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 37 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 38 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_---1RH_1RB1RE | block 40 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 1 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 2 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 3 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 4 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 5 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 6 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 7 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 8 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 9 | no big row within 2000000 steps
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 10 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 11 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 12 | K=4 m=3, checked 1308 visits; first big row 5 stores; HALTS at the end of that row: about 3 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 13 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 14 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 15 | K=4 m=3, checked 1308 visits; first big row 6 stores; HALTS at the end of that row: about 4 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 16 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 17 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 18 | K=4 m=3, checked 1308 visits; first big row 7 stores; HALTS at the end of that row: about 5 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 19 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 20 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 21 | K=4 m=3, checked 1308 visits; first big row 8 stores; HALTS at the end of that row: about 6 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 22 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 23 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 24 | K=4 m=3, checked 1308 visits; first big row 9 stores; HALTS at the end of that row: about 7 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 25 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 26 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 27 | K=4 m=3, checked 1308 visits; first big row 10 stores; HALTS at the end of that row: about 8 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 28 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 29 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 30 | K=4 m=3, checked 1308 visits; first big row 11 stores; HALTS at the end of that row: about 9 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 31 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 32 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 33 | K=4 m=3, checked 1308 visits; first big row 12 stores; HALTS at the end of that row: about 10 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 34 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 35 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 36 | K=4 m=3, checked 1308 visits; first big row 13 stores; HALTS at the end of that row: about 11 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 37 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 38 | halts small from a blank tape
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 39 | K=4 m=3, checked 1308 visits; first big row 14 stores; HALTS at the end of that row: about 12 arrows
+1LH1RG_1RC1RB_0LF0LD_1LC1LD_1RD0RB_0RA1LF_---1RH_1RB1RE | block 40 | halts small from a blank tape
