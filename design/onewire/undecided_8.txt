@@ -1,0 +1,8 @@
+1RB0LG_1RC0LB_1LD1LE_1LB0LC_0LF0RE_0LG0LC_0RA--- | rc=124 | Num Nonzeros: 2_141 (2141) Num Nonzeros: 2_377 (2377) 
+1RB0LG_1RC0RA_1LD1LE_1LB0LC_0LF0RE_0LG0LC_1LA--- | rc=124 | Num Nonzeros: [10^353, 10^354] (_354 chars_) Num Nonzeros: [10^442, 10^443] (_443 chars_) 
+1RB0LG_1RC0RA_1LD1LE_1LB0LC_0LF0RE_1LG0LC_0RA--- | rc=124 | Num Nonzeros: [10↑↑↑↑ 10↑↑↑ 10↑↑ 2865, 10↑↑↑↑ 10↑↑↑ 10↑↑ 3687] (_42556 chars_) Num Nonzeros: [(10↑↑�
+1RB0LG_1RC0RA_1LD1LE_1LB0LC_0LF0RE_1RB0LC_0RA--- | rc=124 | Num Nonzeros: [10↑↑↑↑ 10↑↑↑ 10↑↑ 2865, 10↑↑↑↑ 10↑↑↑ 10↑↑ 3688] (_44625 chars_) Num Nonzeros: [(10↑↑�
+1RB0LG_1RC1LD_1LD1LE_1LB0LC_0LF0RE_0LG0LC_0RA--- | rc=124 | Num Nonzeros: 6 Num Nonzeros: 7 
+1RB1LC_1RC0RA_1LD1LE_1LB0LC_0LF0RE_0LG0LC_0RA--- | rc=124 | Num Nonzeros: 7 Num Nonzeros: 7 
+1RB1RB_1RC0RA_1LD1LE_1LB0LC_0LF0RE_0LG0LC_0RA--- | rc=124 | Num Nonzeros: [10↑↑↑↑ 10↑↑↑ 10↑↑ 2865, 10↑↑↑↑ 10↑↑↑ 10↑↑ 3687] (_44320 chars_) Num Nonzeros: [(10↑↑�
+1RB0RA_1LC1LF_1RD1LB_1RA1LE_---0LC_1RG1LD_0RG0RF | rc=124 | Num Nonzeros: 36_554 (36554) Num Nonzeros: 52_121 (52121) 
