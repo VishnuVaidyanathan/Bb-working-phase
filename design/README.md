@@ -475,3 +475,14 @@ What this changes in the wire count (7 states = 14 wires, one of them the halt):
   (both `0LG`), so the halt asks "is the cell left of this point a 1".  Today that is a shape, not a number.
 - our own 9-state engine: its halt is one of three cut endings.  Under this note the three endings can all be ordinary wires (three
   different tails), with the halt inside the row.  Not tried yet.
+
+## Can the 10-state model fit 8 states / 16 wires? (21 Nov, night)  Answer for this engine: no (tested)
+
+Count: the 10-state machine uses 8 wires that read 1 (4 cutter, 4 engine) and 10 that read 0 (5 engine, 3 cut endings, 1 extra round cell,
+1 boot).  Eight states give 8 and 8: the extra round cell and the boot have no wire.  What does fit with all 16 wires used: round +2
+(A0=0RB), stores of 3, three cut endings (one halt, two free): 3,072 tables (squeeze/round2_store3_8_states_*).
+Alive test: 1,245 halt small from every start tried, 1,000 no row, 459 dead, 368 alive.  In all 368 every long row ends in one class and
+that class halts: one-row engines, no two-step map.
+Short rows (rows from 3 stores counted; blank tape and first blocks 3..24; 8,464 trials): none survives any row.  From a blank tape:
+249 halt small, 80 halt at the end of the first row, 32 no row, 7 not judged (the tool's in-row arithmetic disagreed or failed).
+Over all trials 268 were not judged for the same reason.  Towers over towers with a halt in 8 states: 0 found.
