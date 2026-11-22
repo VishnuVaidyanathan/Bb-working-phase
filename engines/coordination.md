@@ -165,3 +165,26 @@ the other shuttle.  "Lead 2" cannot be given a different action without destroyi
 design/onewire: every one-wire change of his table halts within 2,000 steps or is shown never to halt.)
 So his clock has exactly one row slot because his engine has exactly those wires; it cannot be re-set.  A two-slot clock in 7 states
 would need an engine whose payment chain is longer than its clock needs - none known.
+
+## Not a coin after all: with Jeff Ketchersid's numbers the odd-or-even is kept along a row (22 Nov, late)
+
+While giving out the jobs for a second from-scratch machine I asked how often a number test should fire.  In our first machine the
+test sits on the front store, so every landed block is tested at once: it halts after a few landings (9, 18, 19).  In his grammar the
+round pays 1 (no test) and only deeper payers pay 2.  Working out who is odd and who is even (round +3, new block 1, landed block =
+block + 7 - 2g, fresh stores 2):
+* a row that STARTS with an odd block: +3 per unit of an even store keeps the block odd; a landed block is then even; 1 + 3 x even is odd
+  again.  So every landed block is even, no payer is ever left with 1, the row lives to its end, and the end block is odd: HALT.
+* a row that starts with an even block: landed blocks are odd; as front stores they are harmless, but one that lands deeper becomes a
+  payer and is left with 1: the base halt.  Short rows escape this and end even.
+Bench check (bench.py, his numbers, rows of 1, 2, 3 stores of 2 and a 1): start block 3, 5, 7 -> end block odd in all nine cases;
+start block 2, 4, 6 -> even, even, odd.  (Larger rows are too big for the bench; the argument above is algebra, not a proof of his table.)
+His machine then reads like this: the start lays a row with an EVEN block (2; 2 2 1), short enough to live, ending on 40 (even) ->
+a new row of 22 stores; his row maker always starts a row with block 3 (ODD) -> that row lives to its end and ends odd -> halt.
+So his halt is not luck.  It is a clock with one slot, set by the row maker's first block; and his size is fixed by one number: the
+end block of the short first row (40), which becomes the length of the one full row (22 stores, about 20 arrows).
+What follows for design, inside this grammar:
+* the one full row is as long as half the end block of the start row.  A start row that ends on a bigger even block gives a longer
+  full row: 100 -> 50 stores.  That is the "longer first row" idea, now with the reason it can work and still halt.
+* which constants give a living, odd-ending full row and an even-ending start row can be worked out by this odd/even algebra for
+  every choice of the free numbers, before any machine is looked for.
+* a test on the front store (our first from-scratch machine) is the wrong place: it must sit where an invariant protects it.
