@@ -44,3 +44,19 @@ Reason: with the left-end wire fixed (G0 = `0LA`, one empty cell) no fill of two
 sending the left return through E0 to leave two empty cells - it does so at every payment, and the machine then lays a store of 4 and
 pays 2 for ever, running away to the left.
 Open design question: a second kind of left return (one empty cell after a plain payment, two after a deep one) within 14 wires.
+
+## Carrying "deep" back to the left end: counted on paper (22 Nov) - skeleton 1 is one wire short
+
+What a tower needs here, worked out cell by cell: stores [front, payer, next].  Plain payment: payer pays 2, the old block becomes the
+front store (ONE empty cell at the left end) - the payer then gives payer/2 triplings.  Deep payment (payer empty): the next store
+pays 2 and the old block must become the PAYER with an empty front store (TWO empty cells at the left end) - then the block goes to about
+3^(old block/2).  On the right side the two cases can end the same way (fill, step over one cell, erase one); the only difference
+needed is one or two empty cells at the left.  Always two does not work (shown before: it lays a store of 4 and pays 2 for ever).
+Cheapest way found to carry the fact: a second chain for the deep case - fill, step over, erase, its own left runner, and a left-end
+wire that hands to the plain left-end wire (so that wire gives the second empty cell) = 5 wires.  Free: 2.
+Two-wire tries, each followed on paper: E0=`0LG` (the empty level is dropped for free: one exponential); E0=`0LD` (the next store becomes
+the front store: growth by adding); E0=`1LA`,A1=`0LG` (the next store gains a cell, no payment: one exponential); A as a third left
+runner (A1=`1LA`: the old block joins the new block); A1=`0LG` from E0=`0LA` (never pays: runs for ever).  None makes the block a payer.
+Count for this skeleton: round 6 + payment 5 + halt 1 + tower step 3 at least = 15 wires.  Seven states have 14.
+Where a wire might come from (not tried): the payment's left-end wire and the round's left-end wire as one wire; or a layout in which
+the new block starts next to the payer, so that no run back to the left end is needed after a payment.
