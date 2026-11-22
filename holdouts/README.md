@@ -64,3 +64,17 @@ Same words (`10`, `100`, `1000`) and the same rules as g4:  k # n # -> k-1 | n+1
 It is g4's engine in another table, with a first row of 5 bars instead of 21 (observed on one machine; the other 11 not read).
 So the gated tower builders in Polygon's list show ONE engine: the doubling stack with zero tests only.  No holdout read so far has
 rows of rows together with a number test.
+
+## Re-screen of all 711 holdouts by rule levels (22 Nov), after prurq's analysis of TM 721
+
+prurq (Discord Busy Beaver community) showed that `1RB0LD_0LC0RA_1RE1LD_1LE1RF_1LF0RC_1RG0LE_---1RA` has an arrow mechanism ("overflow")
+and said it is surely not the only one in the list.  Our earlier code for that machine ("small growth") was wrong: Quick_Sim had run
+out of memory with blocks of 2.  So every holdout was run again through Shawn Ligocki's Quick_Sim (our wrapper, memory capped at 3 GB,
+15 s each), recording the highest rule level it proves.  First pass: for 344 machines the level lines were cut off by our own script
+(only the end of the output was kept); those were run again with the whole output kept.  None of the 711 halted.
+Highest level proved:   0: 3    1: 41    2: 161    3: 188    4: 57    5: 136    6: 55    7: 1    8: 16    9: 51    10: 2
+So 261 holdouts reach level 5 or more in 15 seconds and 69 reach level 8 to 10: the arrow mechanism is common in the list, as prurq said.
+(The list itself stays out of this repo; only counts are given.)
+Joined with our older small-tape test (how many tiny tapes halt after more than 1,000 steps): none of the 261 shows such a late halt;
+the 35 machines that do are all at level 0 to 4.  That older test is weak: it also shows nothing for TM 721, whose halt (second counter
+odd, third even) we found today on a purpose-made grid.  So "no number test among the arrow machines" is NOT established.
