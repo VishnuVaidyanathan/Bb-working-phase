@@ -129,3 +129,25 @@ cells and the block gives 2.  The swap is not a change of two wires here; it is 
 Consequence for the layout: the count that decides must not sit behind the row.  It has to sit on the other side of home (left of
 the block), where the row maker never goes, or the row maker must take its room from the store behind (as our own one-cell stack
 does: there each peel trip takes one cell from the next store).
+
+## Two-sided layout: a count on the left of home (22 Nov, hand tapes on the two-cell engine) - no safe place there either
+
+The row end at the left, traced: the pairing walks left; with an even block it ends with E0, F0 (writes the home mark), A0 = home with
+the new row; with an odd block one `10` word is left over, a peel step (F0 A1 G1) erases two cells, B fills, C meets the first store:
+halt.  The cells left of home are part of this: they hold the home mark, and the last steps run over them.
+Test: a count of c cells put on the left, 1, 2 or 3 empty cells before the home mark, then a row end with an even block (6; 0 1):
+* 1 empty cell: the count is swept into the first block of the new row (block 3+c: 4,5,6,7,8,9 for c = 1..6).
+* 2 empty cells: c = 1 gives a row one store longer; c = 2..6 HALT (steps 322..330).
+* 3 empty cells: the row is made, the count is still there at the first home visit, and it is swept into the block at the next round
+  (block 7+c).
+So whatever stands on the left is either swallowed by the block within a round or causes a halt at once.  It cannot be a count that
+pays once per row and stays.
+
+What the paper work now says about "how many rows":
+a new row can only be laid into empty tape (behind = collision, left = swallowed).  So nothing that counts rows can be stored as a
+number beside the row.  The number of rows can only be decided by
+ (a) a coin: a number test on the block at the row end (Jeff Ketchersid's engine), or
+ (b) a small clock carried in a SHAPE that the row maker rewrites each time (Pavel Kropitz's lead word: row at 3, halt at 4; our own
+     9- and 10-state machines: the tail of the row, two steps).
+Iterated Ackermann in 7 states therefore means: a coin that comes up right more than once, or a shape clock with more than one
+row slot.  Both known 7-state engines have exactly one row in them from a blank tape.
