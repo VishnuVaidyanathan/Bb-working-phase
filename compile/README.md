@@ -1,0 +1,26 @@
+# From the story to a table: story -> trips -> roomy table -> squeeze -> check  (22 Nov, night; Vishnu's question)
+
+The gap so far: we know the story (the grammar: who hands what to whom), and we can run a table.  In between we either laid wires by
+feel (and lost what was needed) or changed wires of finished tables (and got the same machines back).  This folder is the bridge.
+
+1. STORY.  The rules on lists of numbers, as in engines/bench.py: round, payment, landing, new row, the tests.  Checked on paper and on
+   the bench (odd/even algebra, exact short rows) before anything else.
+2. TRIPS.  Choose a layout (how a number sits on the tape, where the head rests).  Every rule becomes one walk of the head: out from
+   home, do its work, back.  A walk is a string of JOBS: run over a block, fill a cell, look, step over, erase, write, turn.
+3. ROOMY TABLE.  Give every job its own state.  At each job ask the one question a state can ask - "is the cell a 1 or a 0?" - and
+   write what must happen in each case (a case that cannot happen is left ---).  This is mechanical and may take 10 to 15 states.
+   Nothing clever is done here, so nothing is lost.  The halt wire is written 1RZ.
+4. SQUEEZE (squeeze.py).  Two states can become one when, for each symbol, the wires that are really used agree; an unused wire is
+   free.  The tool tries every grouping of the states into 7 (or 8), keeps the ones with no clash, and checks that the squeezed table
+   moves exactly like the roomy one, step for step.  All the overlaps we looked for by hand are groupings of this kind.
+   If no grouping exists, the trips are changed (another layout, another order of jobs) - not single wires.
+5. CHECK.  The squeezed table is written in tree normal form and run: on hand-made tapes against the story (the next home visit must be
+   what the rule says: fit.c / home_visits.py), then from a blank tape against the bench visit by visit, then by Shawn Ligocki's
+   Quick_Sim.  A table passes only if the real visits agree with the story.
+
+First use of squeeze.py, on our own machines (1,000,000 steps each):
+* the 9-state machine `1LI1RG_1RC1RB_0LF0LD_1LC1LD_0RD0RB_0RA1LF_1RZ1RH_0RE1RE_1RB---`: no grouping into 8.  Same for the other 9-state
+  engine and for the 10-state machine into 9.  They are already as tight as their trips allow - which agrees with the wire counts.
+* a trap the first run fell into, kept here as a warning: when the halt wire was treated as "unused" (it never fires in a million
+  steps) the tool merged the halting state with another and returned an 8-state table that runs exactly alike - and has no halt wire
+  at all.  The halt wire is now always kept.
