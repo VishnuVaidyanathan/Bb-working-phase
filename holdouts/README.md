@@ -47,3 +47,20 @@ They most likely never halt (tested, not proved).
 Of those 90, 21 also reach 3 or 4 arrows in the second tool before it runs out of time: results/gated_and_deep.txt.
 They fall into two groups of cousins (a 3-arrow group and a 4-arrow group) plus one or two singles.
 Status: tested, not proved. A halting small tape shows the table has a gate somewhere; it does not show the blank-tape run ever meets it.
+
+## Sorting the gated holdouts by engine (22 Nov)
+
+Aim: find a multiplying engine (block becomes store) that has rows of rows together with a number test.
+Tried: Shawn Ligocki's Quick_Sim, 40 s each, on the 22 gated tower builders, the 35 number-gate holdouts and four engines we know
+(Jeff Ketchersid's, Pavel Kropitz's, g4, our 7-state stack), reading which kinds of rules it proves.  The check failed: it reports
+0 "Collatz rules" for Jeff's machine and 1 for our adding stack, so its labels do not sort engines the way we mean.  Not used.
+What the run did show (none of the 61 halted):
+* the 22 gated tower builders are two families: 10 with g4's rule profile (about (10^^^^)^9 reached) and 12 that all reach exactly
+  (10^^^)^2 10^^3061;
+* the 35 number-gate holdouts are all small (from 19-digit numbers up to (10^^)^238 10^^6).
+One machine of the second family read by hand (lists.py, far-right turns in state D), `1RB0RG_1LC1LD_1LA0LB_0LE0RD_0LF0LB_0RG---_1RA1RA`:
+    4  ->  1 | | | | |  ->  1 | | | # 2  -> ... ->  1 | # 8 # 2 -> 1 | # 7 | 3 | -> 1 | # 7 | | 6 -> 1 | # 7 # 8 -> 1 | # 6 | 9 | -> ... -> 1 | # 6 # 20 -> ... 44
+Same words (`10`, `100`, `1000`) and the same rules as g4:  k # n # -> k-1 | n+1 | -> k-1 | | 2n+2 -> k-1 # 2n+4,  lone M -> row of M+1 bars.
+It is g4's engine in another table, with a first row of 5 bars instead of 21 (observed on one machine; the other 11 not read).
+So the gated tower builders in Polygon's list show ONE engine: the doubling stack with zero tests only.  No holdout read so far has
+rows of rows together with a number test.
