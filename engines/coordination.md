@@ -188,3 +188,28 @@ What follows for design, inside this grammar:
 * which constants give a living, odd-ending full row and an even-ending start row can be worked out by this odd/even algebra for
   every choice of the free numbers, before any machine is looked for.
 * a test on the front store (our first from-scratch machine) is the wrong place: it must sit where an invariant protects it.
+
+## The odd/even algebra as a tool (oddeven.py, 22 Nov, late) - asked by Vishnu: can it serve design and search?
+
+The rule, for the grammar (round +3, pay 2, land at the deepest empty level, fresh stores of 2), new block B0, added AL:
+a payment turns block w into B0 + 3(w + AL - 2g): odd/even like w + B0 + AL; the landed block is odd/even like w + AL; after a deep
+payment the block restarts from B0.  So after the first deep payment the block is odd/even like B0, and
+    B0 + AL even, B0 odd   -> all landed blocks even, the row lives to its end, the end block is odd: HALT (one full row, certain halt)
+    B0 + AL even, B0 even  -> the row lives and ends even: a new row, for ever
+    B0 + AL odd            -> landed blocks are odd every other time: rows die on the base halt
+(algebra on the grammar; checked on the bench only for short rows.)
+oddeven.py, B0 in 1,3,5 and AL in 1..11 odd (all "certain halt"), exact start rows (block r even; 2 2 1):
+    his numbers (1, 7): start block 2 would give 40 -> 20 stores (his real machine: 22 by his exact row rule); block 8 -> 58 -> 29 stores
+    the largest in the table: (5, 11) with start block 8 -> 74 -> 37 stores
+Start rows of 1 or 2 stores end on small even blocks (28 to 74 here); a start row of 3 stores ends odd.  So inside this grammar the one
+full row has about 15 to 37 stores for these constants: a machine with larger constants or a larger start block would beat 22, but
+not by a different order - one row, a few more stores.
+Uses:
+* design: a verdict for a choice of numbers before any wire is laid (lives / dies / halts for certain / never halts); where a test may
+  sit (only where an invariant protects it - not on the front store, as in our first from-scratch machine); what to aim for (B0 and AL
+  both odd, a start row that ends even and as large as possible).
+* search: fit.c reads a table's numbers from hand-made tapes in about 30 microseconds; the algebra then gives its fate at once and
+  the bench gives the length of its full row exactly.  So engines can be ranked by predicted size without running them.
+* reading holdouts: the same algebra is prurq's remark about TM 721 (everything stays the same in twos, so its test is never fed).
+  For any machine whose numbers can be read, it gives a verdict to test - not a proof.
+* it should carry over to payments of 3 (odd/even replaced by remainders in threes) for Pavel Kropitz's kind of engine: not done.
