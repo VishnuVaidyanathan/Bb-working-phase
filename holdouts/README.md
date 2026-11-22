@@ -78,3 +78,25 @@ So 261 holdouts reach level 5 or more in 15 seconds and 69 reach level 8 to 10: 
 Joined with our older small-tape test (how many tiny tapes halt after more than 1,000 steps): none of the 261 shows such a late halt;
 the 35 machines that do are all at level 0 to 4.  That older test is weak: it also shows nothing for TM 721, whose halt (second counter
 odd, third even) we found today on a purpose-made grid.  So "no number test among the arrow machines" is NOT established.
+
+## Reading the arrow machines (22 Nov): what their engines are
+
+The 69 holdouts at level 8 to 10 fall into about 36 families (within 3 wires of each other): many different tables.
+The deepest, `1RB1LA_0LC0RE_1LA1LD_1LC1LB_0LG0RF_1RD1RE_---0LF` (level 10), read by hand at its far-right turns:
+    1.2 (1.1)^4 2.2 (1.1)^3 2.2 (1.1)^8  ->  ... (1.1)^2 2.2 (1.1)^10 ...  ->  1.2 (1.1)^4 (2.2)^2 (1.1)^7  ->  1.2 (1.1)^4 3.2 (1.1)^11  ->  1.2 (1.1)^3 2.2 (1.1)^10 ...
+Counters of `10` words kept apart by `1100` markers; the middle counter pays 1, the last gains 2; when the middle one is empty two
+markers join and the counter to the left pays 1.  The grammar of g4 (a doubling stack that pays in ones) in another table.
+transfer.py reads the commonest transfer of a machine (checked on Jeff Ketchersid's: pay 1 gain 3; Pavel Kropitz's and g4: pay 1
+gain 2; TM 721: pay 2 gain 4; our from-scratch machine: pay 2 gain 3).  It reads the round only, not a deeper payment.
+On the 261 arrow machines (level 5 or more), 300,000 steps each:
+    256  words, pay 1, gain 2      (doubling stacks)
+      1  words, pay 1, gain 3      (a tripling stack)
+      2  words, pay 1, gain 1
+      2  no transfer seen
+So almost every arrow machine in the list is the same engine: the doubling stack with zero tests.  By the gate rule none of those has
+a number test in its round.
+The one that triples, `1RB1RC_0LC0LE_1RA1LD_1LB1RB_1RF1LB_0RF0RG_0RA---`, read by hand: a block of 17 is cut into 8 bars (2 cells per bar)
+with 1 left over; then on the left `(1.1)^4 | (1.1)^4` -> `(1.1)^7 | (1.1)^3` -> `(1.1)^10 | (1.1)^2` ... pay 1, gain 3; bars are
+taken from the row one at a time.  That is Jeff Ketchersid's grammar (triple, rows cut in twos) in the WORD layout.  Quick_Sim, 100 s:
+no halt, level 6, about (10^^^^^)^31 and climbing, with tower heights near 26,150,88x,xxx.  Its row has 8 bars, so it would be smaller
+than his machine (22 stores) even if it halts.  Whether it halts: not known.
