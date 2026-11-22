@@ -81,3 +81,21 @@ wires). That is why it stopped at 11 states.
    Half-finished tape shapes between passes are fine if each one opens the
    next door.
 5. The halt is a door too: one free half that only a bad shape can reach.
+
+## Door count of machines we know (`doors.py`, observed, blank tape, 2,000,000 steps)
+
+| machine | round | doors | free states |
+|---|---|---|---|
+| Jeff Ketchersid's champion | 9 wires, 6 states | 3 (A1, C1 = halt, F1) | 1 (G) |
+| our 7-state stack (pays 1) | 8 wires, 5 states | 2 (A1, F1) | 2 (E, G) |
+| our from-scratch machine | 6 wires, 4 states | 2 (B0, C0 = halt) | 3 (E, F, G) |
+
+Reading: Jeff spends the most states on the round and the fewest on
+everything else. His round is long, so it has many one-symbol states, so it
+has many doors. Our from-scratch machine did the opposite: a short round and
+three whole states for the other jobs (with their own runner, F).
+
+Not trusted: for Pavel Kropitz's machine, TM 721, the tripling holdout and
+the coin machine the tool picks a short inner loop (3 to 6 wires), not their
+real round. Their rounds are not one fixed set of wires per trip. The tool
+is only good for machines with a fixed round trip.
