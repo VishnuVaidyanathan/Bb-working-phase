@@ -104,3 +104,23 @@ than his machine (22 stores) even if it halts.  Whether it halts: not known.
 Correction (22 Nov, later): the tripling machine does NOT cut its rows in twos; read in full in
 holdouts/read/1RB1RC_0LC0LE_1RA1LD_1LB1RB_1RF1LB_0RF0RG_0RA---.md.  It pays in ones everywhere.  So none of the 261 arrow machines read
 so far shows a payment other than 1 in its round.
+
+## The other 450 holdouts read with transfer.py (22 Nov, night): not all doubling stacks
+
+Asked: is a machine a little bigger than Jeff Ketchersid's sitting among the holdouts?  Such a machine would show few rule levels in a
+short Quick_Sim run, so the 450 holdouts below level 5 were read too (300,000 steps each; commonest transfer; the round only).
+    words, pay 1 gain 2: 372      no transfer seen: 23      words, pay 1 gain 3: 6      words, pay 3 gain 9: 4
+    solid, pay 2 gain 6: 7 (seen only twice each - weak)     solid, pay 1 gain 2: 5      solid, pay 198 gain 237: 5 (not a round)
+    solid, pay 2 gain 4: 2 (one is TM 721)     solid, pay 2 gain 3: 2     solid, pay 1 gain 3: 2     solid, pay 3 gain 6: 2
+    solid, pay 1 gain 6: 3     and 17 others, one or two machines each
+Where the gain per unit paid and the payment share no divisor (gate rule met, on the round alone):
+    solid, pay 3 gain 6 (x2 against threes): 2 machines, seen about 900 times each - the numbers of Pavel Kropitz's engine on solid counters
+    solid, pay 1 gain 3: 2 machines (the round of Jeff Ketchersid's engine; a deeper payment is not shown by this tool)
+    solid, pay 2 gain 6 (x3 against twos): 7 machines, weakly seen
+The "pay 2 gain 3" reading was wrong for the one machine read by hand so far,
+`1RB1RA_1LB1RC_0RG0LD_0RF1LE_1LA1LD_---0RB_0RA0RF` (run lengths at the far-left blank cell):
+    4 6 12 -> 4 10 10 -> 4 14 8 -> ... -> 4 30 -> 2 33 -> 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2_ 3      and earlier  4 10_ 1 -> 2 13_ 1 -> 4 2 14
+Solid counters one cell apart; a counter pays 2 and its neighbour gains 4 (the tool caught a half-step); a used-up level gets a fresh
+store of 2 with the landed number behind it; a lone 33 becomes a ROW of 16 stores of 2 and a 3: rows cut in twos, in the one-cell
+layout.  Multiplier 2 with payments of 2: nothing changes in twos, so no number test is fed (same reason as TM 721).  Not known to halt.
+Not read by hand yet: the two "pay 3 gain 6" machines, the two "pay 1 gain 3", the seven "pay 2 gain 6".
