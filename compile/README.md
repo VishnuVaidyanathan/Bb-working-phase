@@ -43,3 +43,41 @@ its own states, so the table grows with depth instead of looping.
 Lesson: the squeeze cannot fix the trips. The story must be written so that
 one trip serves every depth (depth carried on the tape, e.g. by the width of
 a gap), not one chain of states per depth. That is roomy table 2.
+
+## Overlapping wires: what Jeff Ketchersid's machine shows (observed, `jeff/wires.py`, `jeff/door.py`)
+
+Squeeze merges whole states. Overlap is stronger: the *same wire* works in
+several jobs.
+
+Observed in Jeff's machine (real run from blank tape):
+
+- The round uses 9 wires in 6 states: A0 B0 B1 C0 D0 D1 E0 E1 F0.
+- **All 9 are used again in every other job** (payment, landing, new row).
+- The other jobs add only 4 wires: A1, F1, G0, G1. The halt is C1.
+- Three round states only ever read one symbol in a round (A, C, F read 0).
+  Their other half is free. We call a free half a **door**.
+
+One payment (7; 0 52 …) → (1; 12 50 …), written as wires (`door.py`):
+the head leaves the round wires only 7 times, each time through a door
+(F1, or A1 then G1/G0), changes one or two cells, and falls back into the
+round wires. The round wires do the rest on the changed tape.
+
+So a job is not a separate trip. A job = the round's loop, run again on a
+tape left in an unusual shape, plus a door of one or two wires.
+
+Compare roomy table 1: the round used 6 wires in 4 states with one free
+half; every other job had its own runners and its own way home (15 more
+wires). That is why it stopped at 11 states.
+
+### What makes overlap possible (rules we take from this)
+
+1. A door exists where a round state expects one symbol and meets the other.
+   A round with more one-symbol states has more doors.
+2. The special moment in the story (front store empty, payer at 1, …) must
+   itself cause that unexpected read. The tape shape is the signal.
+3. Behind the door do very little: change a cell or two, then re-enter a
+   round state. Never build a second runner or a second way home.
+4. A job may pass through the round loop several times before it is done.
+   Half-finished tape shapes between passes are fine if each one opens the
+   next door.
+5. The halt is a door too: one free half that only a bad shape can reach.
