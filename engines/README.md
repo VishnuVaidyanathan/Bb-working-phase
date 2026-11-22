@@ -40,3 +40,16 @@ made from it has 22.  Flowcharts of both machines in our terms: jeff_flowchart.*
 | total | 14 | 17 (+ boot) |
 Lessons: (1) no wire should be only an ending; (2) the halt belongs on the round's look (the width of a gap), where a payer that pays
 2 or 3 at a time is tested for free; (3) the second half of a cut can be done by the round's own wires.
+
+## Additive and multiplying engines (22 Nov, on paper from the checked rules)
+
+Our stack: one round adds K cells to the block and takes 1 from a store.  A store of m gives +K*m.  So at the end of a level the block is
+(start) + K*m*(number of stores) + K*(tail): counted in m's, it depends on the tail only, never on how long the row was.  That is why the
+leftover "settles", why every long row ends in the same class, and why the power halt can only come from tails: a fixed map of two
+steps at most (one row survived, the next halts).  It can never count many rows.
+Jeff Ketchersid's engine: at a payment between depths the old block BECOMES the front store (block b -> store b+7-2g, payer pays 2), so
+the next block is about 3b.  The class of the block in twos then depends on the number itself, row after row.  Same kind in Pavel
+Kropitz's machine and holdout g4 (x2).
+So: a fixed tail map = one iteration (our 9- and 10-state machines).  A number-dependent class = the door to many iterations.
+The engine to look for is a multiplying one (block becomes store) with a test whose stride shares no divisor with the multiplier.
+In 8 states our additive stack is closed: round +4 needs the adder state, the merged form (192 tables) and round +2 (3,072) gave zero.
