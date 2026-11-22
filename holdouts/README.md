@@ -100,3 +100,7 @@ with 1 left over; then on the left `(1.1)^4 | (1.1)^4` -> `(1.1)^7 | (1.1)^3` ->
 taken from the row one at a time.  That is Jeff Ketchersid's grammar (triple, rows cut in twos) in the WORD layout.  Quick_Sim, 100 s:
 no halt, level 6, about (10^^^^^)^31 and climbing, with tower heights near 26,150,88x,xxx.  Its row has 8 bars, so it would be smaller
 than his machine (22 stores) even if it halts.  Whether it halts: not known.
+
+Correction (22 Nov, later): the tripling machine does NOT cut its rows in twos; read in full in
+holdouts/read/1RB1RC_0LC0LE_1RA1LD_1LB1RB_1RF1LB_0RF0RG_0RA---.md.  It pays in ones everywhere.  So none of the 261 arrow machines read
+so far shows a payment other than 1 in its round.
