@@ -151,3 +151,17 @@ number beside the row.  The number of rows can only be decided by
      9- and 10-state machines: the tail of the row, two steps).
 Iterated Ackermann in 7 states therefore means: a coin that comes up right more than once, or a shape clock with more than one
 row slot.  Both known 7-state engines have exactly one row in them from a blank tape.
+
+## A shape clock with two row slots: paper work (22 Nov)
+
+A clock in a shape needs classes.  With stores of 2 (two cut endings) there is one class that goes on: the map is "same class for ever"
+or "halt at once".  Two row slots need at least 3 classes.  In our stack that is stores of 3 = 9 states.  The only 7-state machine
+with more classes is Pavel Kropitz's: his payment of 3 needs a chain of states standing on 1s, and the same chain reads the lead word
+in fours (lead 1 and 2: grow; 3: row; 4: halt).  Two rows would need lead 2 to make a row as well.
+Wire count in his real run, 6,000,000 steps (total uses / uses at the far-left blank cell, i.e. as the clock):
+    B0 `1LC`  1,482,987 / 9        F0 `1RG`  1,476,750 / 2        D0 `1RA`  10,890 / 8        E0 halt  0
+So the clock wires are his main working wires: F0 with G1 is the two-wire pusher that lays the `10` words (1.4 million uses), B0 with C1
+the other shuttle.  "Lead 2" cannot be given a different action without destroying the pusher.  (Its one-wire change was already in
+design/onewire: every one-wire change of his table halts within 2,000 steps or is shown never to halt.)
+So his clock has exactly one row slot because his engine has exactly those wires; it cannot be re-set.  A two-slot clock in 7 states
+would need an engine whose payment chain is longer than its clock needs - none known.
