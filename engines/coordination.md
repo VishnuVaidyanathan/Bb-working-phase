@@ -45,3 +45,28 @@ of the peel:  ours stops when the block is used up;  the multiplying one stops w
 An engine of our own = our stack's round and peel, with the peel's stopping rule changed to "until the runner meets the payer",
 a payer that pays in strides sharing no divisor with the round, and a row end that hands the block to the number of levels.
 Each line of that is to be checked on paper against the four questions before any table is written.
+
+## First paper result (22 Nov): our own 7-state stack already has the landing rule; it only pays in ones
+
+Test of the stopping rule on our own stack `1RB1RG_1RC1RB_0LF0LD_1LC1LD_1LD0RB_0RA1LF_1RZ1RE`, hand-made tapes, home visits (block; stores):
+    (7; 0 4 3) -> (2; 8 3 3)          one empty level: new block 2, the old block (+1) becomes the front store, the payer pays 1
+    (26; 0 3 3) -> (2; 27 2 3)        the same again; in between the block went 2 -> 26 = 2 + 3*8: it MULTIPLIES by 3
+    (6; 0 0 4 3) -> (2; 2 5 3 3)      two empty levels: a fresh store of 2 on top, the old block lands at level 2, the payer pays 1
+So our stack's rule is:  g empty levels, payer >= 1  ->  block 2, g-1 fresh stores of 2, then (old block + 3 - 2g), payer - 1.
+Jeff Ketchersid's checked rule:                          block 1, g-1 fresh stores of 2, then (old block + 7 - 2g), payer - 2.
+Same coordination grammar, different numbers.  (Correction: "our stack only adds" was wrong.  It adds inside a store and multiplies at
+every payment.  What I saw as a fixed class has another cause, next paragraph.)
+
+Why paying in ones can never give a number test (paper argument, parity only):
+each payment turns block b into 2 + 3*(b + 3 - 2g), which is odd when b is even and even when b is odd: one flip per payment.
+A payer of size P pays P times: P flips.  A landed block has size b+3-2g, i.e. the opposite parity to b; as a payer it gives that many
+flips, so the block comes out with a parity that does not depend on b.  Every dependence on the number cancels itself.
+With payments of 2 a payer of size P gives P/2 payments, and whether P/2 is odd or even depends on P in fours: the number survives.
+So in this grammar the stride of 2 is forced, for the base halt and for the row-end test alike.
+
+What is fixed and what is free:
+fixed by the grammar - round +3, pay 2, land the block at the deepest empty level, refill above it, row end hands the block to the
+number of levels.  Free - the small numbers: the size of the new block, the offset added to the landed block, the fresh store size,
+the shape of a new row, and the start.  Jeff's machine is one choice of those numbers; its weak point is its start (first row 3 stores).
+Next on paper: run the GRAMMAR (not a machine) from the empty list for each choice of the small numbers, and see which choices give a
+long first row that passes the tests.
