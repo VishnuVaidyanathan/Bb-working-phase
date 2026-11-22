@@ -27,3 +27,20 @@ Tested on hand-made tapes (block, front store, payer), with the two open wires l
 So block -> 3*block + 8 at every payment (tested): it triples, and an odd payer halts while an even payer goes on.
 Not done: what E0 and A1 must do so that an empty payer hands over to the next store (depth) and a finished row makes a new row;
 the start from a blank tape.  Nothing here is proved.
+
+## The two open wires of skeleton 1: all 784 fills (tapes.c, 22 Nov) - no tower, with the reason
+
+Compared with Jeff Ketchersid's table wire by wire: only the common first three wires (`1RB`, `1RC 1RB`) agree; his stores sit two cells
+apart, his look and his eater are two states and his left turn takes three wires - a different machine.
+On paper: a payer of size p gives p/2 triplings = one exponential.  A tower needs the old block to become the PAYER (then the next block
+is about 3^(old block / 2)); in this layout that means two empty cells at the left end instead of one.
+Run: every fill of A1 and E0 on tapes block 3, stores [2,4,q] for q = 2,4,6,8, on [2,2,2,2] and on a blank tape, 30,000,000 steps each
+(columns: H steps ones payments, or R ones payments; skeleton1_784_fills_on_hand_tapes.txt).
+594 fills do not halt on the first tape; 104 halt in the same number of steps for every q (the third store is never used);
+86 take about 9 times more steps for each +2 of q (the last of them running out of the step limit): one more tripling per unit paid.
+That is a single exponential.  The one fill that looked like a blow-up (A1=1LG, E0=0RF) was read by hand: the deep payer pays 1 per
+tripling (blocks 132, 399, 1200, 3603), still one exponential.  Towers: 0.
+Reason: with the left-end wire fixed (G0 = `0LA`, one empty cell) no fill of two wires can make the old block a payer.  Tried on paper:
+sending the left return through E0 to leave two empty cells - it does so at every payment, and the machine then lays a store of 4 and
+pays 2 for ever, running away to the left.
+Open design question: a second kind of left return (one empty cell after a plain payment, two after a deep one) within 14 wires.
