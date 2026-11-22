@@ -49,3 +49,23 @@ The 334 after 30,000,000 steps, by tape shape (show.c):
 
 Not decided: whether any of the 334 halts. Quick_Sim is running 25 minutes
 on four of them.
+
+## Longer Quick_Sim runs (23 Nov) — tested; corrects the note above
+
+- Row-doubling table: 25 minutes, only rule level 1, about 27 million ones.
+  Slow. Not a tower.
+- The "small counter" tables are NOT just an exponential (my call above was
+  wrong). Quick_Sim, 4 minutes each, from a blank tape, still running:
+
+  `1RB1RG_1RC1RB_0LD0LH_0RA1LD_1LA1RF_1RZ1RA_0RH0RB_1LC1LH`
+  ones between (10↑↑↑↑)^4 10↑↑↑ 10↑↑ 26150882525 and … 26150884051;
+  the counter on the right has gone from 62 to 59.
+
+  `1RB1LF_1LC1LF_1LD1LC_0RE0RH_0LA1RE_0LH0LC_1RZ1LB_1RD1RH`
+  ones between (10↑↑↑↑)^4 10↑↑↑ 10↑↑ 10^21 and … 10^23; counter at 13.
+
+  The numbers in brackets are Quick_Sim's lower and upper estimates.
+- So: 8 states, started from a blank tape, four arrows reached, and one more
+  four-arrow step for each unit of the counter (observed, 4 units).
+- NOT known: what happens when the counter reaches 0 (halt, a new counter,
+  or running for ever). Until that is read, these are not halting machines.
