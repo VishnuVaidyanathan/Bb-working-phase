@@ -107,3 +107,25 @@ to mark "this is a payment" = 18 wires = 9 states.  With two empty cells between
 paying), which is Jeff Ketchersid's layout.
 Honest position: the grammar is clear on paper; a 7-state realisation of "pay 2" in OUR layout is not found, and the count says
 it does not fit as tried.
+
+## "A count decides, not a coin": iterated rows that must halt (22 Nov) - grammar checked on the bench, layout problem found
+
+Idea (from Vishnu's note that the power halt has its own arithmetic): swap the two meanings of "the payer has 1 left".
+Today (Jeff Ketchersid's rule): a store behind -> halt; nothing behind -> block even: new row, block odd: halt (one coin toss per row).
+Swapped: a store behind -> NEW ROW (the block becomes the number of levels, put in front of what is behind, which pays 2);
+nothing behind -> HALT.  Every pair of cells behind is one more row; what is behind never grows, so it must halt.
+bench_count.py, smallest cases with a slow toy round (+1): block 2, stores [2,1] with [2] behind: 1 row then halt; with [4] behind:
+2 rows then halt; with [2,2] behind: 2 rows then halt.  With the real round (+3): the first row of one store ends with block 9 and
+the next row has 4 stores - already too big to follow.  The structure is as intended.
+
+Step 2, his wires in the three situations (hand tapes, traced):
+* payer 1 with a store of 4 behind, block 5 or 6: HALT on C1, last wires ... F0 A1 G1 B0 C1
+* row end, block 5 (odd): HALT on C1, last wires ... A1 G0 C0 D1 D0 E1 E0 F1 F0 A1 G1 B0 C1
+* row end, block 6 (even): new row (3; 2 2 2 2 1) after 317 steps
+Both halts are the same wire and the same local event: B fills a cell and the next cell is already a 1.  With a store behind, that is a
+COLLISION: every peel trip adds one cell at the right end of the block, and the block runs into the store behind it.
+So in this layout a new row can only be laid into empty tape.  A row "in front of what is behind" has no room: each new store needs 4
+cells and the block gives 2.  The swap is not a change of two wires here; it is against the geometry.
+Consequence for the layout: the count that decides must not sit behind the row.  It has to sit on the other side of home (left of
+the block), where the row maker never goes, or the row maker must take its room from the store behind (as our own one-cell stack
+does: there each peel trip takes one cell from the next store).
