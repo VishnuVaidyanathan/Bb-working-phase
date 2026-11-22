@@ -70,3 +70,19 @@ number of levels.  Free - the small numbers: the size of the new block, the offs
 the shape of a new row, and the start.  Jeff's machine is one choice of those numbers; its weak point is its start (first row 3 stores).
 Next on paper: run the GRAMMAR (not a machine) from the empty list for each choice of the small numbers, and see which choices give a
 long first row that passes the tests.
+
+## The grammar run for a grid of the free numbers (bench.py, 22 Nov) - grammar level only, no machine yet
+
+Check of the bench: with Jeff Ketchersid's numbers (new block 1, added 7) his first row, block 2 stores [2,2,1], ends with block 40,
+as in his real run; his second row (block 3, 21 stores of 2 and a 1) is too big to work exactly, as it should be.
+Short rows with his numbers and row block 3: 1 store -> 9, 2 -> 43, 3 -> 1,412,147,682,397 (odd: halt), 4 -> too big.
+Grid: new block 0..3, added 1..9, row block 2 or 3, row offset 0 or 1, started as if a row had ended with block 2, 4 or 6: 432 chains
+(bench_grid_432_choices.txt).  184 end on an odd block (power halt), 103 on the base halt, 77 get too big inside a row, and
+68 (34 different choices of new block / added / row block) do this: a first row of 3 stores is worked exactly, ends on an EVEN block,
+and the next row has that block / 2 stores - from 132,861 up to 24,783,191,826,202 stores.
+Of the 34, 15 also keep long rows alive as far as the bench can follow (rows of 4, 5, 6, 9, 30 stores run until the numbers are too
+big, no base halt): new block 0 with added 2,4,6,8 (row block 2); new block 1 with added 4,6,8 (row block 3); new block 2 with added
+2,3,4,5,6,7,8,9 (row block 2).
+One of them is our own stack's numbers (new block 2, added 3) with the payment changed from 1 to 2: second row 25,110,586 stores.
+What this is not: a machine.  No table is known to realise any of these choices; whether the long second row halts is not known;
+the first row of 3 stores is assumed, not produced from a blank tape.
