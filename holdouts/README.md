@@ -124,3 +124,26 @@ Solid counters one cell apart; a counter pays 2 and its neighbour gains 4 (the t
 store of 2 with the landed number behind it; a lone 33 becomes a ROW of 16 stores of 2 and a 3: rows cut in twos, in the one-cell
 layout.  Multiplier 2 with payments of 2: nothing changes in twos, so no number test is fed (same reason as TM 721).  Not known to halt.
 Not read by hand yet: the two "pay 3 gain 6" machines, the two "pay 1 gain 3", the seven "pay 2 gain 6".
+
+## Three more read by hand (22 Nov, night): the transfer tool misleads; one true coin machine, of a small kind
+
+* the two "solid, pay 1 gain 3" machines (`1RB0LF_0LC1RE_1RG1LD_0RB1LF_1RB1LA_1LE1LC_---0RC` and its renamed twin): not his round.
+  7 6 2 2 -> ... unit cells are laid in front two at a time while a counter pays 2, then they join: 7 -> 19 (about 2b+5), with a few
+  small stores behind (3 2 2).  A doubling machine with little depth; Quick_Sim: level 1, about 10^3,800.  The tool had caught a half-step.
+* `1RB1RA_1LC0LF_1LE1LD_1LC0RE_1LF0LB_0RA1RG_0RD---` ("solid, pay 3 gain 6"): read at the far-left blank cell:
+    4 9 -> 10 6 -> 16 3 -> 22 -> 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 -> 5 1.. -> 13 1.. -> 4 10 1.. -> 10 7 -> 16 4 -> 22 1 -> 29 1.. -> 37 1..
+  A counter pays 3 and the block gains 6 (it doubles, against a payment in threes: gate rule met); a lone 22 becomes a ROW of 15
+  one-cell stores; the row is used a couple of stores at a time.
+  Grid of small tapes, head in state F at the far-left blank: (4, b) for b = 1..15: only b = 2 halts (at step 22).
+  (4, b, 1, 1, 1): b = 4 halts at step 15,143 and b = 10 at step 16,721; the other 13 run on.  (4, b, six 1s): none halts in 400,000 steps.
+  So it has a halt that depends on a number and fires late: a number test that IS fed.
+  Real run: direct, 30,000,000,000 steps, no halt, 295,557 ones, longest run 196,594.  Quick_Sim, 100 s: no halt, level 1,
+  about 10^57,291, and it reports one "Collatz rule".
+  Kind: each row gives about one doubling per store, so a row of n stores gives roughly 2^(n/2); the next row is about two thirds of
+  that.  One exponential per ROW - a tower as tall as the number of rows it survives.  That is far below one arrow per STORE
+  (Jeff Ketchersid's 22-store row).  If its test fails after a few rows it halts small; whether it ever fails is not known.
+  It is the first holdout we have read whose halt is a real coin - and it shows that a coin on a slow engine does not give a big machine.
+* one of the seven "solid, pay 2 gain 6" machines, `1RB0LD_0RC1RG_1LD1RF_1LE1LC_0LA0RA_0RA0LA_0RA---`: single cells kept apart by 2 or 3
+  empty cells, with a small counter (5, 3, 1) walking through them; Quick_Sim level 2, about 10^^4.  Not a tripling stack; the tool's
+  reading came from two chance matches.
+So far no holdout read has his grammar with a longer full row.  transfer.py is a pointer, not a reading: every hit must be read by hand.
