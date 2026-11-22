@@ -22,3 +22,24 @@ the payment, the fresh stores, the new row and the start, so they set the free n
 Result: inside this frame the grammar is realised by his table (and its twin) and by one cousin with no working start.  Three of the
 four "free" wires are forced; the fourth has five workable values.  As foreseen, the frame leads back to his machine.
 The useful by-product: fit.c judges an ENGINE without its start, in 30 microseconds a table (614,656 tables in 3 minutes).
+
+## Wide frame: every table within three wire changes of the two-cell engine (fit2.c, gen3.py, 22 Nov)
+
+5,686,551 tables (the halt wire kept), judged without their start on the four hand-made tapes.  (First try took 25 minutes for 6% of
+the tables: the test re-counted the left side of the tape at every home check.  fit2.c looks only at the cells next to home; on 20,000
+tables 273 answers changed, all degenerate cases the slow test had accepted wrongly.  Whole run: about 10 minutes.)
+Plain payment of 2: 45 tables.  Landing at the deepest empty level on all tapes (full grammar): 8 tables
+(wide_frame_8_grammar_members.txt):
+* new block 1, added 7 (his numbers): his table, its twin, two tables with A0=`1LB`, one with three wires renamed.
+* new block 2, added 6: two tables (G0=`0LB`, with A0 `1RB` or `1LB`).
+* new block 2, added 4: two tables with A0=`1LG` (G0 `1LC` or `0LD`).  NEW numbers.
+Each started from a blank tape in all 7 states, 2,000,000 steps, first rows read:
+* his numbers: start A gives his run (rows 3 then 22); starts C..G give a first row (1; 2 2 2 1), the known start whose row ends on an
+  odd block; the A0=`1LB` tables halt at step 2 from start A and give the same row of 4 from starts C..G.
+* new block 2, added 6: every start only grows one solid block (117,648 cells): no row.
+* new block 2, added 4, `1LG0RG_1RC1RB_0RD1RZ_0LE0LD_0LF1LE_1RA1LF_1LC0RB`: from a blank tape a first row (1; 3 2 2 1).  Its round is +2,
+  not +3 (A0 writes on the other side).  The grammar with round +2, new block 2, added 4 reproduces its real home visits (7,660 rule
+  steps to the real visit (3078; 4602 0 0 1)) and says the row ends on block 12,282.  Direct run: HALTS at step 251,843,184 with
+  12,286 ones, longest run 12,280.  So the bench's row end is right to within 2 cells, and the machine halts while making its next
+  row.  Small.  (Round +2 with pay 2 share a divisor, so it has no number test anyway.)
+Result: no new machine.  Within three wire changes, the grammar with a working start from a blank tape is his table only.
