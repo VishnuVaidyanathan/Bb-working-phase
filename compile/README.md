@@ -24,3 +24,22 @@ First use of squeeze.py, on our own machines (1,000,000 steps each):
 * a trap the first run fell into, kept here as a warning: when the halt wire was treated as "unused" (it never fires in a million
   steps) the tool merged the halting state with another and returned an 8-state table that runs exactly alike - and has no halt wire
   at all.  The halt wire is now always kept.
+
+## First roomy table (roomy1.txt) — result: tested
+
+Story written as 13 states, one job each: round (+3, payer −1), plain payment
+(payer pays 2, block lands +4), landing two levels deep (fresh store of 2,
+block lands +5), halt on a payer left with 1.
+
+- Hand tapes follow the story (tested, 7 tapes).
+- Squeeze (`squeeze_tapes.py roomy1.txt 7`): 13 → 12 in 5 ways, 13 → 11 in
+  3 ways (e.g. A+H and G+M), 13 → 10 in **0** ways.
+- With two extra tapes outside what the table was built for, only 13 → 12.
+
+Reason for the stop at 11: the plain return (E, F, G) and the deep return
+(H, I, J, K, L) are two separate chains of trips. Each level of depth costs
+its own states, so the table grows with depth instead of looping.
+
+Lesson: the squeeze cannot fix the trips. The story must be written so that
+one trip serves every depth (depth carried on the tape, e.g. by the width of
+a gap), not one chain of states per depth. That is roomy table 2.

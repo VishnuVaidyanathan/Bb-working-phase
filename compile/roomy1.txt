@@ -1,0 +1,15 @@
+# roomy table 1 (13 states): round, plain payment of 2, landing two levels deep with one fresh store of 2, halt on a payer left with 1
+# layout: solid runs, ONE empty cell between stores, one more empty cell for an empty level; home = A on the blank cell left of the block
+A 1RB ---    home: write a cell, go
+B 1RC 1RB    run right over the block; at the gap: fill it
+C 1RE 0LD    look at the front store: a 1 -> eat one cell; a 0 -> front store empty: fill, look at the payer
+D 1LA 1LD    run back left; at the left end write a cell and step to home
+E 1RH 1RF    payer: a 1 -> step over its first cell; a 0 -> that level is empty too: fill, look one level deeper
+F 1RZ 0LG    payer's second cell: a 1 -> erase it (paid 2); a 0 -> the payer had exactly one cell: HALT
+G 0LA 1LG    run back left after a plain payment; at the left end leave an empty cell; home
+H --- 1RI    deeper payer: step over its first cell   (three empty levels: not built)
+I 1RZ 0LJ    deeper payer's second cell: erase (paid 2), or HALT
+J 0LK 1LJ    run back left after a deep payment; leave an empty cell
+K 1LL ---    fresh store, first cell
+L 1LM ---    fresh store, second cell
+M 0LA ---    empty cell; home
