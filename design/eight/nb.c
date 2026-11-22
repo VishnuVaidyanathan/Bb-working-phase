@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define N 8
-#define TL 4000000
+#define TL 4100000
 static unsigned char tape[TL];
 int W[16],Mv[16],Nx[16];
 long halts_early=0,halts_late=0,off=0,runs_big=0,runs_other=0,total=0;

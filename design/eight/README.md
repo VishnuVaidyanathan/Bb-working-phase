@@ -20,3 +20,32 @@ only observed for 6,000,000 steps.)
 
 Running: nb.c - every table within two wire changes of the two 8-state
 tables, from a blank tape, 2,000,000 steps.
+
+## Neighbour test result (nb.c, 2,000,000 steps from a blank tape) — tested
+
+Tables within two wire changes: 101,371 around each 8-state table.
+
+| | around table 1 | around table 2 |
+|---|---|---|
+| halt before step 1,000 | 28,926 | 34,963 |
+| halt later | 7 (latest step 74,414, 426 ones) | 31 (latest step 1,616,214, 2,753 ones) |
+| running, a few large runs on the tape | 493 | 386 |
+| running, junk (solid block or tiny pieces) | the rest | the rest |
+
+The 879 with a few large runs, Quick_Sim (Shawn Ligocki) 12 seconds each:
+545 proved infinite, 334 still running, 0 halt.
+
+The 334 after 30,000,000 steps, by tape shape (show.c):
+
+- about 180: block, store, and a small counter going down by 1 while the
+  block triples (16, 15, 14, 13 … seen up to 1,000,000,000 steps).
+  Example `1RB1RG_1RC1RB_0LD0LH_0RA1LD_1LA1RF_1RZ1RA_0RH0RB_1LC1LH`.
+  One multiplication per unit of a small counter: an exponential, not a tower.
+- about 70: the same kind, counter 31, 30, 29, 28.
+  Example `1RB1LF_1LC1LF_1LD1LC_0RE0RH_0LA1RE_0LH0LC_1RZ1LB_1RD1RH`.
+- 1 table lays a **row of stores that doubles in length** each time
+  (2x3, 2x7, 2x14, 2x28, 2x82 …):
+  `1RB1RG_1RG1RB_0LD0LH_0RE1LD_1LA0RC_1RZ1RA_0RH0RB_1LC1LH`. Not read yet.
+
+Not decided: whether any of the 334 halts. Quick_Sim is running 25 minutes
+on four of them.
