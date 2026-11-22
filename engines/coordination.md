@@ -86,3 +86,24 @@ big, no base halt): new block 0 with added 2,4,6,8 (row block 2); new block 1 wi
 One of them is our own stack's numbers (new block 2, added 3) with the payment changed from 1 to 2: second row 25,110,586 stores.
 What this is not: a machine.  No table is known to realise any of these choices; whether the long second row halts is not known;
 the first row of 3 stores is assumed, not produced from a blank tape.
+
+## Where can "pay 2" live in our own stack?  Paper tries (22 Nov) - not in the eater
+
+How our stack pays today (trace): a payment is one peel trip (cut a store at the left, run right, fill one empty cell) followed by ONE
+step of the round's eater on the payer.  The same wire (C1) eats in the round, pays the payer, and shifts the cut store back.
+1. "The eater eats 2" (C1 erases a cell and steps right, a new state erases the next and looks; 8 states,
+   `1RB1RG_1RC1RB_0LF0RH_1LC1LD_1LD0RB_0RA1LF_0LD1RE_---0LG`, run with home_visits.py):  (4; 4 4 3) -> (7; 0 2 4 3) -> (2; 0 7 0 0 4 3) ...
+   Fails by geometry: the store's edge retreats 2 cells per round while the block advances 1 into the gap, so empty cells pile up
+   between them; and the wire's third job (shifting the cut store back) is broken.  From a blank tape it stops at step 84.
+2. "Step over one, erase one" in the eater (on paper): the geometry holds (block +2 on the right, store -2), but then EVERY store is
+   tested in twos when it runs out, also every landed block used as a front store.  With +4 per round the parity never changes (blind);
+   with +3 it is tested at every payment - a run of passes only as long as the number has even halves, i.e. a few steps.  Too many tests.
+3. So the round must eat 1 (no test) and only the payment must pay 2 (test).  One wire cannot do both in the one-empty-cell layout:
+   the payment needs its own "step over" wire, its own "erase" wire and the look, and something to tell it apart from a round.
+   Tries at paying before the cut (C0 fills and a new state erases one payer cell first): each erased cell costs one more peel trip,
+   so the payer is turned into fresh stores one by one - not a payment of 2.
+Count for our layout: our stack's 14 wires, minus the old halt wire, plus step-over, erase, look, and a second right-runner (2 wires)
+to mark "this is a payment" = 18 wires = 9 states.  With two empty cells between stores the look is free (the width of the gap after
+paying), which is Jeff Ketchersid's layout.
+Honest position: the grammar is clear on paper; a 7-state realisation of "pay 2" in OUR layout is not found, and the count says
+it does not fit as tried.
