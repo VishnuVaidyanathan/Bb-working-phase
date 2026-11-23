@@ -157,3 +157,12 @@ Once per doubling; the wait grows four times each visit. Only doubling, no
 rows, and G reads the same symbol every time, so its halt never fires.
 
 Running: Quick_Sim on the 1,245 tables with G ≤ 300 entries.
+
+### Quick_Sim on the 1,245 rare-gate tables (8 seconds each) — result: nothing deep
+
+498 proved infinite; 744 still running at rule level 0 or 1; 3 stop with
+"expression too complex" (for example
+`1RB1LA_1RC1RB_1LD0RF_1LE0LD_0LA1LE_0LG1RE_0RB1RZ`: 7 ones and an empty gap
+that gets one exponent wider per cycle — a huge span, almost no ones).
+No halts. No row machine. Not yet screened: the 2,975 tables with 301 to
+2,000 gate entries.

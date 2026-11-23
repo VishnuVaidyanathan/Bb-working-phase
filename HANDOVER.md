@@ -105,3 +105,6 @@ Outputs of 1 and 2 were in the scratch folder `…/scratchpad/eight/`
 - The 1,245 rare-gate tables of the gate class are saved in
   `design/transcript_class/gate_class_rare_candidates.txt`. Their Quick_Sim
   screening was still running when the session ended; rerun it.
+
+- Gate class, the 1,245 rare-gate tables: Quick_Sim done, **nothing deep** (498 infinite, 744 shallow and undecided, 3 gap-growers with 7 ones, no halts). Left: the 2,975 tables with 301-2,000 gate entries.
+- Quick_Sim on the frame5 candidates: first 2,020 (strongest first) started 23 Nov evening; see design/transcript_class/README.md for what came out.
