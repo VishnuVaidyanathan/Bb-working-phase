@@ -68,3 +68,22 @@ G halts when it finds a 1 two cells left of the block. That is exactly the
 place for a small left counter: each landing would have to move toward it or
 use one cell of it. In this machine the left side is always blank, so the
 halt never fires.
+
+## 6. Vishnu: "What if the halt is outside — can pay and lay be built within those two states?"
+
+Halt moved to C1 (C expects an empty gap cell and meets a 1 — a collision).
+Then F and G have four working wires, plus the door: five wires behind the
+round. Count check: Jeff Ketchersid's table spends the same five on these
+jobs (door A1, second left walker F1, the give F0, and G0, G1). So by count
+it is possible.
+
+By hand so far (tested): a **pay** trip fits —
+A1 `1RF`, F1 `1RF`, F0 `1RG`, G0 `0RD`, then the round's own take and walk
+home: `… 2 4 6 8 1 b a c 7 6 9… 8`.  (11; empty; 4; 3) → (16; 3; 3): the
+next store pays 1 and becomes the front store. But this returns home as a
+plain round, so nothing lands, and only G1 is left. By hand I have pay
+(4 wires) or land (4 wires), not both in 5.
+
+So the question goes to a search inside the hand frame (frame5.py):
+fixed = the hand round (A0, B0, B1, C0, D0, D1, E0, E1) and the halt on C1;
+open = the door A1 and all four wires of F and G. 2,458,624 tables.
