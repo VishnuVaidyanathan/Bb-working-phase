@@ -30,3 +30,19 @@ First pass (20,000 steps a tape): 663,444 tables stop on e=4; in 663,436 of
 them e=6 is less than 30 times longer; 8 kept, none of them a real depth
 (e=6 runs past the limit but e=8 stops early, so it is a loop, not growth).
 Longer pass running.
+
+## Longer pass — result: zero (tested)
+
+300,000 steps a tape, starting sizes e = 2 and e = 4, all 1,075,648 tables.
+- About 663,440 tables stop on the smallest tape. In all but 13 of them the
+  next tape is less than 30 times longer.
+- The 13: ten have a middle tape of about 74,000 steps and then a short one
+  for the next size (not growth with depth); three run past the limit on
+  both larger tapes, and by transcript they erase the block leftwards and
+  run away (junk).
+- No table in the frame shows depth.
+
+Reading: with the transcript's words fixed, changing what digits 4, a, c do
+is not enough. The deep landing ("leave a two-cell gap at the far left")
+needs its own word, and the table has no free digit for it. Something has to
+give up its place.
