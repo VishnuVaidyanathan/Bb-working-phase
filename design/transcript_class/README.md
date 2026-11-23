@@ -79,3 +79,42 @@ cut.
 2,582 tables, Quick_Sim 5 seconds each: 1,509 proved infinite; 1,073 still
 running at rule level 0 or 1; none halts; none reaches level 2 while running.
 Nothing deep in this batch.
+
+## Vishnu's changed grammar (23 Nov, afternoon): loop of five, one door, two states behind it, halt behind the door
+
+"Loop has 5 states, exactly one door, two states must be behind the door and
+one of that wire is halt." Then: "think of an arithmetic where, in the two
+states behind the door, G is touched rarely as a gate and the halt must
+happen very rarely."
+
+### The arithmetic on paper (not tested)
+
+Three levels of "rare", one behind the other:
+
+| what fires | when | how often |
+|---|---|---|
+| the loop and its fillers | every round | always |
+| the door into F | home meets the wrong cell: a store has run out | once per store |
+| F's second wire, into G | F meets the wrong cell: the whole row has run out | once per row |
+| G's second wire, the halt | G meets the wrong cell | must be rarer still |
+
+For the halt to be very rare, G must not decide by odd or even of the block
+(that is fixed when the row is born, so it fires at G's second visit — the
+"one-slot clock" we found in Jeff Ketchersid's machine). G should instead
+**take one cell from a small counter each time it is entered, and halt when
+the counter is empty.** Then: number of rows = size of the counter; the halt
+is certain; and it comes only after that many rows of rows.
+G is entered from F, and F is entered at home, so the counter G reads sits
+by home, on the far side from the stores ("the left counter").
+
+### cls5g.c — the class
+
+Even loop A0→B0→C0→D0→E0→A; odd halves: one door (to F), three fillers, one
+take; F: one wire back (to the loop or to itself), the other on to G;
+G: one wire is the halt, the other free. G may be reached late or never
+(printed as `------` when never reached in 60,000 steps). For each kept
+table the number of times G was entered is printed, so "G touched rarely"
+can be read off.
+
+(cls5.c is the wider version with F and G fully free; it was too slow and
+was stopped unfinished.)
