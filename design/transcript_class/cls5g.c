@@ -21,16 +21,17 @@ void name(char*t){t[0]=0;for(int i=0;i<14;i++){
   if(!set[i]){ if(i>=12&&(set[12]||set[13]))strcat(t,"1RZ"); else strcat(t,"---"); }
   else sprintf(t+strlen(t),"%d%c%c",W[i],M[i]>0?'R':'L','A'+X[i]);
   if(i%2&&i<13)strcat(t,"_");}}
+#define RET {memset(tape+lo-1,0,hi-lo+3);return;}
 void go(int d,long pos,int st,long k,long lo,long hi,long o20,int r20,long gin){
   unsigned char*tape=buf[d];
   for(;;){
-    if(k==budget){for(int j=0;j<12;j++)if(!set[j]){partial++;return;}}
+    if(k==budget){for(int j=0;j<12;j++)if(!set[j]){partial++;RET}}
     if(k==20000||k==60000){long o=0;int r=0;for(long q=lo;q<=hi;q++){o+=tape[q];if(tape[q]&&!tape[q-1])r++;}
-      if(k==20000){if(r<4||r>40){shape++;return;}o20=o;r20=r;}
-      else{if(r>r20||o<=o20){grow++;return;}char t[120];name(t);printf("%s %ld %d %ld\n",t,o,r,gin);kept++;if(!set[12]&&!set[13])keptopen++;return;}}
+      if(k==20000){if(r<4||r>40){shape++;RET}o20=o;r20=r;}
+      else{if(r>r20||o<=o20){grow++;RET}char t[120];name(t);printf("%s %ld %d %ld\n",t,o,r,gin);kept++;if(!set[12]&&!set[13])keptopen++;RET}}
     int i=st*2+tape[pos];
     if(!set[i]){
-      if(i>=12&&(set[12]||set[13])){halts++;if(k>maxhalt){maxhalt=k;maxones=0;for(long q=lo;q<=hi;q++)maxones+=tape[q];name(maxt);}return;}
+      if(i>=12&&(set[12]||set[13])){halts++;if(k>maxhalt){maxhalt=k;maxones=0;for(long q=lo;q<=hi;q++)maxones+=tape[q];name(maxt);}RET}
       unsigned char*cp=buf[d+1];
       #define TRY(w,m,x) {W[i]=w;M[i]=m;X[i]=x;set[i]=1;memcpy(cp+lo-1,tape+lo-1,hi-lo+3);go(d+1,pos,st,k,lo,hi,o20,r20,gin);set[i]=0;}
       if(st==6){for(int w=0;w<2;w++)for(int m=-1;m<2;m+=2)for(int x=0;x<7;x++)TRY(w,m,x)}
@@ -43,7 +44,7 @@ void go(int d,long pos,int st,long k,long lo,long hi,long o20,int r20,long gin){
         if(ntake){ntake--;TRY(0,-1,st)TRY(0,1,st)ntake++;}
         if(ndoor){ndoor--;for(int w=0;w<2;w++)for(int m=-1;m<2;m+=2)TRY(w,m,5)ndoor++;}
       }
-      return;
+      RET
     }
     tape[pos]=W[i];pos+=M[i];st=X[i];k++;if(st==6)gin++;
     if(pos<lo)lo=pos;if(pos>hi)hi=pos;
