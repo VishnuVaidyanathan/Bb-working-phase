@@ -93,3 +93,15 @@ Files: `compile/transcript_bb5.md`, `compile/round_transcript.md`,
    counter beside home; halt when it is empty".
 Outputs of 1 and 2 were in the scratch folder `…/scratchpad/eight/`
 (gq*.qs, f5.*); if scratch is gone, rerun from the tools above.
+
+## Added just before the session ended (tested)
+- `frame5.py` frame result: 2,458,624 tables from a blank tape. 745,141 halt
+  by 20,000 steps (largest: step 1,231, 35 ones). 10,731 keep 3 to 60 runs;
+  of those, 4,039 show a store paying at 15+ of 40 checks over 2,000,000
+  steps (3,993 with 6 or more runs). **Not yet screened by Quick_Sim.**
+  The 4,039 tables are saved in
+  `design/transcript_class/frame5_candidates.txt`. This is the first thing
+  to do next: Quick_Sim on them, then read the deep ones by transcript.
+- The 1,245 rare-gate tables of the gate class are saved in
+  `design/transcript_class/gate_class_rare_candidates.txt`. Their Quick_Sim
+  screening was still running when the session ended; rerun it.
