@@ -1,0 +1,12 @@
+# Vishnu's BB5 sheet (23 Nov): pairs 02 and 46, oscillator 159, fillers 3 and 7
+A0 1RB
+A1 ?LC
+B0 1RC
+B1 1RB
+C0 1RD
+C1 ?LE
+D0 1LA
+D1 1LD
+E0 HALT
+E1 ?LA
+ones A1 C1 E1 = 1

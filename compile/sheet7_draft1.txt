@@ -1,0 +1,16 @@
+# Draft 1 (23 Nov): Vishnu's BB5 sheet grown to 7 states.  Pairs 02 and 46, fillers 3 and 7,
+# oscillator of FIVE words 1 5 9 11 13 (all L, a mod gate 5), halt on E0, the two new exits F0 and G0 open.
+A0 1RB
+A1 ?LC
+B0 1RC
+B1 1RB
+C0 1RD
+C1 ?LE
+D0 1LA
+D1 1LD
+E0 HALT
+E1 ?LF
+F0 ???
+F1 ?LG
+G0 ???
+G1 ?LA

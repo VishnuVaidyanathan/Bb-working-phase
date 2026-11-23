@@ -1,0 +1,17 @@
+# Draft 2 (23 Nov): the BB5 words kept whole (pairs 02 and 46, fillers 3 and 7, oscillator 159 with two 0s and one 1),
+# the third exit of the gate (E0) open, two new states F and G open, halt on G0.
+A0 1RB
+A1 ?LC
+B0 1RC
+B1 1RB
+C0 1RD
+C1 ?LE
+D0 1LA
+D1 1LD
+E0 ???
+E1 ?LA
+F0 ???
+F1 ???
+G0 HALT
+G1 ???
+ones A1 C1 E1 = 1

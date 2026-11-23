@@ -99,3 +99,23 @@ Not trusted: for Pavel Kropitz's machine, TM 721, the tripling holdout and
 the coin machine the tool picks a short inner loop (3 to 6 wires), not their
 real round. Their rounds are not one fixed set of wires per trip. The tool
 is only good for machines with a fixed round trip.
+
+## Sheet tool (23 Nov): hand sheet -> every table it allows -> test
+
+`sheet.py SHEET` reads a sheet written like Vishnu's BB5 page (fixed wires,
+open parts marked `?`, and rules such as "these wires write exactly one 1")
+and prints every table it allows. `batch.c` runs each from a blank tape.
+
+Check: `sheet_bb5.txt` gives 3 tables; one is the BB5 champion of Marxen &
+Buntrock (47,176,870 steps, 4,098 ones). Tested.
+
+Two first 7-state sheets, both the BB5 words grown by two states:
+- `sheet7_draft1.txt`: oscillator of five words (mod gate 5). 25,088 tables.
+  At 2,000,000 steps: 10,887 halt (largest 1,244,322 steps, 1,249 ones),
+  14,201 still running. Longer run in progress.
+- `sheet7_draft2.txt`: oscillator 159 kept, third exit of the gate and two
+  new states open. 1,843,968 tables. In progress.
+
+Honest note: these sheets use BB5's kind of words (a mod gate on a counter).
+That kind grows like repeated multiplying, not like towers. They are a first
+use of the tool, not yet our tower story written as a transcript.
