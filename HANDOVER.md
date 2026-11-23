@@ -111,3 +111,5 @@ Outputs of 1 and 2 were in the scratch folder `…/scratchpad/eight/`
 
 - frame5 candidates fully screened (23 Nov, night): **no row machine**. 4,019 of 4,039 proved infinite; 14 single-exponential growers undecided; details in design/transcript_class/hand5.md section 7. Conclusion: pay and lay do not both fit behind the door on top of this hand round; change the round next (where the door fires, who does the take).
 - Last group of the gate class (2,975 tables, gate entered 301-2,000 times): Quick_Sim was started 23 Nov night; result, if finished, is at the end of design/transcript_class/README.md.
+
+- Gate class fully screened (23 Nov, night): the last 2,975 tables gave 3 small halters (largest 19,458 ones) and nothing deep. **Everything that was open on 23 Nov is closed. No job is running.** Next: a new hand round (see hand5.md section 7).

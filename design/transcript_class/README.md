@@ -166,3 +166,11 @@ Running: Quick_Sim on the 1,245 tables with G ≤ 300 entries.
 that gets one exponent wider per cycle — a huge span, almost no ones).
 No halts. No row machine. Not yet screened: the 2,975 tables with 301 to
 2,000 gate entries.
+
+### Quick_Sim on the last 2,975 gate-class tables (gate entered 301–2,000 times, 4 seconds each) — nothing deep
+
+2,198 proved infinite; 774 still running at rule level 0 or 1; 3 halt, all
+small: `1RB1LA_1LC0RF_1RD1LC_1LE0LD_1RA1RE_1RG0RC_1LE1RZ` (19,458 ones),
+`1RB1LA_1LC0RF_1RD1LC_1LE0LD_1RA1RE_0RG0RC_0LC1RZ` (19,457),
+`1RB1RA_0LC1LB_1LD1LC_1RE0LD_0RA0RF_1RG0RC_1LD1RZ` (1,592).
+The gate class is now fully screened: no row machine in it.
