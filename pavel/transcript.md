@@ -55,3 +55,29 @@ How often each digit fired in 3,000,000 steps: 2 and 5 about 739,700 each;
 a and d about 734,900 each; 1: 11,984; 0, 3, 6, b about 6,770 each;
 4, 7, 9 about 3,350 each; c: 1,549; 8: never (the halt).
 So the two pair-fillers do almost all the walking.
+
+## Vishnu's reading (23 Nov): the loop as it is really walked has C1 in it — checked cell by cell
+
+The table's even wires close a loop A0→B0→C0→D0→A. But on the tape the walk
+is `0 2 5 2 4 … 6`: A0 – B0 – **C1** – B0 – C0 – D0 – A.
+
+Why (cell by cell from a blank tape):
+- A0 writes 1 at cell 0, goes right.
+- B0 writes 1 at cell 1, **turns left**, so the head is back on cell 0,
+  which A0 just filled. C therefore reads a 1: digit 5 (C1), not 4.
+- C1 takes that cell and steps left; B0 fires again on the blank; now C
+  reads a 0: digit 4.
+
+Rule this shows: **after a turn, the head stands on a cell the loop itself
+wrote, so the next digit is odd or even according to what was written
+there.** A loop that never turns reads only 0s and runs away. A loop that
+turns must meet its own writing, and that pulls an odd digit into the loop.
+
+Same check on Jeff Ketchersid's loop: `0 2 4` go right and write 1, 1, 0.
+Digit 6 turns left and lands on the 0 that digit 4 wrote, so the next digit
+is still even (8). Digit 8 steps left onto the 1 that digit 2 wrote, so the
+next digit is odd (b, a filler). His C0 writes 0 exactly so the loop stays
+even one step longer after the turn.
+
+So what the loop digits write decides where the first odd digit enters —
+"the 0/1 that A0–F0 write is according to the grammar we want" (Vishnu).
