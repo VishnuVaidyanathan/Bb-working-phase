@@ -87,3 +87,23 @@ plain round, so nothing lands, and only G1 is left. By hand I have pay
 So the question goes to a search inside the hand frame (frame5.py):
 fixed = the hand round (A0, B0, B1, C0, D0, D1, E0, E1) and the halt on C1;
 open = the door A1 and all four wires of F and G. 2,458,624 tables.
+
+## 7. Result of the frame (frame5.py) — tested: no row machine
+
+2,458,624 tables (hand round fixed, halt on C1, door and F, G free), from a
+blank tape:
+- 745,141 halt by 20,000 steps (largest: step 1,231 with 35 ones);
+- 4,039 keep several runs and show a store paying often over 2,000,000 steps;
+- Quick_Sim on all 4,039: 4,019 proved infinite; 20 undecided after 4
+  seconds. Those 20 with 60 seconds each: 14 are single-exponential growers
+  (about 10^56,000 to 10^81,000 ones after a minute, rule level 1, still
+  running; for example `1RB1LF_1RC1RB_0RD1RZ_0LE0LD_1LA1LE_1LC0LG_0LB1RE`),
+  1 at about 10^1,081, and 5 with 10 to 131,535 ones at rule level 0.
+- No halt beyond 35 ones. Nothing at rule level 2 or above still running.
+  No rows.
+
+Answer to "with the halt outside, can pay and lay be built within F and G?":
+**not on top of this hand round.** The best this frame gives is one
+multiplication per landing (an exponential). The next thing to change is the
+round itself (where the door fires and who does the take), not the wires
+behind the door.

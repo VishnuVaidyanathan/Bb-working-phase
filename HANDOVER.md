@@ -108,3 +108,6 @@ Outputs of 1 and 2 were in the scratch folder `…/scratchpad/eight/`
 
 - Gate class, the 1,245 rare-gate tables: Quick_Sim done, **nothing deep** (498 infinite, 744 shallow and undecided, 3 gap-growers with 7 ones, no halts). Left: the 2,975 tables with 301-2,000 gate entries.
 - Quick_Sim on the frame5 candidates: first 2,020 (strongest first) started 23 Nov evening; see design/transcript_class/README.md for what came out.
+
+- frame5 candidates fully screened (23 Nov, night): **no row machine**. 4,019 of 4,039 proved infinite; 14 single-exponential growers undecided; details in design/transcript_class/hand5.md section 7. Conclusion: pay and lay do not both fit behind the door on top of this hand round; change the round next (where the door fires, who does the take).
+- Last group of the gate class (2,975 tables, gate entered 301-2,000 times): Quick_Sim was started 23 Nov night; result, if finished, is at the end of design/transcript_class/README.md.
