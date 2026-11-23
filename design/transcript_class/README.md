@@ -73,3 +73,9 @@ level 3 or 4; 1 halts.
 So far: nothing bigger than Jeff's in the class. Still to screen: second
 batch (2,582), the 737 shallow undecided, and about 10,000 just under the
 cut.
+
+## Second batch (tested)
+
+2,582 tables, Quick_Sim 5 seconds each: 1,509 proved infinite; 1,073 still
+running at rule level 0 or 1; none halts; none reaches level 2 while running.
+Nothing deep in this batch.
