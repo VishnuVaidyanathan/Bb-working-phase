@@ -45,3 +45,31 @@ Running: all 18,977,338 from a blank tape.
 
 Caution: the "row stays, block grows" filter was set by looking at Jeff's
 tape. A machine with a very different early shape could be dropped by it.
+
+## Stage 4 and Quick_Sim on the first batch (tested)
+
+pay.c, 2,000,000 steps, 40 checks: Jeff's table shows a store paying at 39
+of 40 checks. Of 244,838 tables: about 230,000 fewer than 15 times; 4,189
+show it 25 times or more.
+
+First batch to Quick_Sim (Shawn Ligocki), 8 seconds each: the 1,607 strongest.
+845 proved infinite; 737 running at rule level 0 or 1; 21 at level 2; 3 at
+level 3 or 4; 1 halts.
+
+- Halts: `1RB1RZ_1RC0RB_0RD1RC_1LE1RD_1LF1LE_1LA0LG_1LA1LC`, 5,242,879 ones
+  (5 × 2^20 − 1). Small.
+- Level 4: Jeff's table and its disguise (digit c `0LD`), same numbers after
+  15 minutes: (10↑↑↑)^48 10↑↑ 26150882433.
+- Level 3, new: `1RB1RA_0RC1RZ_0LD0LC_0LE1LD_0RF1LE_1RA1RG_1LC0RA`.
+  Same grammar, different loop (writes 1,0,0,0,0,1; moves R R L L R R).
+  After 15 minutes of Quick_Sim, still running, ones about
+  (10↑↑)^77 10↑ 646456686. That is steps of two arrows, where Jeff's has
+  steps of three arrows. So far smaller than Jeff's. Its end is not known.
+- The 21 at level 2, 90 seconds each: none halts. Most stop with "expression
+  too complex" after 500 levels of exponent: they add one level per cycle
+  (for example `1RB1RA_1LC1LB_0RD0LG_0RE0LD_1RF1RZ_0RA1RF_0LC0LB` at
+  10↑↑500). One arrow per cycle, no rows; whether they ever halt is unknown.
+
+So far: nothing bigger than Jeff's in the class. Still to screen: second
+batch (2,582), the 737 shallow undecided, and about 10,000 just under the
+cut.
