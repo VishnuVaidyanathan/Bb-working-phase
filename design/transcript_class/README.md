@@ -28,3 +28,20 @@ Count (budget 3,000 steps while wires are still open):
 Check: Jeff's table is in the set.
 
 Running: all 18,977,338 from a blank tape.
+
+## Stages so far (tested)
+
+1. 20,000 steps: 5,497,971 halt (largest: step 19,924, 180 ones);
+   13,479,367 still running.
+2. Kept tables with 4 to 40 runs of 1s: 686,756. At 60,000 steps, kept those
+   where the number of runs did not grow and the ones did: 390,461.
+3. At 400,000 steps, same test: 42 halt (largest: step 261,774, 1,043 ones);
+   244,838 kept. Jeff's table is among them (22 runs).
+   Number of runs among the kept: mostly 3 to 5 (about 228,000); 6 or more:
+   about 16,000.
+4. Running: pay.c — over 2,000,000 steps, count how often a run gets shorter
+   while the number of runs stays the same (a store paying). A plain growing
+   block never does that.
+
+Caution: the "row stays, block grows" filter was set by looking at Jeff's
+tape. A machine with a very different early shape could be dropped by it.
