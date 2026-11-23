@@ -55,3 +55,33 @@ Start, blank tape: `0 2 4 6 8 bx2 a 1 d 2 4 6 8 b a 1 c 4 7 6 9 8 b a 1 c 4 7 6 
   4 short passes and two `1 c` for 2 empty levels; many for a new row.
   The count is on the tape, never in a state.
 - Digit 5 (the halt) is the partner of 4: C meets a 1 where it expects a 0.
+
+## Vishnu's reading of the table (23 Nov) — checked against the table
+
+- **The even digits make one closed loop:** A0→B, B0→C, C0→D, D0→E, E0→F,
+  F0→A. Digits `0 2 4 6 8 a` and back to 0. Six states, all on the loop.
+- **Three fillers, all odd halves of loop states:** 3 (B1), 9 (E1), b (F1).
+  The end of each filler is its even partner, which is on the loop. So the
+  loop digits are the pairs: every filler starts from the loop and ends back
+  on the loop.
+- **A1 is the only door, and the only way into G.** G is the only state
+  behind the door. Both of G's wires go back to the loop (G0→C, G1→B).
+- **D1 is the take.** It points to its own state (`0LD`), shaped like a
+  filler, but in a round it fires once because the next cell is a 0.
+- **C1 is the halt.**
+
+So the whole table is: one even loop of six + three fillers + one take +
+one door with one state behind it + the halt.
+
+The same check on other machines (the even wires only):
+
+| machine | even wires | closed loop from A? |
+|---|---|---|
+| BB5 champion (Marxen & Buntrock) | A→B→C→D→A, E0 halt | yes, 4 states |
+| Jeff Ketchersid's BB7 champion | A→B→C→D→E→F→A | yes, 6 states |
+| Pavel Kropitz's BB7 machine | A→B→C→D→A, E0 halt, F→G, G→G | yes, 4 states |
+| our 7-state stack | A→B→C→F→A, D→C, E→D, G0 halt | yes, 4 states |
+| our round+payment draft | A→B→C→C, D0 halt, E→F→G→A | **no** (broken at C0) |
+
+On a blank tape every read is a 0, so the machine starts by walking the even
+loop. That is why a closed even loop gives the start for free.
