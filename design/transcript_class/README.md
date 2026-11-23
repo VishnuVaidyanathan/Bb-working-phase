@@ -118,3 +118,42 @@ can be read off.
 
 (cls5.c is the wider version with F and G fully free; it was too slow and
 was stopped unfinished.)
+
+## Gate class, complete (cls5g.c, fixed) — tested
+
+Kept after the 60,000-step test: 578,417 tables (four quarters: 131,945 +
+193,358 + 121,101 + 132,013). Halters met on the way: small (largest step
+59,487, 579 ones).
+
+Note: an earlier run of cls5g.c had a bug (tape cells left over between
+branches). Its output was wrong and was thrown away. The numbers here are
+from the fixed tool, checked against direct runs.
+
+### Hand reading of five tables with "G entered at most 5 times"
+
+One has a row of stores of 3 that gains one store as the numbers double
+(`1RB1RA_0LC0RF_0LD1LC_1LE1RD_1RA0RE_1RG0RD_1LB1RZ`, proved infinite by
+Quick_Sim). Four are a single block growing in a straight line with a few
+fixed small pieces; G is entered only in the first few hundred steps.
+Lesson: "G entered few times" mostly means "G used at the start, then
+never". A rare gate is one that keeps being entered, later and later.
+(Jeff Ketchersid's table: G entered 109 times in 2,000,000 steps, first at
+step 8, last at step 568,099.)
+
+### gate.c on all 578,417 (2,000,000 steps)
+
+103 halt (largest 1,626 ones). By last entry into G:
+- before step 60,000: 226,581 tables (G is start-only);
+- after step 500,000: 350,715 tables; of these 302,361 enter G more than
+  2,000 times (G is part of the round); 4,220 enter G at most 2,000 times
+  **and** stores pay at 15+ of 40 checks: 625 with G ≤ 30 entries, 620 with
+  31–300, 2,975 with 301–2,000.
+
+Example of a rare gate (gatelog.py):
+`1RB1RA_1LC0RB_1LD1LC_1RE1LF_0RA1RE_1RG0LE_1RZ0RE` — G is entered at steps
+68, 155, 458, 1,577, 5,864, 22,631, 88,934, 352,613, 1,404,260, 5,604,707
+with the block at 9, 18, 35, 68, 133, 262, 519, 1,032, 2,057, 4,106.
+Once per doubling; the wait grows four times each visit. Only doubling, no
+rows, and G reads the same symbol every time, so its halt never fires.
+
+Running: Quick_Sim on the 1,245 tables with G ≤ 300 entries.
