@@ -49,3 +49,40 @@ Free after the round: digits 4 (front store empty), 6 (number test), 9.
   empty" also gives a cell and goes home, so the block just grows by 3 for
   ever ((14) → (17) → (20) …). The signal "front store empty" is lost.
   So 8 keeps its own state unless the layout gives another signal.
+
+## The payment word, drafted from digit 4 (23 Nov) — tested on hand tapes
+
+Digits: a = F0, b = F1, c = G0, d = G1.
+
+Round now (one digit added, b):   `0 3… 2 5 7 8 b 1…`
+Payment:                          `0 3… 2 4 5 7 8 a d…d c` then `0 2 5 7 8 b 1`
+
+| digit | wire | job |
+|---|---|---|
+| 4 | C0 `0RC` | front store empty: step over the empty cell (a filler over 0s, so any number of empty cells) |
+| 5 7 | C1 D1 | the same two takes as the round, now on the payer |
+| 8 | E0 `1LF` | give one cell, step left into a look |
+| b | F1 `1LA` | look saw a 1: it was a round, go home as usual |
+| a | F0 `1LG` | look saw a 0: it was a payment; join the block, go home as a different walker |
+| d… | G1 `1LG` | filler: walk left over the old block |
+| c | G0 `0LA` | at the far left: leave an empty cell; the old block is now the front store |
+| 0 | A0 | the usual home digit now starts a new block |
+
+Table: `1RB1LA_1RC1RB_0RC0RD_1RZ0LE_1LF---_1LG1LA_0LA1LG`
+(13 wires used, digit 9 free, halt on digit 6).
+
+Overlap used: the payer is paid by the round's own takes (5 7); the new
+block is started by the round's own home digit (0). The payment costs only
+4 new digits: 4, a, d, c.
+
+Tested rule: block w, front store empty, payer d  →  new block 3, front
+store w+2, payer d−2.  Example (9_ 4) → (3 11 2).
+
+Tested runs: (3 4 4) halts after 11 home visits; (3 2 6) after 20;
+(3 2 4 4) after 20. Reason: the landed store is w+2, and an odd store ends
+in the number test (digit 6). So the odd/even of the block at each landing
+decides life or halt. The test fires early on these tapes.
+
+Not in this draft: the start from a blank tape (digit 4 walks right for ever
+on an empty tape), the new row, and depth (empty cells are only stepped
+over).
