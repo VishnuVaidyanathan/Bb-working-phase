@@ -69,6 +69,7 @@ void go(unsigned char*tape,long pos,int st,long k,int nset){
       unsigned char cp[TW];int u0=used;
       for(int x=0;x<=used&&x<7;x++)for(int w=0;w<2;w++)for(int m=-1;m<2;m+=2){
         if(k+1<np&&x!=pre[k+1]/2)continue;
+        if(k==0&&m<0)continue;            /* the first wire moves right: the mirror image is the same machine */
         W[i]=w;M[i]=m;X[i]=x;set[i]=1;if(x==used)used++;
         memcpy(cp,tape,TW);cp[pos]=w;dlog[k]=i;go(cp,pos+m,x,k+1,nset+1);
         set[i]=0;used=u0;}
