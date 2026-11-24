@@ -17,7 +17,9 @@ def digits_of(t,n):
         out.append(st*2+v);tape[pos]=e[0];pos+=e[1];st=e[2]
     return out
 def solve(seq):
-    n=len(seq);sols=[]
+    n=len(seq);sols=[];nx={}
+    for a,b in zip(seq,seq[1:]):          # a wire has one next state: the digit after it must always be of that state
+        if nx.setdefault(a,b//2)!=b//2: return []
     def go(k,tape,pos,wm):
         if k==n: sols.append(dict(wm));return
         w=seq[k]
