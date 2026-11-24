@@ -1,0 +1,3 @@
+0 2 4 6 8 a a b 5 b | full tables 20961024 | halt in 400 steps 3639127 | test 1 pass 389425 | (halt by 5,000: 89) | test 1b pass 252779 | test 2 pass 7412 | test 3 pass 762 | open after budget 2303541
+reset but no laying: 6650
+laying repeats 5-9: 103 | 10-19: 234 | 20-49: 232 | 50-99: 193 | 100+: 0
