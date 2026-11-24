@@ -18,6 +18,7 @@ for trio in itertools.combinations(odd,3):
         four=list(trio)+[rep]
         for e in even:
             for p in set(itertools.permutations(four+[e])): tails.add(p)
+if __name__!="__main__": raise SystemExit
 res={}
 for t in sorted(tails):
     seq=[0,2,4,6,8]+list(t)
